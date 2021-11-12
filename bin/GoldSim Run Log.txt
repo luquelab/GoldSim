@@ -1,0 +1,31 @@
+GoldSim 14.0.0344
+Simulation Filename:	Example1_Tank
+Simulation Start Time:	11/11/2021 7:45:58 PM
+Simulation Run Time:	0.1 s
+Model Author Name:	Sergio Cobo editing stuff
+Analysis Description:	(not specified)
+
+*** Simulation Time Settings ***
+Time Basis:  Elapsed Time
+Time Unit: day
+Duration: 3 days
+Basic Timestep: 10 min
+Reporting Periods: none
+Scheduled Updates: 433
+Number of Plot Points: 433
+Final Value Capture Times:
+  At the end of the simulation
+
+*** Simulation Monte-Carlo Settings ***
+Simulation Type: Probabilistic (run 1 realization)
+Latin Hypercube Sampling: enabled (using random points in strata)
+Sampling Sequences: repeated; beginning seed 1
+
+WARNINGS AND ERRORS:
+
+Realization 1
+
+0.256273 day:
+\Tank_2: This Pool element is overflowing, but there is nothing linked to its Overflow output!
+	(This message will not be repeated).
+
