@@ -1,18 +1,18 @@
 GoldSim 14.0.0344
 Simulation Filename:	Example1_Tank
-Simulation Start Time:	11/11/2021 7:45:58 PM
+Simulation Start Time:	11/12/2021 12:16:06 PM
 Simulation Run Time:	0.1 s
-Model Author Name:	Sergio Cobo editing stuff
+Model Author Name:	Rick Kossik
 Analysis Description:	(not specified)
 
 *** Simulation Time Settings ***
 Time Basis:  Elapsed Time
 Time Unit: day
-Duration: 3 days
-Basic Timestep: 10 min
+Duration: 72 hr
+Basic Timestep: 15 min
 Reporting Periods: none
-Scheduled Updates: 433
-Number of Plot Points: 433
+Scheduled Updates: 289
+Number of Plot Points: 289
 Final Value Capture Times:
   At the end of the simulation
 
@@ -25,7 +25,7 @@ WARNINGS AND ERRORS:
 
 Realization 1
 
-0.256273 day:
+0.964143 day:
 \Tank_2: This Pool element is overflowing, but there is nothing linked to its Overflow output!
 	(This message will not be repeated).
 
