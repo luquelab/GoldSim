@@ -1,0 +1,30 @@
+GoldSim 14.0.0344
+Simulation Filename:	Aquarium
+Simulation Start Time:	11/18/2021 3:37:15 PM
+Simulation Run Time:	0.1 s
+Model Author Name:	Rohwer Lab
+Analysis Description:	(not specified)
+
+*** Simulation Time Settings ***
+Time Basis:  Elapsed Time
+Time Unit: day
+Duration: 100 day
+Basic Timestep: 1 day
+Reporting Periods: none
+Scheduled Updates: 101
+Number of Plot Points: 101
+Final Value Capture Times:
+  At the end of the simulation
+
+*** Simulation Monte-Carlo Settings ***
+Simulation Type: Probabilistic (run 1 realization)
+Latin Hypercube Sampling: enabled (using random points in strata)
+Sampling Sequences: repeated; beginning seed 1
+
+WARNINGS AND ERRORS:
+
+Realization 1
+
+0 day:
+\Fish and urchins: The result element contains one or more invalid or incomplete result items.
+
