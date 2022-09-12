@@ -1,0 +1,8 @@
+,bacterial growth rate (cell/m2*d),surface (m2),volume (m3),bacterial growth rate (cell/d),bacterial growth rate (cell/h)
+Min,944532,0.43,0.12,406148.9699,16922.87375
+Mean,1134707,,,487923.9303,20330.16376
+Max,1331220,,,572424.7227,23851.03011
+,,,,,
+Mean-Min,190175,,,,
+Max-Mean,196513,,,,
+Error,193344,,,,
