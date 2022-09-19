@@ -1,0 +1,5 @@
+19/9
+Module 1 is more or less finished. Or it looks so.
+I would need to find an average eDAR value to state that the metabolism is either anabolic or catabolic.
+
+Now I need to connect two containers. I want to connect module 1 and module 2.
