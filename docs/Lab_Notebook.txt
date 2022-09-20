@@ -3,3 +3,9 @@ Module 1 is more or less finished. Or it looks so.
 I would need to find an average eDAR value to state that the metabolism is either anabolic or catabolic.
 
 Now I need to connect two containers. I want to connect module 1 and module 2.
+
+20/9
+I will run some tests to see that the differential equations for photosynthesis/respiration work well.
+For that, I will run the system for 24 hours with an hour resolution. If necessary I will increase the stock of all four
+gases to make sure that things add up.
+I will need to change things back if they work
