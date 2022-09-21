@@ -12,6 +12,11 @@ Make clear the assumptions and expected uncertainties.
 
 ---
 
+## Module 1 - eDAR
+
+eDAR stands for electron Donor-Acceptor Ratio. When there are more electron donors acceptors (oxygen) than donors (sugar), catabolic metabolism dominates. When the opposite happens, anabolic metabolism dominates.
+
+
 ## Technical information on how to organize the documentation
 The associated file `index.md` contains a YAML front matter to indicate the layout, title, and navigation options. The repo's website is based on Jekyll's theme [Just-the-Docs](https://pmarsceill.github.io/just-the-docs/). Explore their [documentation]([Just-the-Docs](https://pmarsceill.github.io/just-the-docs/)) and associated [GitHub repo](https://github.com/pmarsceill/just-the-docs) to adapt your project's website to your needs.
 ---
