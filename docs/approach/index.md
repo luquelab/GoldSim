@@ -63,6 +63,17 @@ $$
 $$
 
 
+| Parameter | Description | Value| Source|                                         
+| ----------- | ----------- | ----------- | ----------- | 
+| r | Maximum Growth Rate |0.471 (wild type), 0.382 (spot- mutant)  | Experiment data |             
+| H | Hill functions |8.2x10 7 (Wild type), 1x10 8 (mutant)  | Concentrations of bacteria at the end of the experiments without CX  | 
+| d | Infection rate | 0 |  |
+| $$\mu_p$$ | Lysis rate |  |   | 
+| c | Burst size | 125 |Da. Paepe et al, 2006  | 
+| $$\mathcal{P}(L)$$ | Probability of lysogeny | 0 |  |
+| m | Decay rate | 0.012h<sup>-1</sup>| Da Paepe et al, 2006  | 
+| $$\mu_i$$ | Induction rate |  |   |
+
 
 ## Technical information on how to organize the documentation
 The associated file `index.md` contains a YAML front matter to indicate the layout, title, and navigation options. The repo's website is based on Jekyll's theme [Just-the-Docs](https://pmarsceill.github.io/just-the-docs/). Explore their [documentation]([Just-the-Docs](https://pmarsceill.github.io/just-the-docs/)) and associated [GitHub repo](https://github.com/pmarsceill/just-the-docs) to adapt your project's website to your needs.
