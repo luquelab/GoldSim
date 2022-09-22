@@ -53,7 +53,7 @@ Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^
 $$
 \begin{align*}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda \alpha_1 P^{C}_{out} W \\
-  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
+  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C \\
   \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O - \gamma O \\	
   \frac{d S}{d t}&=& P^{S}_{in}S - \alpha_2 R^{O}_{out} S 		
 \end{align*}
