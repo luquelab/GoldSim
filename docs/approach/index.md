@@ -24,9 +24,9 @@ Definitions:
 $$
 \begin{align*}
   \frac{\dd W}{t}&=&R^{W}_{in}W - \lambda P^{W}_{out} \\
-  \frac{\dd C}{t}&=&R^{W}_{in}W \\
-  \frac{\dd O}{t}&=&\lambda P^{O}_{in}O-R^{W}_{in}W \\	
-  \frac{S}{t}&=&-R^{W}_{in}W 		
+  \frac{\dd C}{t}&=&R^{W}_{in}C - \lambda P^{C}_{out}\\
+  \frac{\dd O}{t}&=&\lambda P^{O}_{in}O-R^{O}_{out}O \\	
+  \frac{S}{t}&=&\lambda P^{S}_{in}S-R^{S}_{out}W 		
 \end{align*}
 $$
 
