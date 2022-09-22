@@ -64,7 +64,7 @@ $$
 \begin{align*}
 P^O_{in}=\lambda \alpha^p_{out} P^C_{out} \big[\alpha_1 W + C \big] //
 P^S_{in}=\lambda (1 - \alpha^p_{out}) P^C_{out} \big[\alpha_1 W + C \big] //
-R^O_{in}=\lambda \alpha^p_{out} P^C_{out} \big[\alpha_1 W + C \big] //
+R^@_{in}=\lambda \alpha^p_{out} P^C_{out} \big[\alpha_1 W + C \big] //
   
 \end{align*}
 $$
