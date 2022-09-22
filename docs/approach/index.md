@@ -19,7 +19,6 @@ eDAR stands for electron Donor-Acceptor Ratio. When there are more electron dono
 
 This module models respiration, photosynthesis and oxygen runoff.
 
-Definitions:
 
 $$
 \begin{align*}
@@ -30,6 +29,7 @@ $$
 \end{align*}
 $$
 
+Definitions:
 
 | Symbol | Meaning | Units| Value |
 | ----------- | ----------- | ----------- | ----------- | 
