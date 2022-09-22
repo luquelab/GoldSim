@@ -31,18 +31,18 @@ $$
 $$
 
 
-| Symbol | Meaning | Value| Source| 
+| Symbol | Meaning | Units| Value |Source| 
 | ----------- | ----------- | ----------- | ----------- | 
-|O| $$O_2$$ | Maximum Growth Rate |0.471 (wild type), 0.382 (spot- mutant)  | Experiment data |             
-|S| $$C_{6}H_{12}O_{6}$$ |   | | 
-|C| $$CO_2$$ | | 0 |  |
-|W| $$H_2O$$ | |  |   | 
-| $\lambda$ | PAR Rate |  |   | 
-|$\alpha_1$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry | 0 |  |
-|$\alpha_2$ | Decay rate | $$H_2O$$ to $$CO_{2}$$ stoichiometry |   | 
-|$$R_i$$| Respiration rate|  |  |   |
-|$$P_i$$| Photosynthesic rate| |  |   |
-|$$\gamma$$ | $$O_2$$ runoff rate |  |   |
+|O| $$O_2$$ | Maximum Growth Rate | $$\frac{g}{m^3 h}$$ |  | 
+|S| $$C_{6}H_{12}O_{6}$$ | $$\frac{g}{m^3 h}$$ | | 
+|C| $$CO_2$$ | $$\frac{g}{m^3 h}$$ |  |  |
+|W| $$H_2O$$ | $$\frac{g}{m^3 h}$$ |  |  | 
+| $$\lambda$$ | PAR Rate | [0,1]  |   | 
+|$$\alpha_1$$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry |  |  |
+|$$\alpha_2$$ | Decay rate | $$H_2O$$ to $$CO_{2}$$ stoichiometry |   | 
+|$$R_i$$| Respiration rate| $$h^{-1}$$ |  |  |
+|$$P_i$$| Photosynthesic rate| $$h^{-1}$$ |  |   |
+|$$\gamma$$ | $$O_2$$ runoff rate | $$h^{-1}$$  |   |
 
 where $$\lambda$$ is a coefficient that limits the concentration of $$CO_2$$ that can be metabolized according to the amount of Photosynthetic Active Radiation (PAR) available and $$\alpha$$ controls the $$O_2$$ runoff.
 
