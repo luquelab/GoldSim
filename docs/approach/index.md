@@ -21,6 +21,20 @@ This module models respiration, photosynthesis and oxygen runoff.
 
 Definitions:
 
+| State variable or equation | Name | Value| Source| 
+| ----------- | ----------- | ----------- | ----------- | 
+| $$O_2$$ | Maximum Growth Rate |0.471 (wild type), 0.382 (spot- mutant)  | Experiment data |             
+| $$C_{6}H_{12}O_{6}$$ | Hill functions |8.2x10 7 (Wild type), 1x10 8 (mutant)  | Concentrations of bacteria at the end of the experiments without CX  | 
+| $$CO_2$$ | Infection rate | 0 |  |
+| $$H_2O$$ | Lysis rate |  |   | 
+| $\lambda$ | Burst size | 125 |Da. Paepe et al, 2006  | 
+| $\alpha_1$ | Probability of lysogeny | 0 |  |
+| $\alpha_2$ | Decay rate | 0.012h<sup>-1</sup>| Da Paepe et al, 2006  | 
+| $$R_i$$ | Induction rate |  |   |
+| $$P_i$$ | Induction rate |  |   |
+| $$$$ | Induction rate |  |   |
+
+
 
 $$
 \begin{align*}
@@ -36,10 +50,10 @@ Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^
 
 $$
 \begin{align*}
-  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
+  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda \alpha_1 P^{C}_{out} W \\
   \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
   \frac{d O}{d t}&=&\lambda P^{O}_{in}O - R^{O}_{out} O \\	
-  \frac{d S}{d t}&=&\lambda P^{S}_{in}S - R^{S}_{out} S 		
+  \frac{d S}{d t}&=&\lambda P^{S}_{in}S - \alpha_2 R^{O}_{out} S 		
 \end{align*}
 $$
 
@@ -63,7 +77,7 @@ $$
 $$
 
 
-| Parameter | Description | Value| Source|                                         
+| Parameter | Description | Value| Source| 
 | ----------- | ----------- | ----------- | ----------- | 
 | r | Maximum Growth Rate |0.471 (wild type), 0.382 (spot- mutant)  | Experiment data |             
 | H | Hill functions |8.2x10 7 (Wild type), 1x10 8 (mutant)  | Concentrations of bacteria at the end of the experiments without CX  | 
