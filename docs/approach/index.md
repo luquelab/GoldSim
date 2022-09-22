@@ -21,21 +21,6 @@ This module models respiration, photosynthesis and oxygen runoff.
 
 Definitions:
 
-| State variable or equation | Name | Value| Source| 
-| ----------- | ----------- | ----------- | ----------- | 
-| $$O_2$$ | Maximum Growth Rate |0.471 (wild type), 0.382 (spot- mutant)  | Experiment data |             
-| $$C_{6}H_{12}O_{6}$$ | Hill functions |8.2x10 7 (Wild type), 1x10 8 (mutant)  | Concentrations of bacteria at the end of the experiments without CX  | 
-| $$CO_2$$ | Infection rate | 0 |  |
-| $$H_2O$$ | Lysis rate |  |   | 
-| $\lambda$ | Burst size | 125 |Da. Paepe et al, 2006  | 
-| $\alpha_1$ | Probability of lysogeny | 0 |  |
-| $\alpha_2$ | Decay rate | 0.012h<sup>-1</sup>| Da Paepe et al, 2006  | 
-| $$R_i$$ | Induction rate |  |   |
-| $$P_i$$ | Induction rate |  |   |
-| $$\gamma$$ | Induction rate |  |   |
-
-
-
 $$
 \begin{align*}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
@@ -44,7 +29,23 @@ $$
   \frac{d S}{d t}&=&\lambda P^{S}_{in}S - R^{S}_{out} S \,,
 \end{align*}
 $$
-where $\lambda$ is a coefficient that limits the concentration of $$CO_2$$ that can be metabolized according to the amount of Photosynthetic Active Radiation (PAR) available and $$\alpha$$ controls the $$O_2$$ runoff.
+
+
+| Symbol | Meaning | Value| Source| 
+| ----------- | ----------- | ----------- | ----------- | 
+|O| $$O_2$$ | Maximum Growth Rate |0.471 (wild type), 0.382 (spot- mutant)  | Experiment data |             
+|S| $$C_{6}H_{12}O_{6}$$ |   | | 
+|C| $$CO_2$$ | | 0 |  |
+|W| $$H_2O$$ | |  |   | 
+| $\lambda$ | PAR Rate |  |   | 
+|$\alpha_1$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry | 0 |  |
+|$\alpha_2$ | Decay rate | $$H_2O$$ to $$CO_{2}$$ stoichiometry |   | 
+|$$R_i$$| Respiration rate|  |  |   |
+|$$P_i$$| Photosynthesic rate| |  |   |
+|$$\gamma$$ | $$O_2$$ runoff rate |  |   |
+
+where $$\lambda$$ is a coefficient that limits the concentration of $$CO_2$$ that can be metabolized according to the amount of Photosynthetic Active Radiation (PAR) available and $$\alpha$$ controls the $$O_2$$ runoff.
+
 
 Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $\alpha_1$ and $\alpha_2$ are the stoichoimetric coefficients for $$CO_2$$ to $$H_{2}0$$ and $$O_2$$ to $$C_{6}H_{12}O_{6}$$, respectively. Then, we have:
 
