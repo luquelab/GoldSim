@@ -2,6 +2,8 @@
 layout: default
 title: Approach
 nav_order: 4
+
+\usepackage{mathtools}
 ---
 
 # Approach
