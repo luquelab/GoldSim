@@ -32,7 +32,7 @@ Definitions:
 | $\alpha_2$ | Decay rate | 0.012h<sup>-1</sup>| Da Paepe et al, 2006  | 
 | $$R_i$$ | Induction rate |  |   |
 | $$P_i$$ | Induction rate |  |   |
-| $$$$ | Induction rate |  |   |
+| $$\gamma$$ | Induction rate |  |   |
 
 
 
@@ -40,7 +40,7 @@ $$
 \begin{align*}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
   \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
-  \frac{d O}{d t}&=&\lambda P^{O}_{in}O - R^{O}_{out} O - \alpha O\\	
+  \frac{d O}{d t}&=&\lambda P^{O}_{in}O - R^{O}_{out} O - \gamma O\\	
   \frac{d S}{d t}&=&\lambda P^{S}_{in}S - R^{S}_{out} S \,,
 \end{align*}
 $$
@@ -52,7 +52,7 @@ $$
 \begin{align*}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda \alpha_1 P^{C}_{out} W \\
   \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
-  \frac{d O}{d t}&=&\lambda P^{O}_{in}O - R^{O}_{out} O \\	
+  \frac{d O}{d t}&=&\lambda P^{O}_{in}O - R^{O}_{out} O - \gamma O \\	
   \frac{d S}{d t}&=&\lambda P^{S}_{in}S - \alpha_2 R^{O}_{out} S 		
 \end{align*}
 $$
