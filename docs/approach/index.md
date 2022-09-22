@@ -4,7 +4,7 @@ title: Approach
 nav_order: 4
 
 \usepackage{mathtools}
-\usepackage[thinc]{esdiff}
+\usepackage{physics}
 ---
 
 # Approach
@@ -24,10 +24,10 @@ Definitions:
 
 $$
 \begin{align*}
-  \frac{\dd W}{\dd t}&=&R^{W}_{in}W - \lambda P^{W}_{out} \\
-  \frac{\dd C}{\dd t}&=&R^{W}_{in}C - \lambda P^{C}_{out}\\
-  \frac{\dd O}{\dd t}&=&\lambda P^{O}_{in}O - R^{O}_{out}O \\	
-  \frac{\dd S}{\dd t}&=&\lambda P^{S}_{in}S - R^{S}_{out}S 		
+  \frac{\dd W}{\dd t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
+  \frac{\dd C}{\dd t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
+  \frac{\dd O}{\dd t}&=&\lambda P^{O}_{in}O - R^{O}_{out} O \\	
+  \frac{\dd S}{\dd t}&=&\lambda P^{S}_{in}S - R^{S}_{out} S 		
 \end{align*}
 $$
 
