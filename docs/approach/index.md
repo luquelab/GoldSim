@@ -39,7 +39,7 @@ $$
 |W| $$H_2O$$ | $$\frac{g}{m^3 h}$$ |  |  | 
 | $$\lambda$$ | PAR Rate | [0,1]  |   | 
 |$$\alpha_1$$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry |  |  |
-|$$\alpha_2$$ | Decay rate | $$H_2O$$ to $$CO_{2}$$ stoichiometry |   | 
+|$$\alpha_2$$ | $$H_2O$$ to $$CO_{2}$$ stoichiometry |   | 
 |$$R_i$$| Respiration rate| $$h^{-1}$$ |  |  |
 |$$P_i$$| Photosynthesic rate| $$h^{-1}$$ |  |   |
 |$$\gamma$$ | $$O_2$$ runoff rate | $$h^{-1}$$  |   |
@@ -80,13 +80,13 @@ $$
 
 | Parameter | Description | Value| Source| 
 | ----------- | ----------- | ----------- | ----------- | 
-| r | Maximum Growth Rate |0.471 (wild type), 0.382 (spot- mutant)  | Experiment data |             
-| H | Hill functions |8.2x10 7 (Wild type), 1x10 8 (mutant)  | Concentrations of bacteria at the end of the experiments without CX  | 
-| d | Infection rate | 0 |  |
+| r | Maximum Growth Rate |  | Experiment data |             
+| H | Hill functions      |  |   | 
+| d | Infection rate |    |  |   |
 | $$\mu_p$$ | Lysis rate |  |   | 
 | c | Burst size | 125 |Da. Paepe et al, 2006  | 
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | 0 |  |
-| m | Decay rate | 0.012h<sup>-1</sup>| Da Paepe et al, 2006  | 
+| m | Decay rate | $$0.012 h^{-1}$$| Da Paepe et al, 2006  | 
 | $$\mu_i$$ | Induction rate |  |   |
 
 
