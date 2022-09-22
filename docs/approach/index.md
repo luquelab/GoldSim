@@ -63,10 +63,10 @@ where
 
 $$
 \begin{align*}
-P^O_{in} O=\lambda \alpha^p_{out} P^C_{out} \big[\alpha_1 W + C \big] //
-P^S_{in} S=\lambda (1 - \alpha^p_{out}) P^C_{out} \big[\alpha_1 W + C \big] //
-R^W_{in} W= \alpha^r_{out} RO^O_{out} \big[\alpha_2 S + O \big] //
-R^C_{in} C= (1 - \alpha^r_{out}) RO^O_{out} \big[\alpha_2 S + O \big] //
+P^O_{in} O &=& \lambda \alpha^p_{out} P^C_{out} \big[\alpha_1 W + C \big] //
+P^S_{in} S &=& \lambda (1 - \alpha^p_{out}) P^C_{out} \big[\alpha_1 W + C \big] //
+R^W_{in} W &=& \alpha^r_{out} RO^O_{out} \big[\alpha_2 S + O \big] //
+R^C_{in} C &=& (1 - \alpha^r_{out}) RO^O_{out} \big[\alpha_2 S + O \big] //
 \end{align*}
 $$
 
