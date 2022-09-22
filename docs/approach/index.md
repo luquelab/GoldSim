@@ -43,6 +43,27 @@ $$
 \end{align*}
 $$
 
+
+## Module 2 - bacterial-phage ecology. Lysis-lysogeny decision
+
+$$
+\begin{align*}   
+\frac{dB}{dt}&=&\underbrace{r H_{O_2}H_{DOC}H_{eDAR}B}_{\text{growth}} -
+\underbrace{dBP}_{\text{Infection}} \\
+\frac{dP}{dt}&=&\underbrace{c\mu_p \big[1 - \mathcal{P}(L)\big]I_n}_{burst} -
+\underbrace{dBP}_{\text{infection}} - \underbrace{mP}_{\text{viral decay}} + 
+\underbrace{c\mu_i L}_{\text{burst induction}} \\ 
+\frac{dI_n}{dt}&=&\underbrace{dBP}_{\text{Infection}} - 
+\underbrace{\big[1 -\mathcal{P}(L) \big] I_n}_{\text{lysis}} -
+\underbrace{\mathcal{P}(L) I_n}_{lysogeny} \\ 
+\frac{dL}{dt}&=&\underbrace{rH_{O_2}H_{DOC}H_{eDAR}L}_{\text{growth}} +
+\underbrace{\mathcal{P}(L)I_n }_{\text{lysogeny}} -
+\underbrace{\mu_i L}_{\text{induction}} \\
+\end{align*}
+$$
+
+
+
 ## Technical information on how to organize the documentation
 The associated file `index.md` contains a YAML front matter to indicate the layout, title, and navigation options. The repo's website is based on Jekyll's theme [Just-the-Docs](https://pmarsceill.github.io/just-the-docs/). Explore their [documentation]([Just-the-Docs](https://pmarsceill.github.io/just-the-docs/)) and associated [GitHub repo](https://github.com/pmarsceill/just-the-docs) to adapt your project's website to your needs.
 ---
