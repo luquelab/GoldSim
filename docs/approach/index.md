@@ -31,7 +31,7 @@ $$
 \end{align*}
 $$
 
-Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ 
+Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$, where \alpha_1 and \alpha_2 are the stoichoimetric coefficients for CO_2 to H20 and O2 to C6H12O6, respectively.
 
 ## Technical information on how to organize the documentation
 The associated file `index.md` contains a YAML front matter to indicate the layout, title, and navigation options. The repo's website is based on Jekyll's theme [Just-the-Docs](https://pmarsceill.github.io/just-the-docs/). Explore their [documentation]([Just-the-Docs](https://pmarsceill.github.io/just-the-docs/)) and associated [GitHub repo](https://github.com/pmarsceill/just-the-docs) to adapt your project's website to your needs.
