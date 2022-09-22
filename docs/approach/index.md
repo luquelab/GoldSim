@@ -32,7 +32,7 @@ $$
 $$
 where $\lambda$ is a coefficient that limits the concentration of $CO_2$ that can be metabolized according to the amount of Photosynthetic Active Radiation (PAR) available.
 
-Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $\alpha_1$ and $\alpha_2$ are the stoichoimetric coefficients for $CO_2$ to $H_{2}0$ and $O_2$ to $C_{6}H_{12}O_{6}$, respectively. Then, we have:
+Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $\alpha_1$ and $\alpha_2$ are the stoichoimetric coefficients for $$CO_2$$ to $$H_{2}0$$ and $$O_2$$ to $$C_{6}H_{12}O_{6}$$, respectively. Then, we have:
 
 $$
 \begin{align*}
