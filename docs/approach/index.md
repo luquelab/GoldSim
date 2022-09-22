@@ -34,13 +34,11 @@ Definitions:
 | Symbol | Meaning | Units| Value |
 | ----------- | ----------- | ----------- | ----------- | 
 |O| $$O_2$$ concentration | $$\frac{g}{m^3 h}$$ |  | 
-
-
-
-
 |S| $$C_{6}H_{12}O_{6}$$  | $$\frac{g}{m^3 h}$$ | | 
 |C| $$CO_2$$ | $$\frac{g}{m^3 h}$$ |  |  
 |W| $$H_2O$$ | $$\frac{g}{m^3 h}$$ |  |   
+
+
 | $$\lambda$$ | PAR Rate |         | [0,1]| 
 |$$\alpha_1$$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry | 0.29  |  |
 |$$\alpha_2$$ | $$H_2O$$ to $$CO_{2}$$ stoichiometry | 0.51   |  |
