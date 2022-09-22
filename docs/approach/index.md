@@ -33,8 +33,8 @@ $$
 
 | Symbol | Meaning | Units| Value |Source| 
 | ----------- | ----------- | ----------- | ----------- | 
-|O| $$O_2$$ | Maximum Growth Rate | $$\frac{g}{m^3 h}$$ |  | 
-|S| $$C_{6}H_{12}O_{6}$$ | $$\frac{g}{m^3 h}$$ | | 
+|O| $$O_2$$ concentration | $$\frac{g}{m^3 h}$$ |  | 
+|S| $$C_{6}H_{12}O_{6}$$  | $$\frac{g}{m^3 h}$$ | | 
 |C| $$CO_2$$ | $$\frac{g}{m^3 h}$$ |  |  |
 |W| $$H_2O$$ | $$\frac{g}{m^3 h}$$ |  |  | 
 | $$\lambda$$ | PAR Rate | [0,1]  |   | 
