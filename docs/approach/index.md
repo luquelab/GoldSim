@@ -4,6 +4,7 @@ title: Approach
 nav_order: 4
 
 \usepackage{mathtools}
+\usepackage[thinc]{esdiff}
 ---
 
 # Approach
