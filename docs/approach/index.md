@@ -40,9 +40,9 @@ $$
 | $$\lambda$$ | PAR Rate |         | [0,1] |     | 
 |$$\alpha_1$$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry |  |  |
 |$$\alpha_2$$ | $$H_2O$$ to $$CO_{2}$$ stoichiometry |   | 
-|$$R_i$$| Respiration rate| $$h^{-1}$$ |  |  |
-|$$P_i$$| Photosynthesic rate| $$h^{-1}$$ |  |   |
-|$$\gamma$$ | $$O_2$$ runoff rate | $$h^{-1}$$  |   |
+|$$R_i$$| Respiration rate| $$h^{-1}$$ | [0,1]  |  |
+|$$P_i$$| Photosynthesic rate| $$h^{-1}$$ | [0,1] |   |
+|$$\gamma$$ | $$O_2$$ runoff rate | $$h^{-1}$$  | [0,1]   |
 
 where $$\lambda$$ is a coefficient that limits the concentration of $$CO_2$$ that can be metabolized according to the amount of Photosynthetic Active Radiation (PAR) available and $$\alpha$$ controls the $$O_2$$ runoff.
 
