@@ -24,12 +24,14 @@ Definitions:
 
 $$
 \begin{align*}
-  \frac{\dd W}{\dd t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
-  \frac{\dd C}{\dd t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
-  \frac{\dd O}{\dd t}&=&\lambda P^{O}_{in}O - R^{O}_{out} O \\	
-  \frac{\dd S}{\dd t}&=&\lambda P^{S}_{in}S - R^{S}_{out} S 		
+  \frac{d W}{\dd t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
+  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
+  \frac{d O}{d t}&=&\lambda P^{O}_{in}O - R^{O}_{out} O \\	
+  \frac{d S}{d t}&=&\lambda P^{S}_{in}S - R^{S}_{out} S 		
 \end{align*}
 $$
+
+Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ 
 
 ## Technical information on how to organize the documentation
 The associated file `index.md` contains a YAML front matter to indicate the layout, title, and navigation options. The repo's website is based on Jekyll's theme [Just-the-Docs](https://pmarsceill.github.io/just-the-docs/). Explore their [documentation]([Just-the-Docs](https://pmarsceill.github.io/just-the-docs/)) and associated [GitHub repo](https://github.com/pmarsceill/just-the-docs) to adapt your project's website to your needs.
