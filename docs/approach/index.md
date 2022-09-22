@@ -21,10 +21,10 @@ Definitions:
 
 $$
 \begin{align*}
-  \diff{W}{t}&=&R^{W}_{in}W \\
-  \diff{W}{t}&=&R^{W}_{in}W \\
-  \diff{W}{t}&=&R^{W}_{in}W \\	
-  \diff{W}{t}&=&R^{W}_{in}W 		
+  \frac{\dd W}{t}&=&R^{W}_{in}W - \lambda P^{W}_{out} \\
+  \frac{\dd C}{t}&=&R^{W}_{in}W \\
+  \frac{\dd O}{t}&=&\lambda P^{O}_{in}O-R^{W}_{in}W \\	
+  \frac{S}{t}&=&-R^{W}_{in}W 		
 \end{align*}
 $$
 
