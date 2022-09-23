@@ -41,8 +41,8 @@ Definitions:
 |$$\alpha_1$$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry | 0.29  |  |
 |$$\alpha_2$$ | $$H_2O$$ to $$CO_{2}$$ stoichiometry | 0.51   |  |
 |$$R_i$$| Respiration rate| $$h^{-1}$$ | [0,1]  |
-
 |$$P_i$$| Photosynthesic rate| $$h^{-1}$$ | [0,1] |
+
 |$$\gamma$$ | $$O_2$$ runoff rate | $$h^{-1}$$  | [0,1]   |
 |$$\alpha^p_{out}$$ | Photosynthesis to O |   | 0.51 |
 |$$\alpha^p_{out}$$ | Respiration to W |   | 0.29 |
