@@ -9,3 +9,19 @@ I will run some tests to see that the differential equations for photosynthesis/
 For that, I will run the system for 24 hours with an hour resolution. If necessary I will increase the stock of all four
 gases to make sure that things add up.
 I will need to change things back if they work
+
+Changes to do the respiration+photosynthesis test:
+1. switch off the Oxygen runoff
+2. Reduce simulation time from 200 to 48 hours
+3. Do things at the hour timescale
+
+For an additional test, I am going to increase the stock of O2 and sugar. Multiply by three.
+It doesn't work. I multiply it by 10. Still does not work.
+
+I believe what happens is a numerical artifact. If you have a pool that it's practically empty and ask it to outflow
+the maximum stock available, then the pool is going to outflow the inflow that it gets. In the same time point. As a result,
+you are going to see an empty pool all the time. However, that is more of a numerical artifact than anything else. The tank
+is not empty, it is just outflowing at the same rate at it is inflowing. It is as if you had a pool with a pipe that pours
+water and another pipe that drains it...and they do that simultaneously. You would need to have more inflow than outflow
+to notice an oscillation in the stock of the pool. That is, you need a minimum amount of photosynthesis going on so that you
+don't get the numerical artifact by which there is no O2 or sugar around.
