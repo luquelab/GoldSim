@@ -96,7 +96,7 @@ $$
 | H | Hill functions      |  |   | 
 | d | Infection rate |  $$3e-8 ml/h $$  |  |
 | $$\mu_p$$ | Lysis rate |  |   | 
-| c | Burst size | 125 |Da. Paepe et al, 2006  | 
-| $$\mathcal{P}(L)$$ | Probability of lysogeny | 0 |  |
+| c | Burst size | 5 | ??  | 
+| $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.01, 0.6] | Silveira et. al, 2021  |
 | m | Decay rate | $$0.012 h^{-1}$$| Da Paepe et al, 2006  | 
 | $$\mu_i$$ | Induction rate |  |   |
