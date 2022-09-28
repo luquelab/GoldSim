@@ -92,7 +92,7 @@ $$
 
 | Parameter | Description | Value| Source| 
 | ----------- | ----------- | ----------- | ----------- | 
-| r | Maximum Growth Rate |  | Experiment data |             
+| r | Maximum Growth Rate | $$0.17^{-1} $$| Experiment data |             
 | H | Hill functions      |  |   | 
 | d | Infection rate |    |  |   |
 | $$\mu_p$$ | Lysis rate |  |   | 
