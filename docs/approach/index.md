@@ -92,9 +92,9 @@ $$
 
 | Parameter | Description | Value| Source| 
 | ----------- | ----------- | ----------- | ----------- | 
-| r | Maximum Growth Rate | $$0.17^{-1} $$| Experiment data |             
+| r | Maximum Growth Rate | $$0.17 h^{-1} $$|  Silveira et. al, 2021 |             
 | H | Hill functions      |  |   | 
-| d | Infection rate |    |  |   |
+| d | Infection rate |  $$3e-8 ml/h $$  |  |
 | $$\mu_p$$ | Lysis rate |  |   | 
 | c | Burst size | 125 |Da. Paepe et al, 2006  | 
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | 0 |  |
