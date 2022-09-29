@@ -94,7 +94,7 @@ $$
 | ----------- | ----------- | ----------- | ----------- | 
 | r | Maximum Growth Rate | $$0.17 h^{-1}$$  | Experiment data |             
 | H | Hill functions      | $$[0,1]$$ |   | 
-| d | Infection rate |    | $$3 \cdot 10^{-8} ml/h$$ | Luque et. al., 2020  |
+| d | Infection rate      | $$3 \cdot 10^{-8} ml/h$$ | Luque et. al., 2020  |
 | $$\mu_p$$ | Phage producing rate | $$\frac{r}{0.8 \log(2)} h^{-1}$$ |   | 
 | c | Burst size | 11 | (M.Middelboe et al.,2001) |
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.1,0.7] |  |
