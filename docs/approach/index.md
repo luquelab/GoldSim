@@ -94,15 +94,15 @@ $$
 | ----------- | ----------- | ----------- | ----------- | 
 | r | Maximum Growth Rate | $$0.17 h^{-1}$$  | Experiment data |             
 | H | Hill functions      | $$[0,1]$$ |   | 
-| d | Infection rate |    | $$3e-8 ml/h$$ | Luque et. al., 2020  |
+| d | Infection rate |    | $$3 \cdot 10^{-8} ml/h$$ | Luque et. al., 2020  |
 | $$\mu_p$$ | Phage producing rate | $$\frac{r}{0.8 \log(2)} h^{-1}$$ |   | 
 | c | Burst size | 11 | (M.Middelboe et al.,2001) |
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.1,0.7] |  |
 | $$m$$ | Decay rate | $$0.012 h^{-1}$$| Da Paepe et al, 2006  | 
-| $$\mu_i$$ | Induction rate | $$(1/24) e-6 h^{-1}$$ | Rockney et al., 2008, Rosner et al. 1972  |
-| $$B_0$$ | Initial sensitive concentration | $$[3.78 x 10^{4}, 1.54 x 10^{6}] cells/ml $$|  Silveira et. al, 2021 |
-| $$P_0$$ | Initial phage concentration | $$[1.4 x 10^{5}, 1.17 x 10^{7}] phage/ml $$|  Silveira et. al, 2021 |
+| $$\mu_i$$ | Induction rate | $$(1/24) \cdot 10^{-6} h^{-1}$$ | Rockney et al., 2008, Rosner et al. 1972  |
+| $$B_0$$ | Initial sensitive concentration | $$[3.78 \cdot 10^{4}, 1.54 \cdot 10^{6}] cells/ml $$|  Silveira et. al, 2021 |
+| $$P_0$$ | Initial phage concentration | $$[1.4 \cdot 10^{5}, 1.17 \cdot 10^{7}] phage/ml $$|  Silveira et. al, 2021 |
 | $$I_0$$ | Initial infecte concentration |  |   |
-| $$L_0$$ | Initial lysogen concentration | $$0.1 x B_{0} $$|  Silveira et. al, 2021 | 
+| $$L_0$$ | Initial lysogen concentration | $$0.1 \cdot B_{0} $$|  Silveira et. al, 2021 | 
 
 
