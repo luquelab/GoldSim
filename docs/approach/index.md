@@ -91,6 +91,7 @@ $$
 
 
 | Parameter | Description | Value| Minimum/Maximum | Source| Phage Species| Host|
+<<<<<<< HEAD
 | ------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | 
 | r | Maximum Growth Rate |$$7 \cdot 10^{-3} h^{-1}$$| $$2.95 \cdot 10^{-3}, 7 \cdot 10^{-3} h^{-1}$$ | (Silveira et. al, 2021)|  |
 | H | Hill functions      | $$[0,1]$$ |   | | | 
@@ -120,12 +121,21 @@ Concentrations for lysogeny [0.01, 0.1]:
 | d | Infection rate      | $$3 \cdot 10^{-8} ml/h$$ | Luque et. al., 2020  |
 | $$\mu_p$$ | Phage producing rate | $$\frac{r}{0.8 \log(2)} h^{-1}$$ |   | 
 | c | Burst size | 11 | (M.Middelboe et al.,2001) |
+=======
+| ------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| r | Maximum Growth Rate |$$7 \cdot 10^{-3} hr^{-1}$$| $$2.95 \cdot 10^{-3}, 7 \cdot 10^{-3} h^{-1}$$ | (Silveira et. al, 2021)|  |             
+| H | Hill functions      | $$[0,1]$$ |   | | | 
+| d | Infection rate |$$1.06 \cdot 10^{-8} ml/hr$$| $$7.2 \cdot 10 ^{-10}, 3.7 \cdot 10^{-7} ml/h$$ |(Luque and Silveira, 2020)  | | |
+| c | Burst size | $$11$$ | |(M.Middelboe et al.,2001) | Myoviridae | Vibrio sp. |
+| m | Decay rate | $$0.528 hr^{-1}$$| |(C.A. Suttle,1994)   |Myoviridae |Vibrio sp. |
+>>>>>>> 9e8ffeed80c69b91f3b534040c824ae1822aafb0
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.1,0.7] |  |
 | $$m$$ | Decay rate | $$0.012 h^{-1}$$| Da Paepe et al, 2006  | 
-| $$\mu_i$$ | Induction rate | $$(1/24) \cdot 10^{-6} h^{-1}$$ | Rockney et al., 2008, Rosner et al. 1972  |
-| $$B_0$$ | Initial sensitive concentration | $$[3.78 \cdot 10^{4}, 1.54 \cdot 10^{6}] cells/ml $$|  Silveira et. al, 2021 |
-| $$P_0$$ | Initial phage concentration | $$[1.4 \cdot 10^{5}, 1.17 \cdot 10^{7}] phage/ml $$|  Silveira et. al, 2021 |
-| $$I_0$$ | Initial infecte concentration |  |   |
-| $$L_0$$ | Initial lysogen concentration | $$0.1 \cdot B_{0} $$|  Silveira et. al, 2021 | 
+| $$\mu_i$$ | Induction rate |$$0.02 hr^{-1}$$| |Emily's thesis   | | |
+| $$B_0$$ | Initial sensitive concentration | $$2.5 \cdot 10^6 cells/ml$$ | $$3.78 \cdot 10^{4}, 1.54 \cdot 10^{6}  cells/ml $$|  Silveira et. al, 2021 |
+| $$P_0$$ | Initial phage concentration |$$1.6 \cdot 10^7$$ | $$1.4 \cdot 10^{5}, 1.17 \cdot 10^{7} phage/ml $$ |Silveira et. al, 2021 |
+| $$I_{N0}$$ | Initial infected concentration | $$0 cells/ml $$| |  |
+| $$I_{P0}$$ | Initial phage producing concentration | $$0 cells/ml $$| |  |
+| $$L_0$$ | Initial lysogen concentration | $$0.1 B_0 $$| $$[0.0001, 0.1]$$ | inferred from Silveira et. al, 2021 | 
 
 
