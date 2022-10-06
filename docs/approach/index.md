@@ -91,7 +91,6 @@ $$
 
 
 | Parameter | Description | Value| Minimum/Maximum | Source| Phage Species| Host|
-<<<<<<< HEAD
 | ------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | 
 | r | Maximum Growth Rate |$$7 \cdot 10^{-3} h^{-1}$$| $$2.95 \cdot 10^{-3}, 7 \cdot 10^{-3} h^{-1}$$ | (Silveira et. al, 2021)|  |
 | H | Hill functions      | $$[0,1]$$ |   | | | 
@@ -121,7 +120,6 @@ Concentrations for lysogeny [0.01, 0.1]:
 | d | Infection rate      | $$3 \cdot 10^{-8} ml/h$$ | Luque et. al., 2020  |
 | $$\mu_p$$ | Phage producing rate | $$\frac{r}{0.8 \log(2)} h^{-1}$$ |   | 
 | c | Burst size | 11 | (M.Middelboe et al.,2001) |
-=======
 | ------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | r | Maximum Growth Rate |$$7 \cdot 10^{-3} hr^{-1}$$| $$2.95 \cdot 10^{-3}, 7 \cdot 10^{-3} h^{-1}$$ | (Silveira et. al, 2021)|  |             
 | H | Hill functions      | $$[0,1]$$ |   | | | 
