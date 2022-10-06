@@ -125,7 +125,6 @@ Concentrations for lysogeny [0.01, 0.1]:
 | d | Infection rate |$$1.06 \cdot 10^{-8} ml/hr$$| $$7.2 \cdot 10 ^{-10}, 3.7 \cdot 10^{-7} ml/h$$ |(Luque and Silveira, 2020)  | | |
 | c | Burst size | $$11$$ | |(M.Middelboe et al.,2001) | Myoviridae | Vibrio sp. |
 | m | Decay rate | $$0.528 hr^{-1}$$| |(C.A. Suttle,1994)   |Myoviridae |Vibrio sp. |
->>>>>>> 9e8ffeed80c69b91f3b534040c824ae1822aafb0
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.1,0.7] |  |
 | $$m$$ | Decay rate | $$0.012 h^{-1}$$| Da Paepe et al, 2006  | 
 | $$\mu_i$$ | Induction rate |$$0.02 hr^{-1}$$| |Emily's thesis   | | |
