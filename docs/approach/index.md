@@ -97,7 +97,7 @@ $$
 | $$c$$ | Burst size | $$11$$ | |(M.Middelboe et al.,2001) | Myoviridae | Vibrio sp. |
 | $$m$$ | Decay rate | $$0.528 hr^{-1}, 0.012 h^{-1}$$| |(C.A. Suttle,1994), Da Paepe et al, 2006   |Myoviridae |Vibrio sp. |
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.1,0.7] |  |
-| $$\mu_i$$ | Induction rate |$$0.02 hr^{-1}$$| |Emily's thesis   | | |
+| $$\mu_i$$ | Induction rate |$$1.2 \cdot 10^{-6} hr^{-1}$$| |Emily's thesis   | | |
 
 Concentrations for lysogeny [0.01, 0.1]:
 
