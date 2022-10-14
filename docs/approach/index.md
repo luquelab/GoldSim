@@ -151,8 +151,7 @@ $$
 \frac{dL}{dt}&=&\underbrace{r(MTE)L}_{\text{growth}} +
 \underbrace{\mathcal{P}_L(eDAR)I_n }_{\text{lysogeny}} -
 \underbrace{\mu_i(eDAR) L}_{\text{induction}} \\
-\frac{dE}{dt}&=&\underbrace{r_E(MTE)E}_{\text{growth}} +
-\underbrace{d_E EB}_{\text{protist predation}} - \underbrace{d_E BE}_{\text{protist predation}}\\
+\frac{dE}{dt}&=&\underbrace{r_E(MTE, d_E)E}_{\text{growth and protist predation}} - \underbrace{d_E EL}_{\text{pathogen-protist immunity}}\\
 \end{align*}
 $$
 
