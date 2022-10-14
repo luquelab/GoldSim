@@ -139,3 +139,21 @@ $$
 \underbrace{\mu_i(eDAR) L}_{\text{induction}} \\
 \end{align*}
 $$
+
+## Module 3 - Protist-pathogen interaction
+
+Protists (E) are generally defined as unicellular eukariotes. For our purposes, protists kill bacteria and are poisoned by pathogens (lysogens). 
+
+$$
+\begin{align*}   
+\frac{dB}{dt}&=&\underbrace{r(MTE)B}_{\text{growth}} -
+\underbrace{dBP}_{\text{Infection}} - \underbrace{d_E BE}_{\text{protist predation}}\\
+\frac{dL}{dt}&=&\underbrace{r(MTE)L}_{\text{growth}} +
+\underbrace{\mathcal{P}_L(eDAR)I_n }_{\text{lysogeny}} -
+\underbrace{\mu_i(eDAR) L}_{\text{induction}} \\
+\frac{dE}{dt}&=&\underbrace{r_E(MTE)E}_{\text{growth}} +
+\underbrace{d_E EB}_{\text{protist predation}} - \underbrace{d_E BE}_{\text{protist predation}}\\
+\end{align*}
+$$
+
+
