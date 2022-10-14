@@ -136,6 +136,6 @@ $$
 \underbrace{\mathcal{P}_L(eDAR) I_n}_{lysogeny} \\ 
 \frac{dL}{dt}&=&\underbrace{r(MTE)L}_{\text{growth}} +
 \underbrace{\mathcal{P}_L(eDAR)I_n }_{\text{lysogeny}} -
-\underbrace{\mu_i L}_{\text{induction}} \\
+\underbrace{\mu_i(eDAR) L}_{\text{induction}} \\
 \end{align*}
 $$
