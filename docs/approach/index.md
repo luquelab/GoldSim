@@ -122,3 +122,37 @@ Concentrations for lysogeny [0.1, ~0.5]:
 | $$L_0$$ | Initial lysogen concentration | $$0.1 \cdot B_0 $$| $$~0.2 \cdot B0$$ | $$~0.3 \cdot B0$$ | $$~0.3 \cdot B0$$ | $$~0.4 \cdot B0$$ | $$~0.5 \cdot B_0 $$ | inferred from Luque et. al, 2020|
 | $$I_{N0}$$ | Initial infected concentration |$$0 cells/ml $$| | | | | |
 | $$I_{P0}$$ | Initial phage producing concentration | $$0 cells/ml $$| | | | | |
+
+
+$$
+\begin{align*}   
+\frac{dB}{dt}&=&\underbrace{r(MTE)B}_{\text{growth}} -
+\underbrace{dBP}_{\text{Infection}} \\
+\frac{dP}{dt}&=&\underbrace{c\mu_p \big[1 - \mathcal{P}_L(eDAR)\big]I_n}_{burst} -
+\underbrace{dBP}_{\text{infection}} - \underbrace{mP}_{\text{viral decay}} + 
+\underbrace{c\mu_i (eDAR) L}_{\text{burst induction}} \\ 
+\frac{dI_n}{dt}&=&\underbrace{dBP}_{\text{Infection}} - 
+\underbrace{\big[1 -\mathcal{P}_L(eDAR) \big] I_n}_{\text{lysis}} -
+\underbrace{\mathcal{P}_L(eDAR) I_n}_{lysogeny} \\ 
+\frac{dL}{dt}&=&\underbrace{r(MTE)L}_{\text{growth}} +
+\underbrace{\mathcal{P}_L(eDAR)I_n }_{\text{lysogeny}} -
+\underbrace{\mu_i(eDAR) L}_{\text{induction}} \\
+\end{align*}
+$$
+
+## Module 3 - Protist-pathogen interaction
+
+Protists (E) are generally defined as unicellular eukariotes. For our purposes, protists kill bacteria and are poisoned by pathogens (lysogens). 
+
+$$
+\begin{align*}   
+\frac{dB}{dt}&=&\underbrace{r(MTE)B}_{\text{growth}} -
+\underbrace{dBP}_{\text{Infection}} - \underbrace{d_E BE}_{\text{protist predation}}\\
+\frac{dL}{dt}&=&\underbrace{r(MTE)L}_{\text{growth}} +
+\underbrace{\mathcal{P}_L(eDAR)I_n }_{\text{lysogeny}} -
+\underbrace{\mu_i(eDAR) L}_{\text{induction}} \\
+\frac{dE}{dt}&=&\underbrace{r_E(MTE, d_E)E}_{\text{growth and protist predation}} - \underbrace{d_E EL}_{\text{pathogen-protist immunity}}\\
+\end{align*}
+$$
+
+
