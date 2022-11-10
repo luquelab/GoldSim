@@ -79,9 +79,10 @@ Then, the energy consumption can be expressed as:
 
 $$
 \begin{align*} 
-\frac{dW}{dt}&=&W_{in} - W_{out}
+\frac{dW}{dt}&=&W_{in} - W_{out} , 
 \end{align*}
 $$
+where $W_{in}=\frac{R^{O}_{out} O + \alpha_2 R^{O}_{out}}{m_{r1}} E_{R1}$
 
 
 $$
