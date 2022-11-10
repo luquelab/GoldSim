@@ -71,22 +71,7 @@ $$
 $$
 
 
-## Module 2 - Energy from respiration
-
-A single respiration entails $m_{r1}=6.18e-22 g$ from the six molecules of $O_2$ and a single molecule of $C_6H_{12}O_6$  and it generates 26 ATP molecules, or 25.7 meV. Let us call this energy $E_{R1}$.
-Let us assume (as a first approximation) that energy is consumed 
-
-
-Let us call $E_{R1}$
-A single respiration reaction produces approximately 26 ATP molecules. 26 ATP molecules generate 25.7 meV. The six molecules of $O_2$ and the molecule of $C6H12O6$ involved in a single respiration event weigh $6.18e-22 g$. For unit
-consistency, let us assume that we have $6.18e-22 g/m^3$.
-
-$$
-\begin{align*} 
-\frac{dB}{dt}&=&W_{in} - W_{out}
-\end{align*}
-$$
-
+## Module 2 - bacterial-phage ecology. Lysis-lysogeny decision
 
 $$
 \begin{align*}   
