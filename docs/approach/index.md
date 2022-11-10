@@ -81,12 +81,20 @@ Then, the energy consumption can be expressed as:
 
 $$
 \begin{align*} 
-\frac{dW}{dt}&=&W_{in} - W_{out} , 
+\frac{dE}{dt}&=&W_{in} - W_{out} , 
 \end{align*}
 $$
 
 where $$W_{in}=\frac{R^{O}_{out} O + \alpha_2 R^{O}_{out}}{m_{r1}} E_{R1}$$ and $$W_{out}=w_b B$$. The numerator in $$W_{in}$$ represents the rate of mass being consumed by respiration. The quotient gives the number
 of respiration cycles per unit of time.
+
+Assume that $$E_{B}=1 J/(cells/ml)$$ is the energy that it takes to duplicate a bacteria. Then, the growth of bacteria can be expressed as:
+
+$$
+\begin{align*} 
+\frac{dB}{dt}&=&W_{out}/E_{B} B  
+\end{align*}
+$$
 
 
 $$
