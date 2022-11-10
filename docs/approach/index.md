@@ -73,8 +73,10 @@ $$
 
 ## Module 2 - Energy from respiration
 
-A single respiration entails $$m_{r1}=6.18e-22 g$$ from the six molecules of $$O_2$$ and a single molecule of $$C_6H_{12}O_6$$  and it generates 26 ATP molecules, or 25.7 meV. Let us call this energy $$E_{R1}$$.
-Let us assume (as a first approximation) that each bacteria consumes $$w_b=1 J/h$$ and that energy is consumed at a rate of $$W=w_b \cdot B$$, $$B$$ being the number of bacteria.
+A single respiration entails $$m_{r1}=6.18e-22 g$$ from the six molecules of $$O_2$$ and a single molecule of $$C_6H_{12}O_6$$  and it generates 26 ATP molecules, or 25.7 meV. Let us call this energy $$E_{R1}$$. Let us assume as 
+a first approximation that:
+* 1. Energy from respiration is produced at a rate that is equal to the number of respiration cycles multiplied by $$E_{R1}$$.
+* 2. Each bacteria consumes $$w_b=1 J/h$$ .
 Then, the energy consumption can be expressed as:
 
 $$
@@ -83,7 +85,8 @@ $$
 \end{align*}
 $$
 
-where $$W_{in}=\frac{R^{O}_{out} O + \alpha_2 R^{O}_{out}}{m_{r1}} E_{R1}$$ and $$W_{out}=w_b B$$.
+where $$W_{in}=\frac{R^{O}_{out} O + \alpha_2 R^{O}_{out}}{m_{r1}} E_{R1}$$ and $$W_{out}=w_b B$$. The numerator in $$W_{in}$$ represents the rate of mass being consumed by respiration. The quotient gives the number
+of respiration cycles per unit of time.
 
 
 $$
