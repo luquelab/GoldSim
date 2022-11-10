@@ -82,7 +82,7 @@ $$
 \frac{dW}{dt}&=&W_{in} - W_{out} , 
 \end{align*}
 $$
-where $W_{in}=\frac{R^{O}_{out} O + \alpha_2 R^{O}_{out}}{m_{r1}} E_{R1}$
+where $$W_{in}=\frac{R^{O}_{out} O + \alpha_2 R^{O}_{out}}{m_{r1}} E_{R1}$$ and $$W_{out}$$
 
 
 $$
