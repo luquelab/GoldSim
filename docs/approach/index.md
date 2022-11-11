@@ -23,8 +23,8 @@ $$
 \begin{align*}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
   \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
-  \frac{d O}{d t}&=&\lambda P^{O}_{in}O - R^{O}_{out} O - \gamma O\\	
-  \frac{d S}{d t}&=&\lambda P^{S}_{in}S - R^{S}_{out} S
+  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O - \gamma O\\	
+  \frac{d S}{d t}&=& P^{S}_{in}S - R^{S}_{out} S
 \end{align*}
 $$
 
