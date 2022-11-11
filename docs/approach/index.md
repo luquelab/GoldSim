@@ -70,7 +70,18 @@ $$
 \end{align*}
 $$
 
-As a next step, we include fermentation as an anaerobic metabolism. For the sake of our argument (anaerobic vs aerobic metabolism) we will assume that fermentation happens at twice the rate as respiration occurs
+As a next step, we include fermentation as an anaerobic metabolism. For the sake of our argument (anaerobic vs aerobic metabolism) we will assume that fermentation happens at twice the rate as respiration occurs:
+
+$$
+\begin{align*}
+  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda \alpha_1 P^{C}_{out} W \\
+  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C + \alpha_4 2 \alpha_2 F^{O}_{out} E\\
+  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O - \gamma O \\	
+  \frac{d S}{d t}&=& P^{S}_{in}S - \alpha_2 R^{O}_{out} S - 2 \alpha_2 R^{O}_{out} S \\
+  \frac{d E}{d t}&=& \alpha_3 2 \alpha_2 F^{O}_{out} E \\
+  
+\end{align*}
+$$
 
 ## Module 2 - Energy from respiration
 
