@@ -92,7 +92,7 @@ Assume that $$E_{B}=1 J/(cells/ml)$$ is the energy that it takes to duplicate a 
 
 $$
 \begin{align*} 
-\frac{dB}{dt}&=&W_{out}/E_{B} B  
+\frac{dB}{dt}&=&\frac{W_{out}}/{E_{B}} B  
 \end{align*}
 $$
 

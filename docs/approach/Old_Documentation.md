@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Approach
-nav_order: 4
+title: Former Approach
+nav_order: 5
 
 \usepackage{mathtools}
 \usepackage{physics}
