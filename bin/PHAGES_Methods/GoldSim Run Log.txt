@@ -1,6 +1,6 @@
 GoldSim 14.0.0344
 Simulation Filename:	Energy_Model
-Simulation Start Time:	11/11/2022 4:40:40 PM
+Simulation Start Time:	11/11/2022 4:56:02 PM
 Simulation Run Time:	0.0 s
 Model Author Name:	Rohwer Lab
 Analysis Description:	(not specified)
@@ -27,4 +27,8 @@ Realization 1
 
 0 hr:
 \eDAR_Module\Tests\O2_Outflows: The result element contains one or more invalid or incomplete result items.
+
+
+0 hr:
+\eDAR_Module\eDAR_Plot: The result element contains one or more invalid or incomplete result items.
 
