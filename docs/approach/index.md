@@ -17,6 +17,38 @@ This section describes the mathematical formalism used for the modules.
 ## Module 1 - eDAR
 
 eDAR stands for electron Donor-Acceptor Ratio. When there are more electron donors acceptors (oxygen) than donors (sugar) in a given ecosystem, a catabolic metabolism dominates. Otherwise, anabolic metabolism dominates. 
+This module models respiration, photosynthesis, and fermentation. 
+Let us start writing the differential equations that model a system that does respiration and photosynthesis: 
+
+$$
+\begin{align*}
+  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
+  \frac{d C}{d t}&=&R^{C}_{in}C - \lambda P^{C}_{out} C\\
+  \frac{d O}{d t}&=& \lambda P^{O}_{in}O - R^{O}_{out} O \\	
+  \frac{d S}{d t}&=& \lambda P^{S}_{in}S - R^{S}_{out} S 
+\end{align*}
+$$
+
+Each equation describes the rate at which the concentration of the corresponding compound changes, with W, C, O, and S, representing $$H_2O$$, $$CO_2$$, $$O_2$$, and $$C_6H_{12}O_6$$, respectively. Naturally, changes are due to 
+of respiration and photosynthesis. Respiration reduces the concentration of $$O$$ and $$S$$ at rates $$R^{O}_{out}$$ and $$R^{S}_{out}$$, and increases that of $$W$$ and $$C$$ at rates $$R^{W}_{in}$$ and $$R^{C}_{in}$$. Photosynthesis
+does the opposite and it is weighted by $$\lambda$$ a parameter related to Photosynthetic Active Radiation (PAR) which limits the amount of $$C$$ and $$W$$ that can be metabolized.
+
+By conservation of matter, we have that:
+
+$$
+\begin{align*}
+R^{S}_{out}S + R^{O}_{out} O = R^{W}_{in}W + R^{W}_{in}C
+P^{W}_{out} W + P^{C}_{out} C =  P^{O}_{in}O + P^{S}_{in}S
+\end{align*}
+$$
+
+Also, by the stoichiometry of respiration and photosynthesis, we know that:
+$$
+\begin{align*}
+R^{S}_{out} S=\alpha_1 R^{O}_{out} O
+P^{W}_{out} W=\alpha_2 P^{C}_{out} C
+\end{align*}
+$$
 
 Definitions:
 
@@ -35,17 +67,11 @@ Definitions:
 |$$\alpha^p_{out}$$ | Respiration to W |   | 0.29 |
 
 
-This module models respiration, photosynthesis, and fermentation. Let us start with the differential equations that model a system that does respiration and photosynthesis
 
-$$
-\begin{align*}
-  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
-  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
-  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O \\	
-  \frac{d S}{d t}&=& P^{S}_{in}S - R^{S}_{out} S 
-\end{align*}
-$$
 
+
+
+where each equation describes the change of concentrations of a given
 where $$\lambda$$ is the Photosynthetic Active Radiation (PAR) rate, which limits the amount of $$CO_2$$ and $$H_2O$$ that can be metabolized.
 Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $$\alpha_1$$ and $$\alpha_2$$ are the stoichoimetric coefficients for $$CO_2$$ to $$H_{2}0$$ and $$O_2$$ to $$C_{6}H_{12}O_{6}$$, respectively. Then, we have:
 
