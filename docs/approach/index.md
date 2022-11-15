@@ -31,7 +31,6 @@ Definitions:
 |$$\alpha_2$$ | $$H_2O$$ to $$CO_{2}$$ stoichiometry | |0.51|
 |$$R^j_i$$| Respiration rate| $$h^{-1}$$ | [0,1]  |
 |$$P^j_i$$| Photosynthesic rate| $$h^{-1}$$ | [0,1] |
-|$$\gamma$$ | $$O_2$$ runoff rate | $$h^{-1}$$  | [0,1]   |
 |$$\alpha^p_{out}$$ | Photosynthesis to O |   | 0.51 |
 |$$\alpha^p_{out}$$ | Respiration to W |   | 0.29 |
 
@@ -46,14 +45,14 @@ $$
   \frac{d S}{d t}&=& P^{S}_{in}S - R^{S}_{out} S 
 \end{align*}
 $$
-
+where $$\lambda$$ is the Photosynthetic Active Radiation (PAR) rate, which limits the amount of $$CO_2$$ and $$H_2O$$ that can be metabolized.
 Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $$\alpha_1$$ and $$\alpha_2$$ are the stoichoimetric coefficients for $$CO_2$$ to $$H_{2}0$$ and $$O_2$$ to $$C_{6}H_{12}O_{6}$$, respectively. Then, we have:
 
 $$
 \begin{align*}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda \alpha_1 P^{C}_{out} W \\
   \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C \\
-  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O - \gamma O \\	
+  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O \\
   \frac{d S}{d t}&=& P^{S}_{in}S - \alpha_2 R^{O}_{out} S 		
 \end{align*}
 $$
@@ -78,10 +77,10 @@ For the sake of our argument (anaerobic vs aerobic metabolism) we will assume th
 $$
 \begin{align*}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda \alpha_1 P^{C}_{out} W \\
-  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C + F^{C}_{in} E\\
+  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C + \alpha_4 2 \alpha_2 F^{O}_{out} E\\
   \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O - \gamma O \\	
-  \frac{d S}{d t}&=& P^{S}_{in}S - \alpha_2 R^{O}_{out} S - F^{S}_{out} S \\
-  \frac{d E}{d t}&=& F^{E}_{in} E \\
+  \frac{d S}{d t}&=& P^{S}_{in}S - \alpha_2 R^{O}_{out} S - 2 \alpha_2 R^{O}_{out} S \\
+  \frac{d E}{d t}&=& \alpha_3 2 \alpha_2 F^{O}_{out} E \\
   
 \end{align*}
 $$
