@@ -50,6 +50,17 @@ P^{W}_{out} W=\alpha_2 P^{C}_{out} C
 \end{align*}
 $$
 
+and that:
+
+$$
+\begin{align*}
+R^{C}_{in}C = \alpha^{R}_{out}(R^{S}_{out}S + R^{O}_{out} O)
+R^{W}_{in}W = (1-\alpha^{C}_{out})(R^{S}_{out}S + R^{O}_{out} O)
+P^{O}_{in} O  = \alpha^{P}_{out}(P^{W}_{out} W + P^{C}_{out} C)
+P^{W}_{in} W  = (1 - \alpha^{P}_{out})(P^{W}_{out} W + P^{C}_{out} C)
+\end{align*}
+$$
+
 Definitions:
 
 | Symbol | Meaning | Units| Value |
