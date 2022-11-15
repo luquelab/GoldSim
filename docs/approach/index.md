@@ -29,6 +29,8 @@ $$
 \end{align*}
 $$
 
+where $$\lambda$$ is a coefficient that limits the concentration of $$CO_2$$ and $$H2O$$ that can be metabolized according to the amount of Photosynthetic Active Radiation (PAR) available and $$\alpha$$ controls the $$O_2$$ runoff.
+
 Definitions:
 
 | Symbol | Meaning | Units| Value |
@@ -46,10 +48,7 @@ Definitions:
 |$$\alpha^p_{out}$$ | Photosynthesis to O |   | 0.51 |
 |$$\alpha^p_{out}$$ | Respiration to W |   | 0.29 |
 
-where $$\lambda$$ is a coefficient that limits the concentration of $$CO_2$$ that can be metabolized according to the amount of Photosynthetic Active Radiation (PAR) available and $$\alpha$$ controls the $$O_2$$ runoff.
-
-
-Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $\alpha_1$ and $\alpha_2$ are the stoichoimetric coefficients for $$CO_2$$ to $$H_{2}0$$ and $$O_2$$ to $$C_{6}H_{12}O_{6}$$, respectively. Then, we have:
+Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $$\alpha_1$$ and $$\alpha_2$$ are the stoichoimetric coefficients for $$CO_2$$ to $$H_{2}0$$ and $$O_2$$ to $$C_{6}H_{12}O_{6}$$, respectively. Then, we have:
 
 $$
 \begin{align*}
@@ -75,8 +74,7 @@ As a next step, we include ethanol fermentation as an anaerobic metabolism:
 
 \ch{C6H12O6 ->[ ] 2 C2H6O + 2 CO2}
 
-
-For the sake of our argument (anaerobic vs aerobic metabolism) we will assume that fermentation happens at twice the rate as respiration occurs:
+For the sake of our argument (anaerobic vs aerobic metabolism) we will assume that fermentation happens at twice the rate as respiration occurs. This gives the following differential equations for the governors:
 
 $$
 \begin{align*}
