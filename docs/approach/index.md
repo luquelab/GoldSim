@@ -70,7 +70,7 @@ $$
 
 As a next step, we include ethanol fermentation as an anaerobic metabolism:
 
-\ch{C6H12O6 ->[ ] 2 C2H6O + 2 CO2}
+$$\ch{C6H12O6 ->[ ] 2 C2H6O + 2 CO2}$$
 
 For the sake of our argument (anaerobic vs aerobic metabolism) we will assume that fermentation happens at twice the rate as respiration occurs. This gives the following differential equations for the governors:
 
