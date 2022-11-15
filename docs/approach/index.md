@@ -5,6 +5,7 @@ nav_order: 4
 
 \usepackage{mathtools}
 \usepackage{physics}
+\usepackage[version=4]{mhchem}
 ---
 
 # Approach
@@ -70,7 +71,12 @@ $$
 \end{align*}
 $$
 
-As a next step, we include fermentation as an anaerobic metabolism. For the sake of our argument (anaerobic vs aerobic metabolism) we will assume that fermentation happens at twice the rate as respiration occurs:
+As a next step, we include ethanol fermentation as an anaerobic metabolism:
+
+\ch{C6H12O6 ->[ ] 2 C2H6O + 2 CO2}
+
+
+For the sake of our argument (anaerobic vs aerobic metabolism) we will assume that fermentation happens at twice the rate as respiration occurs:
 
 $$
 \begin{align*}
