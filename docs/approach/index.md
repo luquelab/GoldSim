@@ -16,20 +16,7 @@ This section describes the mathematical formalism used for the modules.
 
 ## Module 1 - eDAR
 
-eDAR stands for electron Donor-Acceptor Ratio. When there are more electron donors acceptors (oxygen) than donors (sugar) in a given ecosystem, a catabolic metabolism dominates. Otherwise, anabolic metabolism dominates. The electron acceptors and donors are never balanced.
-
-This module models respiration, photosynthesis, oxygen runoff, and fermentation.
-
-$$
-\begin{align*}
-  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
-  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
-  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O - \gamma O\\	
-  \frac{d S}{d t}&=& P^{S}_{in}S - R^{S}_{out} S 
-\end{align*}
-$$
-
-where $$\lambda$$ is a coefficient that limits the concentration of $$CO_2$$ and $$H2O$$ that can be metabolized according to the amount of Photosynthetic Active Radiation (PAR) available and $$\alpha$$ controls the $$O_2$$ runoff.
+eDAR stands for electron Donor-Acceptor Ratio. When there are more electron donors acceptors (oxygen) than donors (sugar) in a given ecosystem, a catabolic metabolism dominates. Otherwise, anabolic metabolism dominates. 
 
 Definitions:
 
@@ -47,6 +34,18 @@ Definitions:
 |$$\gamma$$ | $$O_2$$ runoff rate | $$h^{-1}$$  | [0,1]   |
 |$$\alpha^p_{out}$$ | Photosynthesis to O |   | 0.51 |
 |$$\alpha^p_{out}$$ | Respiration to W |   | 0.29 |
+
+
+This module models respiration, photosynthesis, and fermentation. Let us start with the differential equations that model a system that does respiration and photosynthesis
+
+$$
+\begin{align*}
+  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
+  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C\\
+  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O \\	
+  \frac{d S}{d t}&=& P^{S}_{in}S - R^{S}_{out} S 
+\end{align*}
+$$
 
 Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $$\alpha_1$$ and $$\alpha_2$$ are the stoichoimetric coefficients for $$CO_2$$ to $$H_{2}0$$ and $$O_2$$ to $$C_{6}H_{12}O_{6}$$, respectively. Then, we have:
 
