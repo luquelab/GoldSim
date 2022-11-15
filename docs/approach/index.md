@@ -45,6 +45,7 @@ $$
   \frac{d S}{d t}&=& P^{S}_{in}S - R^{S}_{out} S 
 \end{align*}
 $$
+
 where $$\lambda$$ is the Photosynthetic Active Radiation (PAR) rate, which limits the amount of $$CO_2$$ and $$H_2O$$ that can be metabolized.
 Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $$\alpha_1$$ and $$\alpha_2$$ are the stoichoimetric coefficients for $$CO_2$$ to $$H_{2}0$$ and $$O_2$$ to $$C_{6}H_{12}O_{6}$$, respectively. Then, we have:
 
