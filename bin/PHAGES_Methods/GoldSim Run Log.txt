@@ -1,6 +1,6 @@
 GoldSim 14.0.0344
-Simulation Filename:	edar_Hill_Function_Test
-Simulation Start Time:	10/26/2022 5:13:47 PM
+Simulation Filename:	Energy_Model
+Simulation Start Time:	11/11/2022 4:56:02 PM
 Simulation Run Time:	0.0 s
 Model Author Name:	Rohwer Lab
 Analysis Description:	(not specified)
@@ -8,11 +8,11 @@ Analysis Description:	(not specified)
 *** Simulation Time Settings ***
 Time Basis:  Elapsed Time
 Time Unit: hr
-Duration: 1.5 hr
-Basic Timestep: 1 min
+Duration: 750 hr
+Basic Timestep: 1 hr
 Reporting Periods: none
-Scheduled Updates: 91
-Number of Plot Points: 91
+Scheduled Updates: 751
+Number of Plot Points: 751
 Final Value Capture Times:
   At the end of the simulation
 
@@ -25,7 +25,10 @@ WARNINGS AND ERRORS:
 
 Realization 1
 
-1.40833 hr:
-\edar: This Pool element is overflowing, but there is nothing linked to its Overflow output!
-	(This message will not be repeated).
+0 hr:
+\eDAR_Module\Tests\O2_Outflows: The result element contains one or more invalid or incomplete result items.
+
+
+0 hr:
+\eDAR_Module\eDAR_Plot: The result element contains one or more invalid or incomplete result items.
 
