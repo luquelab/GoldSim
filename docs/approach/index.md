@@ -58,10 +58,10 @@ and that:
 
 $$
 \begin{align*}
-R^{C}_{in}C = \alpha^{R}_{out}(R^{S}_{out}S + R^{O}_{out} O) \\
-R^{W}_{in}W = (1-\alpha^{C}_{out})(R^{S}_{out}S + R^{O}_{out} O) \\
-P^{O}_{in} O  = \alpha^{P}_{out}(P^{W}_{out} W + P^{C}_{out} C) \\
-P^{W}_{in} W  = (1 - \alpha^{P}_{out})(P^{W}_{out} W + P^{C}_{out} C)
+R^{C}_{in}C = \alpha^{R}_{in}(R^{S}_{out}S + R^{O}_{out} O) \\
+R^{W}_{in}W = (1-\alpha^{R}_{in})(R^{S}_{out}S + R^{O}_{out} O) \\
+P^{O}_{in} O  = \alpha^{P}_{in}(P^{W}_{out} W + P^{C}_{out} C) \\
+P^{W}_{in} W  = (1 - \alpha^{P}_{in})(P^{W}_{out} W + P^{C}_{out} C)
 \end{align*}
 $$
 
@@ -69,10 +69,10 @@ Combining the previous two equations we can rewrite it the previous equation as:
 
 $$
 \begin{align*}
-R^{C}_{in}C = \alpha^{R}_{out}(1 + \alpha_1) R^{O}_{out} O \\
-R^{W}_{in}W = (1-\alpha^{C}_{out})(1 + \alpha_1) R^{O}_{out} O \\
-P^{O}_{in} O  = \alpha^{P}_{out}(1 + \alpha_2) P^{C}_{out} C \\
-P^{W}_{in} W  = (1 - \alpha^{P}_{out})(1 + \alpha_2) P^{C}_{out} C)
+R^{C}_{in}C = \alpha^{R}_{in}(1 + \alpha_1) R^{O}_{out} O \\
+R^{W}_{in}W = (1-\alpha^{R}_{in})(1 + \alpha_1) R^{O}_{out} O \\
+P^{O}_{in} O  = \alpha^{P}_{in}(1 + \alpha_2) P^{C}_{out} C \\
+P^{W}_{in} W  = (1 - \alpha^{P}_{in})(1 + \alpha_2) P^{C}_{out} C)
 \end{align*}
 $$
 
