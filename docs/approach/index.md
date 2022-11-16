@@ -29,9 +29,12 @@ $$
 \end{align*}
 $$
 
-Each equation describes the rate at which the concentration of the corresponding compound changes, with W, C, O, and S, representing $$H_2O$$, $$CO_2$$, $$O_2$$, and $$C_6H_{12}O_6$$, respectively. Naturally, changes are due to 
-of respiration and photosynthesis. Respiration reduces the concentration of $$O$$ and $$S$$ at rates $$R^{O}_{out}$$ and $$R^{S}_{out}$$, and increases that of $$W$$ and $$C$$ at rates $$R^{W}_{in}$$ and $$R^{C}_{in}$$. Photosynthesis
-does the opposite and it is weighted by $$\lambda$$, a parameter related to Photosynthetic Active Radiation (PAR) which limits the amount of $$C$$ and $$W$$ that can be metabolized.
+Each equation describes the rate at which the concentration of the corresponding compound changes, with $$W$$, $$C$$, $$O$$, and $$S$$, representing $$H_2O$$, $$CO_2$$, $$O_2$$, 
+and $$C_6H_{12}O_6$$, respectively. Naturally, changes are due to of respiration and photosynthesis. Respiration reduces the concentration of $$O$$ and $$S$$ at rates $$R^{O}_{out}$$, 
+and $$R^{S}_{out}$$, and increases that of $$W$$ and $$C$$ at rates $$R^{W}_{in}$$ and $$R^{C}_{in}$$. Photosynthesis
+does the opposite. However, the rates $$P^{W}_{out}$$, $$P^{C}_{out}$$, $$P^{O}_{in}$$, and $$P^{S}_{in}$$ are weighted by $$\lambda$$,
+ a parameter related to Photosynthetic Active Radiation (PAR) that limits the amount of $$C$$ and $$W$$ that can be metabolized.
+
 
 By conservation of matter, we know that:
 
@@ -42,7 +45,7 @@ P^{W}_{out} W + P^{C}_{out} C =  P^{O}_{in}O + P^{S}_{in}S
 \end{align*}
 $$
 
-Also, by the stoichiometry of respiration and photosynthesis, we know that:
+By the stoichiometry of respiration and photosynthesis, we know that:
 
 $$
 \begin{align*}
@@ -59,6 +62,17 @@ R^{C}_{in}C = \alpha^{R}_{out}(R^{S}_{out}S + R^{O}_{out} O) \\
 R^{W}_{in}W = (1-\alpha^{C}_{out})(R^{S}_{out}S + R^{O}_{out} O) \\
 P^{O}_{in} O  = \alpha^{P}_{out}(P^{W}_{out} W + P^{C}_{out} C) \\
 P^{W}_{in} W  = (1 - \alpha^{P}_{out})(P^{W}_{out} W + P^{C}_{out} C)
+\end{align*}
+$$
+
+Combining the previous two equations we can rewrite it the previous equation as:
+
+$$
+\begin{align*}
+R^{C}_{in}C = \alpha^{R}_{out}(1 + \alpha_1) R^{O}_{out} O \\
+R^{W}_{in}W = (1-\alpha^{C}_{out})(1 + \alpha_1) R^{O}_{out} O \\
+P^{O}_{in} O  = \alpha^{P}_{out}(1 + \alpha_2) P^{C}_{out} C \\
+P^{W}_{in} W  = (1 - \alpha^{P}_{out})(1 + \alpha_2) P^{C}_{out} C)
 \end{align*}
 $$
 
