@@ -49,8 +49,8 @@ By the stoichiometry of respiration and photosynthesis, we know that:
 
 $$
 \begin{align*}
-R^{S}_{out} S=\alpha_1 R^{O}_{out} O \\
-P^{W}_{out} W=\alpha_2 P^{C}_{out} C
+R^{S}_{out} S=\alpha^{R}_{out} R^{O}_{out} O \\
+P^{W}_{out} W=\alpha^{P}_{out} P^{C}_{out} C
 \end{align*}
 $$
 
