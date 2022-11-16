@@ -31,7 +31,7 @@ $$
 
 Each equation describes the rate at which the concentration of the corresponding compound changes, with W, C, O, and S, representing $$H_2O$$, $$CO_2$$, $$O_2$$, and $$C_6H_{12}O_6$$, respectively. Naturally, changes are due to 
 of respiration and photosynthesis. Respiration reduces the concentration of $$O$$ and $$S$$ at rates $$R^{O}_{out}$$ and $$R^{S}_{out}$$, and increases that of $$W$$ and $$C$$ at rates $$R^{W}_{in}$$ and $$R^{C}_{in}$$. Photosynthesis
-does the opposite and it is weighted by $$\lambda$$ a parameter related to Photosynthetic Active Radiation (PAR) which limits the amount of $$C$$ and $$W$$ that can be metabolized.
+does the opposite and it is weighted by $$\lambda$$, a parameter related to Photosynthetic Active Radiation (PAR) which limits the amount of $$C$$ and $$W$$ that can be metabolized.
 
 By conservation of matter, we know that:
 
