@@ -69,10 +69,10 @@ Combining the previous two equations we can rewrite it the previous equation as:
 
 $$
 \begin{align*}
-R^{C}_{in}C = \alpha^{R}_{in}(1 + \alpha_1) R^{O}_{out} O \\
-R^{W}_{in}W = (1-\alpha^{R}_{in})(1 + \alpha_1) R^{O}_{out} O \\
-P^{O}_{in} O  = \alpha^{P}_{in}(1 + \alpha_2) P^{C}_{out} C \\
-P^{W}_{in} W  = (1 - \alpha^{P}_{in})(1 + \alpha_2) P^{C}_{out} C)
+R^{C}_{in}C = \alpha^{R}_{in}(1 + \alpha^{R}_{out}) R^{O}_{out} O \\
+R^{W}_{in}W = (1-\alpha^{R}_{in})(1 + \alpha^{R}_{out}) R^{O}_{out} O \\
+P^{O}_{in} O  = \alpha^{P}_{in}(1 + \alpha^{P}_{out}) P^{C}_{out} C \\
+P^{W}_{in} W  = (1 - \alpha^{P}_{in})(1 + \alpha^{P}_{out}) P^{C}_{out} C)
 \end{align*}
 $$
 
@@ -85,12 +85,12 @@ Definitions:
 |C| $$CO_2$$ | $$\frac{g}{m^3 h}$$ |  |  
 |W| $$H_2O$$ | $$\frac{g}{m^3 h}$$ |  |   
 | $$\lambda$$ | PAR Rate |         | [0,1]| 
-|$$\alpha_1$$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry | |0.29  |
-|$$\alpha_2$$ | $$H_2O$$ to $$CO_{2}$$ stoichiometry | |0.51|
+|$$\alpha^{R}_{out}$$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry | |0.29  |
+|$$\alpha^{R}_{out}$$ | $$H_2O$$ to $$CO_{2}$$ stoichiometry | |0.51|
 |$$R^j_i$$| Respiration rate| $$h^{-1}$$ | [0,1]  |
 |$$P^j_i$$| Photosynthesic rate| $$h^{-1}$$ | [0,1] |
-|$$\alpha^p_{out}$$ | Photosynthesis to O |   | 0.51 |
-|$$\alpha^p_{out}$$ | Respiration to W |   | 0.29 |
+|$$\alpha^P_{in}$$ | Photosynthesis to O |   | 0.51 |
+|$$\alpha^R_{in}$$ | Respiration to W |   | 0.29 |
 
 
 
