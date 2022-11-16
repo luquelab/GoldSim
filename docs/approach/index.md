@@ -95,47 +95,23 @@ Definitions:
 |$$\alpha^R_{in}$$ | Respiration to W |   | 0.29 |
 
 
-
-
-
-
-where each equation describes the change of concentrations of a given
-where $$\lambda$$ is the Photosynthetic Active Radiation (PAR) rate, which limits the amount of $$CO_2$$ and $$H_2O$$ that can be metabolized.
-Let us define $$P^{W}_{out}=\alpha_1 P^{C}_{out}$$ and $$R^{S}_{out}=\alpha_2 R^{0}_{out}$$, where $$\alpha_1$$ and $$\alpha_2$$ are the stoichoimetric coefficients for $$CO_2$$ to $$H_{2}0$$ and $$O_2$$ to $$C_{6}H_{12}O_{6}$$, respectively. Then, we have:
-
-$$
-\begin{align*}
-  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda \alpha_1 P^{C}_{out} W \\
-  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C \\
-  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O \\
-  \frac{d S}{d t}&=& P^{S}_{in}S - \alpha_2 R^{O}_{out} S 		
-\end{align*}
-$$
-
-where
-
-$$
-\begin{align*}
-   P^O_{in} O &=& \lambda \alpha^p_{out} P^C_{out} \big[\alpha_1 W + C \big] \\
-   P^S_{in} S &=& \lambda (1 - \alpha^p_{out}) P^C_{out} \big[\alpha_1 W + C \big] \\
-   R^W_{in} W &=& \alpha^r_{out} RO^O_{out} \big[\alpha_2 S + O \big] \\
-   R^C_{in} C &=& (1 - \alpha^r_{out}) RO^O_{out} \big[\alpha_2 S + O \big]
-\end{align*}
-$$
-
 As a next step, we include ethanol fermentation as an anaerobic metabolism:
 
-$$\ch{C6H12O6 ->[ ] 2 C2H6O + 2 CO2}$$
+$$
+\begin{equation*}
+C6H12O6 \rightarrow 2 C2H6O + 2 CO2  
+\end{equation*}
+$$
 
-For the sake of our argument (anaerobic vs aerobic metabolism) we will assume that fermentation happens at twice the rate as respiration occurs. This gives the following differential equations for the governors:
+For the sake of our argument we will assume that fermentation happens at twice the rate as respiration occurs. This gives the following differential equations for the governors:
 
 $$
 \begin{align*}
-  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda \alpha_1 P^{C}_{out} W \\
-  \frac{d C}{d t}&=&R^{W}_{in}C - \lambda P^{C}_{out} C + \alpha_4 2 \alpha_2 F^{O}_{out} E\\
+  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
+  \frac{d C}{d t}&=&R^{C}_{in}C + F^{C}_{in} C - \lambda P^{C}_{out} C \\
   \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O  \\	
-  \frac{d S}{d t}&=& P^{S}_{in}S - \alpha_2 R^{O}_{out} S - 2 \alpha_2 R^{O}_{out} S \\
-  \frac{d E}{d t}&=& \alpha_3 2 \alpha_2 F^{O}_{out} E \\
+  \frac{d S}{d t}&=& \lambda P^{S}_{in}S - R^{O}_{out} S - F^{E}_{out} S \\
+  \frac{d E}{d t}&=& F^{E}_{in} E \\
   
 \end{align*}
 $$
