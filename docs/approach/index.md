@@ -80,15 +80,17 @@ Definitions:
 
 | Symbol | Meaning | Units| Value |
 | ----------- | ----------- | ----------- | ----------- | 
-|O| $$O_2$$ concentration | $$\frac{g}{m^3 h}$$ |  | 
-|S| $$C_{6}H_{12}O_{6}$$  | $$\frac{g}{m^3 h}$$ | | 
-|C| $$CO_2$$ | $$\frac{g}{m^3 h}$$ |  |  
-|W| $$H_2O$$ | $$\frac{g}{m^3 h}$$ |  |   
+|O| $$O_2$$ concentration | $$\frac{g}{m^3}$$ |  | 
+|S| $$C_{6}H_{12}O_{6}$$  | $$\frac{g}{m^3}$$ | | 
+|C| $$CO_2$$ | $$\frac{g}{m^3}$$ |  |  
+|W| $$H_2O$$ | $$\frac{g}{m^3}$$ |  |
+|E| $$C_2H_6O$$ | $$\frac{g}{m^3}$$ |  |   
 | $$\lambda$$ | PAR Rate |         | [0,1]| 
 |$$\alpha^{R}_{out}$$ | $$O_2$$ to $$C_{6}H_{12}O_{6}$$ stoichiometry | |0.29  |
 |$$\alpha^{R}_{out}$$ | $$H_2O$$ to $$CO_{2}$$ stoichiometry | |0.51|
-|$$R^j_i$$| Respiration rate| $$h^{-1}$$ | [0,1]  |
 |$$P^j_i$$| Photosynthesic rate| $$h^{-1}$$ | [0,1] |
+|$$R^j_i$$| Respiration rate| $$h^{-1}$$ | [0,1] |
+|$$F^j_i$$| Fermentation rate| $$h^{-1}$$ | [0,1], 2\cdotR^j_i$$ |
 |$$\alpha^P_{in}$$ | Photosynthesis to O |   | 0.51 |
 |$$\alpha^R_{in}$$ | Respiration to W |   | 0.29 |
 
