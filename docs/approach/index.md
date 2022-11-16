@@ -33,11 +33,11 @@ Each equation describes the rate at which the concentration of the corresponding
 of respiration and photosynthesis. Respiration reduces the concentration of $$O$$ and $$S$$ at rates $$R^{O}_{out}$$ and $$R^{S}_{out}$$, and increases that of $$W$$ and $$C$$ at rates $$R^{W}_{in}$$ and $$R^{C}_{in}$$. Photosynthesis
 does the opposite and it is weighted by $$\lambda$$ a parameter related to Photosynthetic Active Radiation (PAR) which limits the amount of $$C$$ and $$W$$ that can be metabolized.
 
-By conservation of matter, we have that:
+By conservation of matter, we know that:
 
 $$
 \begin{align*}
-R^{S}_{out}S + R^{O}_{out} O = R^{W}_{in}W + R^{W}_{in}C
+R^{S}_{out}S + R^{O}_{out} O = R^{W}_{in}W + R^{W}_{in}C \\
 P^{W}_{out} W + P^{C}_{out} C =  P^{O}_{in}O + P^{S}_{in}S
 \end{align*}
 $$
@@ -45,7 +45,7 @@ $$
 Also, by the stoichiometry of respiration and photosynthesis, we know that:
 $$
 \begin{align*}
-R^{S}_{out} S=\alpha_1 R^{O}_{out} O
+R^{S}_{out} S=\alpha_1 R^{O}_{out} O \\
 P^{W}_{out} W=\alpha_2 P^{C}_{out} C
 \end{align*}
 $$
@@ -54,9 +54,9 @@ and that:
 
 $$
 \begin{align*}
-R^{C}_{in}C = \alpha^{R}_{out}(R^{S}_{out}S + R^{O}_{out} O)
-R^{W}_{in}W = (1-\alpha^{C}_{out})(R^{S}_{out}S + R^{O}_{out} O)
-P^{O}_{in} O  = \alpha^{P}_{out}(P^{W}_{out} W + P^{C}_{out} C)
+R^{C}_{in}C = \alpha^{R}_{out}(R^{S}_{out}S + R^{O}_{out} O) \\
+R^{W}_{in}W = (1-\alpha^{C}_{out})(R^{S}_{out}S + R^{O}_{out} O) \\
+P^{O}_{in} O  = \alpha^{P}_{out}(P^{W}_{out} W + P^{C}_{out} C) \\
 P^{W}_{in} W  = (1 - \alpha^{P}_{out})(P^{W}_{out} W + P^{C}_{out} C)
 \end{align*}
 $$
