@@ -21,12 +21,12 @@ This module models respiration, photosynthesis, and fermentation.
 Let us start writing the differential equations that model a system that does respiration and photosynthesis: 
 
 $$
-\begin{align*}
+\begin{align}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
   \frac{d C}{d t}&=&R^{C}_{in}C - \lambda P^{C}_{out} C\\
   \frac{d O}{d t}&=& \lambda P^{O}_{in}O - R^{O}_{out} O \\	
   \frac{d S}{d t}&=& \lambda P^{S}_{in}S - R^{S}_{out} S 
-\end{align*}
+\end{align}
 $$
 
 Each equation describes the rate at which the concentration of the corresponding compound changes, with $$W$$, $$C$$, $$O$$, and $$S$$, representing $$H_2O$$, $$CO_2$$, $$O_2$$, 
@@ -39,10 +39,10 @@ does the opposite. However, the rates $$P^{W}_{out}$$, $$P^{C}_{out}$$, $$P^{O}_
 By conservation of matter, we know that:
 
 $$
-\begin{align*}
+\begin{align}
 R^{S}_{out}S + R^{O}_{out} O = R^{W}_{in}W + R^{W}_{in}C \\
 P^{W}_{out} W + P^{C}_{out} C =  P^{O}_{in}O + P^{S}_{in}S
-\end{align*}
+\end{align}
 $$
 
 By the stoichiometry of respiration and photosynthesis, we know that:
@@ -57,23 +57,23 @@ $$
 and that:
 
 $$
-\begin{align*}
+\begin{align}
 R^{C}_{in}C = \alpha^{R}_{in}(R^{S}_{out}S + R^{O}_{out} O) \\
 R^{W}_{in}W = (1-\alpha^{R}_{in})(R^{S}_{out}S + R^{O}_{out} O) \\
 P^{O}_{in} O  = \alpha^{P}_{in}(P^{W}_{out} W + P^{C}_{out} C) \\
 P^{W}_{in} W  = (1 - \alpha^{P}_{in})(P^{W}_{out} W + P^{C}_{out} C)
-\end{align*}
+\end{align}
 $$
 
 Combining the previous two equations we can rewrite it the previous equation as:
 
 $$
-\begin{align*}
+\begin{align}
 R^{C}_{in}C = \alpha^{R}_{in}(1 + \alpha^{R}_{out}) R^{O}_{out} O \\
 R^{W}_{in}W = (1-\alpha^{R}_{in})(1 + \alpha^{R}_{out}) R^{O}_{out} O \\
 P^{O}_{in} O  = \alpha^{P}_{in}(1 + \alpha^{P}_{out}) P^{C}_{out} C \\
 P^{W}_{in} W  = (1 - \alpha^{P}_{in})(1 + \alpha^{P}_{out}) P^{C}_{out} C)
-\end{align*}
+\end{align}
 $$
 
 Definitions:
@@ -98,22 +98,22 @@ Definitions:
 As a next step, we include ethanol fermentation as an anaerobic metabolism:
 
 $$
-\begin{equation*}
+\begin{equation}
 C6H12O6 \rightarrow 2 C2H6O + 2 CO2  
-\end{equation*}
+\end{equation}
 $$
 
 For the sake of our argument we will assume that fermentation happens at twice the rate as respiration occurs. This gives the following differential equations for the governors:
 
 $$
-\begin{align*}
+\begin{align}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
   \frac{d C}{d t}&=&R^{C}_{in}C + F^{C}_{in} C - \lambda P^{C}_{out} C \\
   \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O  \\	
   \frac{d S}{d t}&=& \lambda P^{S}_{in}S - (1-e^-DAR) \cdot R^{O}_{out} S - e^-DAR \cdot F^{E}_{out} S \\
   \frac{d E}{d t}&=& F^{E}_{in} E \\
   
-\end{align*}
+\end{align}
 $$
 
 ## Module 2 - Energy from respiration
@@ -125,9 +125,9 @@ a first approximation that:
 Then, the energy consumption can be expressed as:
 
 $$
-\begin{align*} 
+\begin{align} 
 \frac{dE}{dt}&=&W_{in} - W_{out} , 
-\end{align*}
+\end{align}
 $$
 
 where $$W_{in}=\frac{R^{O}_{out} O + \alpha_2 R^{O}_{out}}{m_{r1}} E_{R1}$$ and $$W_{out}=w_b B$$. The numerator in $$W_{in}$$ represents the rate of mass being consumed by respiration. The quotient gives the number
@@ -136,9 +136,9 @@ of respiration cycles per unit of time.
 Assume that $$E_{B}=1 J/(cells/ml)$$ is the energy that it takes to duplicate a bacteria. Then, the growth of bacteria can be expressed as:
 
 $$
-\begin{align*} 
+\begin{align} 
 \frac{dB}{dt}&=&\frac{W_{out}}{E_{B}} B  
-\end{align*}
+\end{align}
 $$
 
 
