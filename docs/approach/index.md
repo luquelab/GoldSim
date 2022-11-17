@@ -110,7 +110,7 @@ $$
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
   \frac{d C}{d t}&=&R^{C}_{in}C + F^{C}_{in} C - \lambda P^{C}_{out} C \\
   \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O  \\	
-  \frac{d S}{d t}&=& \lambda P^{S}_{in}S - R^{O}_{out} S - F^{E}_{out} S \\
+  \frac{d S}{d t}&=& \lambda P^{S}_{in}S - (1-e^-DAR) \cdot R^{O}_{out} S - e^-DAR \cdot F^{E}_{out} S \\
   \frac{d E}{d t}&=& F^{E}_{in} E \\
   
 \end{align*}
