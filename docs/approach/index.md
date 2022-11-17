@@ -23,8 +23,8 @@ Let us start writing the differential equations that model a system that does re
 $$
 \begin{align}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
-  \frac{d C}{d t}&=&R^{C}_{in}C - \lambda P^{C}_{out} C\\
-  \frac{d O}{d t}&=& \lambda P^{O}_{in}O - R^{O}_{out} O \\	
+  \frac{d C}{d t}&=&R^{C}_{in}C - \lambda P^{C}_{out} C \nonumber \\
+  \frac{d O}{d t}&=& \lambda P^{O}_{in}O - R^{O}_{out} O \nonumber \\	
   \frac{d S}{d t}&=& \lambda P^{S}_{in}S - R^{S}_{out} S 
 \end{align}
 $$
@@ -40,8 +40,8 @@ By conservation of matter, we know that:
 
 $$
 \begin{align}
-R^{S}_{out}S + R^{O}_{out} O = R^{W}_{in}W + R^{W}_{in}C \\
-P^{W}_{out} W + P^{C}_{out} C =  P^{O}_{in}O + P^{S}_{in}S
+R^{S}_{out}S + R^{O}_{out} O = R^{W}_{in}W + R^{W}_{in}C  \\
+P^{W}_{out} W + P^{C}_{out} C =  P^{O}_{in}O + P^{S}_{in}S \nonumber
 \end{align}
 $$
 
@@ -49,8 +49,8 @@ By the stoichiometry of respiration and photosynthesis, we know that:
 
 $$
 \begin{align*}
-R^{S}_{out} S=\alpha^{R}_{out} R^{O}_{out} O \\
-P^{W}_{out} W=\alpha^{P}_{out} P^{C}_{out} C
+R^{S}_{out} S=\alpha^{R}_{out} R^{O}_{out} O  \\
+P^{W}_{out} W=\alpha^{P}_{out} P^{C}_{out} C \nonumber
 \end{align*}
 $$
 
@@ -59,9 +59,9 @@ and that:
 $$
 \begin{align}
 R^{C}_{in}C = \alpha^{R}_{in}(R^{S}_{out}S + R^{O}_{out} O) \\
-R^{W}_{in}W = (1-\alpha^{R}_{in})(R^{S}_{out}S + R^{O}_{out} O) \\
-P^{O}_{in} O  = \alpha^{P}_{in}(P^{W}_{out} W + P^{C}_{out} C) \\
-P^{W}_{in} W  = (1 - \alpha^{P}_{in})(P^{W}_{out} W + P^{C}_{out} C)
+R^{W}_{in}W = (1-\alpha^{R}_{in})(R^{S}_{out}S + R^{O}_{out} O) \nonumber \\
+P^{O}_{in} O  = \alpha^{P}_{in}(P^{W}_{out} W + P^{C}_{out} C) \nonumber \\
+P^{W}_{in} W  = (1 - \alpha^{P}_{in})(P^{W}_{out} W + P^{C}_{out} C) \nonumber
 \end{align}
 $$
 
@@ -70,9 +70,9 @@ Combining the previous two equations we can rewrite it the previous equation as:
 $$
 \begin{align}
 R^{C}_{in}C = \alpha^{R}_{in}(1 + \alpha^{R}_{out}) R^{O}_{out} O \\
-R^{W}_{in}W = (1-\alpha^{R}_{in})(1 + \alpha^{R}_{out}) R^{O}_{out} O \\
-P^{O}_{in} O  = \alpha^{P}_{in}(1 + \alpha^{P}_{out}) P^{C}_{out} C \\
-P^{W}_{in} W  = (1 - \alpha^{P}_{in})(1 + \alpha^{P}_{out}) P^{C}_{out} C)
+R^{W}_{in}W = (1-\alpha^{R}_{in})(1 + \alpha^{R}_{out}) R^{O}_{out} O \nonumber \\
+P^{O}_{in} O  = \alpha^{P}_{in}(1 + \alpha^{P}_{out}) P^{C}_{out} C \nonumber \\
+P^{W}_{in} W  = (1 - \alpha^{P}_{in})(1 + \alpha^{P}_{out}) P^{C}_{out} C) \nonumber
 \end{align}
 $$
 
@@ -108,10 +108,10 @@ For the sake of our argument we will assume that fermentation happens at twice t
 $$
 \begin{align}
   \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
-  \frac{d C}{d t}&=&R^{C}_{in}C + F^{C}_{in} C - \lambda P^{C}_{out} C \\
-  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O  \\	
-  \frac{d S}{d t}&=& \lambda P^{S}_{in}S - (1-e^-DAR) \cdot R^{O}_{out} S - e^-DAR \cdot F^{E}_{out} S \\
-  \frac{d E}{d t}&=& F^{E}_{in} E \\
+  \frac{d C}{d t}&=&R^{C}_{in}C + F^{C}_{in} C - \lambda P^{C}_{out} C \nonumber \\
+  \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O  \nonumber \\	
+  \frac{d S}{d t}&=& \lambda P^{S}_{in}S - (1-e^-DAR) \cdot R^{O}_{out} S - e^-DAR \cdot F^{E}_{out} S \nonumber \\
+  \frac{d E}{d t}&=& F^{E}_{in} E \nonumber
   
 \end{align}
 $$
