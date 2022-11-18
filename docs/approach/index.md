@@ -16,6 +16,8 @@ This section describes the mathematical formalism used for the modules.
 
 ## Module 1 - eDAR
 
+### Photosynthesis and respiration
+
 eDAR stands for electron Donor-Acceptor Ratio. When there are more electron donors acceptors (oxygen) than donors (sugar) in a given ecosystem, a catabolic metabolism dominates. Otherwise, anabolic metabolism dominates. 
 This module models respiration, photosynthesis, and fermentation. 
 Let us start writing the differential equations that model a system that does respiration and photosynthesis: 
@@ -95,6 +97,8 @@ Definitions:
 |$$\alpha^R_{in}$$ | Respiration to W |   | 0.29 |
 
 
+### Photosynthesis, respiration, and fermentation
+
 As a next step, we include ethanol fermentation as an anaerobic metabolism:
 
 $$
@@ -107,11 +111,11 @@ For the sake of our argument we will assume that fermentation happens at twice t
 
 $$
 \begin{align}
-  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
-  \frac{d C}{d t}&=&R^{C}_{in}C + F^{C}_{in} C - \lambda P^{C}_{out} C \nonumber \\
+  \frac{d W}{d t}&=&(1- e^-DAR)R^{W}_{in}W - \lambda P^{W}_{out} W \\
+  \frac{d C}{d t}&=&(1- e^-DAR)R^{C}_{in}C + e^-DAR F^{C}_{in} C - \lambda P^{C}_{out} C \nonumber \\
   \frac{d O}{d t}&=& P^{O}_{in}O - R^{O}_{out} O  \nonumber \\	
-  \frac{d S}{d t}&=& \lambda P^{S}_{in}S - (1-e^-DAR) \cdot R^{O}_{out} S - e^-DAR \cdot F^{E}_{out} S \nonumber \\
-  \frac{d E}{d t}&=& F^{E}_{in} E \nonumber
+  \frac{d S}{d t}&=& P^{S}_{in}S - (1-e^-DAR) R^{S}_{out} S - e^-DAR F^{S}_{out} S \nonumber \\
+  \frac{d E}{d t}&=& e^-DAR F^{E}_{in} E \nonumber
   
 \end{align}
 $$
