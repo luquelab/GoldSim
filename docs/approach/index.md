@@ -116,8 +116,24 @@ $$
 \end{align}
 $$
 
-## Module 2 - Energy from respiration
+## Module 2 - Energy from metabolism
 
+In this model, the rate of energy (power) is a positive function of the incoming power and a negative function of outcoming power:
+
+$$
+\begin{align} 
+\frac{dE}{dt}&=&W_{in} - W_{out} , 
+\end{align}
+$$
+
+The incoming power occurs via respiration and fermentation. The outcoming power represents the rate at which bacteria use the energy obtained for metabolism.
+$$
+\begin{align} 
+\frac{dE}{dt}&=&\frac{dM_R}{dt} \dot \frac{\epsilon_{R}}{m_{R}} + \frac{dM_F}{dt} \dot \frac{\epsilon_{F}}{m_{F}} - B \cdot w_B , 
+\end{align}
+$$
+
+The rate of energy (power) is a positive function of the incoming power via respiration and fermentation, and a negative function of outcoming power via metabolic 
 A single respiration entails $$m_{r1}=6.18e-22 g$$ from the six molecules of $$O_2$$ and a single molecule of $$C_6H_{12}O_6$$  and it generates 26 ATP molecules, or 25.7 meV. Let us call this energy $$E_{R1}$$. Let us assume as 
 a first approximation that:
 * 1. Energy from respiration is produced at a rate that is equal to the number of respiration cycles multiplied by $$E_{R1}$$.
