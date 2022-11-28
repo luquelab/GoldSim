@@ -112,10 +112,10 @@ For the sake of our argument we will assume that fermentation happens at twice t
 $$
 \begin{align}
   \frac{d W}{d t}&=&(1- e^-DAR)R^{W}_{in}W - \lambda P^{W}_{out} W \\
-  \frac{d C}{d t}&=&(1- e^-DAR)R^{C}_{in}C + e^-DAR F^{C}_{in} C - \lambda P^{C}_{out} C \nonumber \\
+  \frac{d C}{d t}&=&(1- e^-DAR)R^{C}_{in}C + e^-DAR \cdot F^{C}_{in} C - \lambda P^{C}_{out} C \nonumber \\
   \frac{d O}{d t}&=& P^{O}_{in}O - (1-e^-DAR)R^{O}_{out} O  \nonumber \\	
-  \frac{d S}{d t}&=& P^{S}_{in}S - (1-e^-DAR) \quad R^{S}_{out} S - e^-DAR \quad F^{S}_{out} S \nonumber \\
-  \frac{d E}{d t}&=& e^-DAR F^{E}_{in} E \nonumber
+  \frac{d S}{d t}&=& P^{S}_{in}S - (1-e^-DAR) \cdot R^{S}_{out} S - e^-DAR \cdot F^{S}_{out} S \nonumber \\
+  \frac{d E}{d t}&=& e^-DAR \cdot F^{E}_{in} E \nonumber
   
 \end{align}
 $$
