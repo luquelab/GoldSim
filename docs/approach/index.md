@@ -143,6 +143,13 @@ The incoming power occurs via respiration and fermentation. The outcoming power 
 
 $$
 \begin{align} 
+\frac{dE}{dt}&=&\frac{dM_R}{dt} 
+\end{align}
+$$
+
+
+$$
+\begin{align} 
 \frac{dE}{dt}&=&\frac{dM_R}{dt} \frac{\epsilon_{R}}{m_{R}} + \frac{dM_F}{dt} \dot \frac{\epsilon_{F}}{m_{F}} - B \cdot w_B , 
 \end{align}
 $$
