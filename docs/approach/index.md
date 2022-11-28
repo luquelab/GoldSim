@@ -129,6 +129,15 @@ F^{E}_{in}E + F^{C}_{in} C=F^{S}_{out} S \nonumber
 \end{align}
 $$
 
+From the stoichiometry of the reactions we still have:
+
+$$
+\begin{align*}
+R^{S}_{out} S=\alpha^{R}_{out} R^{O}_{out} O  \\
+P^{W}_{out} W=\alpha^{P}_{out} P^{C}_{out} C \nonumber
+\end{align*}
+$$
+
 ## Module 2 - Energy from metabolism
 
 In this model, the rate of energy (power) is a positive function of the incoming power and a negative function of outcoming power:
