@@ -150,7 +150,7 @@ $$
 
 $$
 \begin{align} 
-\frac{dE}{dt}&=&\frac{dM_R}{dt} \frac{\epsilon_{R}}{m_{R}} + \frac{dM_F}{dt} \dot \frac{\epsilon_{F}}{m_{F}} - B \cdot w_B , 
+\frac{dE}{dt}&=&\frac{dM_R}{dt} \frac{\epsilon_{R}}{m_{R}} + \frac{dM_F}{dt} \cdot \frac{\epsilon_{F}}{m_{F}} - B \cdot w_B , 
 \end{align}
 $$
 
