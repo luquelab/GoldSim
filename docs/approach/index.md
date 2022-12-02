@@ -171,4 +171,27 @@ $$
 \end{align}
 $$
 
+## Application of the model to an experiment
+
+
+### The model:
+
+Phage-bacterial dynamics:
+
+$$
+\begin{align*}
+\frac{dB}{dt}&=&\underbrace{r \big(1- \frac{N}{K}\big)B }_{\text{growth}} -
+\underbrace{dBP}_{\text{Infection}} \\      
+\frac{dP}{dt}&=&\underbrace{c\mu_p \big[1 - \mathcal{P}(L)\big]I_n}_{burst} -
+\underbrace{dBP}_{\text{infection}} - \underbrace{mP}_{\text{viral decay}} +
+\underbrace{c\mu_i L}_{\text{burst induction}} \\ 
+\frac{dI_n}{dt}&=&\underbrace{dBP}_{\text{Infection}} -
+\underbrace{\big[1 -\mathcal{P}(L) \big] I_n}_{\text{lysis}} -
+\underbrace{\mathcal{P}(L) I_n}_{lysogeny} \\ 
+\frac{dL}{dt}&=&\underbrace{r\big(1- \frac{N}{K}\big)L}_{\text{growth}} +
+\underbrace{\mathcal{P}(L)I_n }_{\text{lysogeny}} -
+\underbrace{\mu_i L}_{\text{induction}} \\
+\end{align*}
+$$
+
 
