@@ -208,11 +208,11 @@ $$
 | ------ | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | $$r$$ | Maximum Growth Rate |$$7 \cdot 10^{-3} h^{-1}$$| $$2.95 \cdot 10^{-3}, 7 \cdot 10^{-3} h^{-1}$$ | Silveira et. al, 2021| 
 | $$K$$ | Carrying capacity |$$1 \cdot 10^{9} cells/ml$$| $$1 \cdot 10^{9} h^{7} cells/ml$$, $$1 \cdot 10^{9} cells/ml$$ | |
-| $$d$$ | Phage adsorption rate | $$1.6 \cdot 10^{-7} ml/h | $$6.2 \cdot 10^{-9} ml/h $$, $$3.7 \cdot 10^{-7} ml/h $$ | Luque et. al, 2020 | 
+| $$d$$ | Phage adsorption rate | $$1.6 \cdot 10^{-7} ml/h$$ | $$6.2 \cdot 10^{-9} ml/h $$, $$3.7 \cdot 10^{-7} ml/h $$ | Luque et. al, 2020 | 
 | $$c$$ | Burst size | $$11$$ | |(M.Middelboe et al.,2001) |   
 | $$\mu_p$$ | Burst rate | $$1 h^{-1}$$ | | |        
+| $$m$$ | Decay rate | $$0.022 hr^{-1}$$| |(C.A. Suttle,1994)   |
 | H | Hill functions      | $$[0,1]$$ |   | | | 
-| $$m$$ | Decay rate | $$0.528 hr^{-1}$$| |(C.A. Suttle,1994)   |Myoviridae |Vibrio sp. |
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.01,0.5] |  |
 | $$\mu_i$$ | Induction rate |$$???$$| |   | | |
 
