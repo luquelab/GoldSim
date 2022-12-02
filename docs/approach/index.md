@@ -194,6 +194,12 @@ $$
 \end{align*}
 $$
 
+With:
+$$
+\begin{equation}
+\mathcal{P}(L)= \big( \mathcal{P}_{max}(L) - \mathcal{P}_{min}(L) \big) H(eDAR) + \mathcal{P}_{min}(L)
+\end{equation}
+
 Metabolic dynamics:
 
 $$
@@ -215,7 +221,18 @@ Parameters:
 | $$m$$ | Decay rate | $$0.022 hr^{-1}$$| |(C.A. Suttle,1994)   |
 | $$H(eDAR)$$ | Hill function      | $$[0,1]$$ |   | | | 
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.01,0.55] | Luque et. al, 2020 |
-| $$\mu_i$$ | Induction rate |$$???$$| |   | | |
+| $$\mu_i$$ | Induction rate |$$1.2e-6 h^{-1}$$| |   | | |
+
+Initial Values
+
+| Variable| Description | Value| Minimum/Maximum | Source| 
+| ------ | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| $$B_0$$ | Bacterial concentration |$$ $$| $$ $$, $$ $$ | Experiments| 
+| $$P_0$$ | Phage concentration |$$ $$| $$ $$, $$ $$ | |
+| $$L_0$$ | Lysogen concentration | $$ $$ | $$ $$, $$  $$ |  | 
+| $$O_0$$ | $$O_2$$ concentration | $$ $$ | | |   
+| $$S_0$$ | DOC concentration | $$ $$ | | |        
+| $$eDAR_0$$ | eDAR | 1| |   |
 
 
 
