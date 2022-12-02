@@ -194,4 +194,12 @@ $$
 \end{align*}
 $$
 
+Metabolic dynamics:
+
+$$
+\begin{align}
+  \frac{d O}{d t}&=& P^{O}_{in}O - (1-e^-DAR)R^{O}_{out} O  \nonumber \\	
+  \frac{d S}{d t}&=& P^{S}_{in}S - (1-e^-DAR) \cdot R^{S}_{out} S - e^-DAR \cdot F^{S}_{out} S \nonumber \\
+\end{align}
+$$
 
