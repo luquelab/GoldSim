@@ -180,7 +180,7 @@ Phage-bacterial dynamics:
 
 $$
 \begin{align*}
-\frac{dB}{dt}&=&\underbrace{r \big(1- \frac{N}{K}\big)B }_{\text{growth}} -
+\frac{dB}{dt}&=&\underbrace{r \big(1- \frac{B + I_n + L}{K}\big)B }_{\text{growth}} -
 \underbrace{dBP}_{\text{Infection}} \\      
 \frac{dP}{dt}&=&\underbrace{c\mu_p \big[1 - \mathcal{P}(L)\big]I_n}_{burst} -
 \underbrace{dBP}_{\text{infection}} - \underbrace{mP}_{\text{viral decay}} +
@@ -188,7 +188,7 @@ $$
 \frac{dI_n}{dt}&=&\underbrace{dBP}_{\text{Infection}} -
 \underbrace{\big[1 -\mathcal{P}(L) \big] I_n}_{\text{lysis}} -
 \underbrace{\mathcal{P}(L) I_n}_{lysogeny} \\ 
-\frac{dL}{dt}&=&\underbrace{r\big(1- \frac{N}{K}\big)L}_{\text{growth}} +
+\frac{dL}{dt}&=&\underbrace{r\big(1- \frac{B + I_n + L}{K}\big)L}_{\text{growth}} +
 \underbrace{\mathcal{P}(L)I_n }_{\text{lysogeny}} -
 \underbrace{\mu_i L}_{\text{induction}} \\
 \end{align*}
@@ -198,8 +198,22 @@ Metabolic dynamics:
 
 $$
 \begin{align}
-  \frac{d O}{d t}&=& P^{O}_{in}O - (1-e^-DAR)R^{O}_{out} O  \nonumber \\	
-  \frac{d S}{d t}&=& P^{S}_{in}S - (1-e^-DAR) \cdot R^{S}_{out} S - e^-DAR \cdot F^{S}_{out} S \nonumber \\
+  \frac{d O}{d t}&=& - (1-e^-DAR)R^{O}_{out} O  \nonumber \\	
+  \frac{d S}{d t}&=& - (1-e^-DAR) \cdot R^{S}_{out} S - e^-DAR \cdot F^{S}_{out} S \nonumber \\
 \end{align}
 $$
+
+
+| Parameter | Description | Value| Minimum/Maximum | Source| 
+| ------ | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| r | Maximum Growth Rate |$$7 \cdot 10^{-3} h^{-1}$$| $$2.95 \cdot 10^{-3}, 7 \cdot 10^{-3} h^{-1}$$ | Silveira et. al, 2021| 
+| $$d$$ | Phage adsorption rate | $$1.6 \cdot 10^{-7} ml/h, $$3.7 \cdot 10^{-7} ml/h $$ | Luque et. al, 2020 | 
+| c | Burst size | $$11$$ | |(M.Middelboe et al.,2001) |         
+| H | Hill functions      | $$[0,1]$$ |   | | | 
+| c | Burst size | $$11$$ | |(M.Middelboe et al.,2001) | Myoviridae | Vibrio sp. |
+| $$m$$ | Decay rate | $$0.528 hr^{-1}$$| |(C.A. Suttle,1994)   |Myoviridae |Vibrio sp. |
+| $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.01,0.5] |  |
+| $$\mu_i$$ | Induction rate |$$???$$| |   | | |
+
+
 
