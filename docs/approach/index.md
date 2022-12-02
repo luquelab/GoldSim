@@ -229,11 +229,11 @@ Initial Values:
 
 | Variable| Description | Value| Minimum/Maximum | Source| 
 | ------ | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| $$B_0$$ | Bacterial concentration |$$ $$| $$ $$, $$ $$ | Experiments| 
-| $$P_0$$ | Phage concentration |$$ $$| $$ $$, $$ $$ | |
-| $$L_0$$ | Lysogen concentration | $$ $$ | $$ $$, $$  $$ |  | 
-| $$O_0$$ | $$O_2$$ concentration | $$ $$ | | |   
-| $$S_0$$ | DOC concentration | $$ $$ | | |        
+| $$B_0$$ | Bacterial concentration |$$ 2230000 cells/ml $$| $$ $$, $$ $$ | Experiments| 
+| $$P_0$$ | Phage concentration |$$ 23833333.33 virions/ml$$| $$ $$, $$ $$ | |
+| $$L_0$$ | Lysogen concentration | $$ 0 cells/ml$$ | $$ $$, $$  $$ |  | 
+| $$O_0$$ | $$O_2$$ concentration | $$ 8.5 g/m^3 $$ | | |   
+| $$S_0$$ | DOC concentration | $$ 7.9645 g/m^3 $$ | | C_{6}H_{12}O_{6}/O_2 stoichiometry |        
 | $$eDAR_0$$ | eDAR | 1| |   |
 
 
