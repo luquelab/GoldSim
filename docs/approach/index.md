@@ -204,8 +204,8 @@ Metabolic dynamics:
 
 $$
 \begin{align}
-  \frac{d O}{d t}&=& - (1-e^-DAR)R^{O}_{out} O  \nonumber \\	
-  \frac{d S}{d t}&=& - (1-e^-DAR) \cdot R^{S}_{out} S - e^-DAR \cdot F^{S}_{out} S \nonumber \\
+  \frac{d O}{d t}&=& - \underbrace{(1-e^-DAR)R^{O}_{out} O}_{\text{O2 Respiration}}  \nonumber \\	
+  \frac{d S}{d t}&=& - \underbrace{(1-e^-DAR) \cdot R^{S}_{out} S}_{\text{Gluc Respiration}} - \underbrace{e^-DAR \cdot F^{S}_{out} S}_{\text{Fermentation}} \nonumber \\
 \end{align}
 $$
 
