@@ -195,9 +195,10 @@ $$
 $$
 
 With:
+
 $$
 \begin{equation}
-\mathcal{P}(L)= \big( \mathcal{P}_{max}(L) - \mathcal{P}_{min}(L) \big) H(eDAR) + \mathcal{P}_{min}(L)
+\mathcal{P}(L)= \mathcal{P}_{min}(L)(1 - H(eDAR)) + mathcal{P}_{max}(L) H(eDAR)
 \end{equation}
 $$
 
