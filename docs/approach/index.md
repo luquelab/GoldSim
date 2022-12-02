@@ -203,6 +203,7 @@ $$
 \end{align}
 $$
 
+Parameters:
 
 | Parameter | Description | Value| Minimum/Maximum | Source| 
 | ------ | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -212,8 +213,8 @@ $$
 | $$c$$ | Burst size | $$11$$ | |(M.Middelboe et al.,2001) |   
 | $$\mu_p$$ | Burst rate | $$1 h^{-1}$$ | | |        
 | $$m$$ | Decay rate | $$0.022 hr^{-1}$$| |(C.A. Suttle,1994)   |
-| H | Hill functions      | $$[0,1]$$ |   | | | 
-| $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.01,0.5] |  |
+| $$H(eDAR)$$ | Hill function      | $$[0,1]$$ |   | | | 
+| $$\mathcal{P}(L)$$ | Probability of lysogeny | [0.01,0.55] | Luque et. al, 2020 |
 | $$\mu_i$$ | Induction rate |$$???$$| |   | | |
 
 
