@@ -199,6 +199,7 @@ $$
 \begin{equation}
 \mathcal{P}(L)= \big( \mathcal{P}_{max}(L) - \mathcal{P}_{min}(L) \big) H(eDAR) + \mathcal{P}_{min}(L)
 \end{equation}
+$$
 
 Metabolic dynamics:
 
