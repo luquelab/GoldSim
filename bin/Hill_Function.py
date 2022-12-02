@@ -1,3 +1,5 @@
+#2/12/2022 - Modified version of the Hill Function for eDAR
+
 import math
 import numpy as np
 import matplotlib.pyplot as plt
@@ -5,9 +7,10 @@ import seaborn as sns
 import matplotlib 
 
 
-eDAR_vec=np.arange(0, 1e6, 5)
+eDAR_vec=np.arange(0, 2, 0.01)
+print(eDAR_vec)
 
-Ka=1e6/2
+Ka=1
 exponents=[1,3,5,7,9]
 Hills=[]
 
