@@ -223,7 +223,7 @@ Parameters:
 | $$m$$ | Decay rate | $$0.022 hr^{-1}$$| |(C.A. Suttle,1994)   |
 | $$H(eDAR)$$ | Hill function      |  |  $$[0,1]$$ | | 
 | $$\mathcal{P}(L)$$ | Probability of lysogeny | |$$[0.01,0.55]$$ | Luque et. al, 2020 |
-| $$\mu_i$$ | Induction rate |$$1.2e-6 h^{-1}$$| |   | 
+| $$\mu_i$$ | Induction rate |$$1.2 \cdot 10^{-6} h^{-1}$$| |   | 
 
 Initial Values:
 
