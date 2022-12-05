@@ -20,7 +20,7 @@ eDAR stands for electron Donor-Acceptor Ratio. When there are more electron dono
 
 $$
 \begin{equation}
-   eDAR=6\frac{[C_{6}H_{12}O_6]}{[O_2]} \,
+   eDAR=6\frac{[C_{6}H_{12}O_6]}{[O_2]}
 \end{align}
 $$
 
@@ -28,7 +28,8 @@ where the brackets represent concentration in molarity ($mol/l$) and the factor 
 
 $$
 \begin{align}
-   eDAR=6\frac{[$C_{6}H_{12}O_6$]}{[O_2]} = 6\frac{ X mole$C_{6}H_{12}O_6/L}{Y mole O_2]}
+   eDAR=6\frac{[C_{6}H_{12}O_6]}{[O_2]} = 6\frac{ X mol C_{6}H_{12}O_6/L}{Y mol O_2/L} \frac{180.156 g C_{6}H_{12}O_}{1 mole C_{6}H_{12}O_6} \frac{1 mol O_2}{ 31.999 g} =\\
+   6 \frac{180.156}{31.999 } \frac{X g C_{6}H_{12}O_6}{ Y g O_2}
 \end{align}
 $$
 
