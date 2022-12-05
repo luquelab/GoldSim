@@ -5,8 +5,7 @@ nav_order: 4
 
 \usepackage{mathtools}
 \usepackage{physics}
-\usepackage[normalem]{ulem}
-\usepackage{soul}
+\usepackage{cancel}
 \usepackage[version=4]{mhchem}
 ---
 
@@ -30,7 +29,7 @@ where the brackets represent concentration in molarity ($$mol/l$$) and the facto
 
 $$
 \begin{align}
-   eDAR=6\frac{[C_{6}H_{12}O_6]}{[O_2]} = 6\frac{ X mol C_{6}H_{12}O_6/L}{Y mol O_2/L} \frac{180.156 g C_{6}H_{12}O_6}{\st{1 mole C_{6}H_{12}O_6}} \frac{1 mol O_2}{ 31.999 g} 
+   eDAR=6\frac{[C_{6}H_{12}O_6]}{[O_2]} = 6\frac{ X mol C_{6}H_{12}O_6/L}{Y mol O_2/L} \frac{180.156 g C_{6}H_{12}O_6}{\cancel{1 mole C_{6}H_{12}O_6}} \frac{1 mol O_2}{ 31.999 g} 
 \end{align}
 $$
 
