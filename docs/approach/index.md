@@ -20,13 +20,11 @@ eDAR stands for electron Donor-Acceptor Ratio. When there are more electron dono
 
 $$
 \begin{equation}
-   eDAR=6\frac{[$C_{6}H_{12}O_6$]}{[O_2]}
-  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
-  \frac{d C}{d t}&=&R^{C}_{in}C - \lambda P^{C}_{out} C \nonumber \\
-  \frac{d O}{d t}&=& \lambda P^{O}_{in}O - R^{O}_{out} O \nonumber \\	
-  \frac{d S}{d t}&=& \lambda P^{S}_{in}S - R^{S}_{out} S \nonumber
+   eDAR=6\frac{[$C_{6}H_{12}O_6$]}{[O_2]} \,
 \end{align}
 $$
+
+where
 
 ### Photosynthesis and respiration
 
