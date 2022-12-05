@@ -32,7 +32,6 @@ $$
 \end{align}
 $$
 
-
 $$
 \begin{align}
    eDAR=6\frac{[C_{6}H_{12}O_6]}{[O_2]} = 6\frac{ X mol C_{6}H_{12}O_6/L}{Y mol O_2/L} \frac{180.156 g C_{6}H_{12}O_6}{1 mole C_{6}H_{12}O_6} \frac{1 mol O_2}{ 31.999 g} =\\
