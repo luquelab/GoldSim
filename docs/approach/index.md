@@ -16,9 +16,20 @@ This section describes the mathematical formalism used for the modules.
 
 ## Module 1 - eDAR
 
+eDAR stands for electron Donor-Acceptor Ratio. When there are more electron donors acceptors (oxygen) than donors (sugar) in a given ecosystem, a catabolic metabolism dominates. Otherwise, anabolic metabolism dominates. In the case of cellular respiration, where glucose ($C_{6}H_{12}O_6$) is the electron donor and oxygen (O_2) is the electron acceptor, we have:
+
+$$
+\begin{equation}
+   eDAR=6\frac{[$C_{6}H_{12}O_6$]}{[O_2]}
+  \frac{d W}{d t}&=&R^{W}_{in}W - \lambda P^{W}_{out} W \\
+  \frac{d C}{d t}&=&R^{C}_{in}C - \lambda P^{C}_{out} C \nonumber \\
+  \frac{d O}{d t}&=& \lambda P^{O}_{in}O - R^{O}_{out} O \nonumber \\	
+  \frac{d S}{d t}&=& \lambda P^{S}_{in}S - R^{S}_{out} S \nonumber
+\end{align}
+$$
+
 ### Photosynthesis and respiration
 
-eDAR stands for electron Donor-Acceptor Ratio. When there are more electron donors acceptors (oxygen) than donors (sugar) in a given ecosystem, a catabolic metabolism dominates. Otherwise, anabolic metabolism dominates. 
 This module models respiration, photosynthesis, and fermentation. 
 Let us start writing the differential equations that model a system that does respiration and photosynthesis: 
 
@@ -170,71 +181,5 @@ $$
 \frac{dB}{dt}&=&\frac{W_{out}}{E_{B}} B  
 \end{align}
 $$
-
-## Application of the model to an experiment
-
-
-### The model:
-
-Phage-bacterial dynamics:
-
-$$
-\begin{align*}
-\frac{dB}{dt}&=&\underbrace{r \big(1- \frac{B + I_n + L}{K}\big)B }_{\text{growth}} -
-\underbrace{dBP}_{\text{Infection}} \\      
-\frac{dP}{dt}&=&\underbrace{c\mu_p \big[1 - \mathcal{P}(L)\big]I_n}_{burst} -
-\underbrace{dBP}_{\text{infection}} - \underbrace{mP}_{\text{viral decay}} +
-\underbrace{c\mu_i L}_{\text{burst induction}} \\ 
-\frac{dI_n}{dt}&=&\underbrace{dBP}_{\text{Infection}} -
-\underbrace{\big[1 -\mathcal{P}(L) \big] I_n}_{\text{lysis}} -
-\underbrace{\mathcal{P}(L) I_n}_{lysogeny} \\ 
-\frac{dL}{dt}&=&\underbrace{r\big(1- \frac{B + I_n + L}{K}\big)L}_{\text{growth}} +
-\underbrace{\mathcal{P}(L)I_n }_{\text{lysogeny}} -
-\underbrace{\mu_i L}_{\text{induction}} \\
-\end{align*}
-$$
-
-With:
-
-$$
-\begin{equation}
-\mathcal{P}(L)= \mathcal{P}_{min}(L)(1 - H(eDAR)) + mathcal{P}_{max}(L) H(eDAR)
-\end{equation}
-$$
-
-Metabolic dynamics:
-
-$$
-\begin{align}
-  \frac{d O}{d t}&=& - \underbrace{(1-e^-DAR)R^{O}_{out} O}_{\text{O2 Respiration}}  \nonumber \\	
-  \frac{d S}{d t}&=& - \underbrace{(1-e^-DAR) \cdot R^{S}_{out} S}_{\text{Gluc Respiration}} - \underbrace{e^-DAR \cdot F^{S}_{out} S}_{\text{Fermentation}} \nonumber \\
-\end{align}
-$$
-
-Parameters:
-
-| Parameter | Description | Value| Minimum/Maximum | Source| 
-| ------ | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| $$r$$ | Maximum Growth Rate |$$7 \cdot 10^{-3} h^{-1}$$| $$[2.95 \cdot 10^{-3}, 7 \cdot 10^{-3}]$$ $$h^{-1}$$ | Silveira et. al, 2021| 
-| $$K$$ | Carrying capacity |$$1 \cdot 10^{9} cells/ml$$| $$[1 \cdot 10^{9} h^{7} , 1 \cdot 10^{9}]$$ $$cells/ml$$ | |
-| $$d$$ | Phage adsorption rate | $$1.6 \cdot 10^{-7} ml/h$$ | $$[6.2 \cdot 10^{-9} ml/h, 3.7 \cdot 10^{-7}]$$ $$ml/h$$ | Luque et. al, 2020 | 
-| $$c$$ | Burst size | $$11$$ | |(M.Middelboe et al.,2001) |   
-| $$\mu_p$$ | Burst rate | $$1 h^{-1}$$ | | |        
-| $$m$$ | Decay rate | $$0.022 hr^{-1}$$| |(C.A. Suttle,1994)   |
-| $$H(eDAR)$$ | Hill function      |  |  $$[0,1]$$ | | 
-| $$\mathcal{P}(L)$$ | Probability of lysogeny | |$$[0.01,0.55]$$ | Luque et. al, 2020 |
-| $$\mu_i$$ | Induction rate |$$1.2 \cdot 10^{-6} h^{-1}$$| |   | 
-
-Initial Values:
-
-| Variable| Description | Value| Minimum/Maximum | Source| 
-| ------ | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| $$B_0$$ | Bacterial concentration |$$ 2230000 cells/ml $$| $$ $$, $$ $$ | Experiments| 
-| $$P_0$$ | Phage concentration |$$ 23833333.33 virions/ml$$| $$ $$, $$ $$ | |
-| $$L_0$$ | Lysogen concentration | $$ 0 cells/ml$$ | $$ $$, $$  $$ |  | 
-| $$O_0$$ | $$O_2$$ concentration | $$ 8.5 g/m^3 $$ | | |   
-| $$S_0$$ | DOC concentration | $$ 7.9645 g/m^3 $$ | | C_{6}H_{12}O_{6}/O_2 stoichiometry |        
-| $$eDAR_0$$ | eDAR | 1| |   |
-
 
 
