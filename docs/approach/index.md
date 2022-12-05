@@ -5,6 +5,7 @@ nav_order: 4
 
 \usepackage{mathtools}
 \usepackage{physics}
+\usepackage[normalem]{ulem}
 \usepackage[version=4]{mhchem}
 ---
 
