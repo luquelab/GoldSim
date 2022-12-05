@@ -29,12 +29,6 @@ where the brackets represent concentration in molarity ($$mol/l$$) and the facto
 
 $$
 \begin{align}
-   eDAR=6\frac{[C_{6}H_{12}O_6]}{[O_2]} = 6\frac{ X \cancel{mol C_{6}H_{12}O_6/\cancel{L}}}{Y \cancel{mol O_2}/\cancel{L}} \frac{180.156 g C_{6}H_{12}O_6}{\cancel{1 mole C_{6}H_{12}O_6}} \frac{\cancel{1 mol O_2}}{ 31.999 g} 
-\end{align}
-$$
-
-$$
-\begin{align}
    eDAR=6\frac{[C_{6}H_{12}O_6]}{[O_2]} = 6\frac{ X \cancel{mol C_{6}H_{12}O_6/\cancel{L}}}{Y \cancel{mol O_2}/\cancel{L}} \frac{180.156 g C_{6}H_{12}O_6}{\cancel{1 mole C_{6}H_{12}O_6}} \frac{\cancel{1 mol O_2}}{ 31.999 g} =\\
    6 \frac{180.156}{31.999 } \frac{X g C_{6}H_{12}O_6}{ Y g O_2} = 33.78 \frac{X g C_{6}H_{12}O_6}{ Y g O_2} \nonumber
 \end{align}
