@@ -20,11 +20,17 @@ eDAR stands for electron Donor-Acceptor Ratio. When there are more electron dono
 
 $$
 \begin{equation}
-   eDAR=6\frac{[$C_{6}H_{12}O_6$]}{[O_2]} \,
+   eDAR=6\frac{[C_{6}H_{12}O_6]}{[O_2]} \,
 \end{align}
 $$
 
-where
+where the brackets represent concentration in molarity ($mol/l$) and the factor six corresponds to the stoichiometry of the respiration ( a molecule of glucose requires six molecules of $O_2$ for being completely oxidized). That is, eDAR is equal to 1 (Goldilocks line) if there are 6 moles of $O_2$ for mole of glucose. If we measure eDAR in grams:
+
+$$
+\begin{align}
+   eDAR=6\frac{[$C_{6}H_{12}O_6$]}{[O_2]} = 6\frac{ X mole$C_{6}H_{12}O_6/L}{Y mole O_2]}
+\end{align}
+$$
 
 ### Photosynthesis and respiration
 
