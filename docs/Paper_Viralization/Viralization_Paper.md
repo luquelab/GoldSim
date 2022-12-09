@@ -27,7 +27,7 @@ Our hypothesis is based on the Daisyworld model.
 Unlike physics or chemistry, biological and ecological sciences do not generally have universally and objective units to measure their world. Measurements are generally subjective and arbitrary. For instances, what differentiates two closely related species? Or how can we clearly differentiate a forest ecosystem from a grassland ecosystem?
 
 ### How to fill the knowledge gap
-Here, we propose an objective, scale-free metric for ecosystems. Our metric is a dichotomy that measures whether bacteria or bacteriophages are dominant in any given ecosystem. We observe that the dominant biological agent is related to the type of metabolism that dominates.
+Here, we propose an objective, scale-free metric for ecosystems. We hypothesize that ecosystems are divided in two categories: viralized or microbialized ecosystems. Viralized ecosystems are characterized by the dominance of bacteriophages with lytic activity and a catabolic metabolism, whereas in microbialized systems, phages are dormant, microbes are thus dominant, and there is an anaerobic metabolism.
 
 ## Methods
 
