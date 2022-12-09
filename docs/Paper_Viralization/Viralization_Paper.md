@@ -20,14 +20,14 @@ header-includes:
 
 ### Hypothesis and background
 
-* Every ecosystem can be divided into microbialized and viralized. In viralized ecosystems, phages are virulent and lyse bacteria. This occurs because bacteria are producing ATP (catabolic environment) . In microbialized systems, phages are dormant, and bacteria grow fast and dominate. Anaerobic metabolism dominates.
+* Every ecosystem can be classified as microbialized and viralized. In viralized ecosystems, phages are virulent and lyse bacteria. This occurs because bacteria are producing ATP (catabolic environment) . In microbialized systems, phages are dormant, and bacteria grow fast and dominate. Anaerobic metabolism dominates.
 Our hypothesis is based on the Daisyworld model.
 
 ### Knowledge gap
-The impact of bacterial and bacteriophage activity on the biosphere has not been studied before
+Unlike physics or chemistry, biological and ecological sciences do not generally have universally and objective units to measure their world. Measurements are generally subjective and arbitrary. For instances, what differentiates two closely related species? Or how can we clearly differentiate a forest ecosystem from a grassland ecosystem?
 
 ### How to fill the knowledge gap
-We propose a scale-free classification of biological systems: any ecological system can be classified as viralized or microbialized
+Here, we propose an objective, scale-free metric for ecosystems. Our metric is a dichotomy that measures whether bacteria or bacteriophages are dominant in any given ecosystem. We observe that the dominant biological agent is related to the type of metabolism that dominates.
 
 ## Methods
 
