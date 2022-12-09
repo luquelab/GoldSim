@@ -1,0 +1,43 @@
+---
+title: "Viralization and Microbialization dominate global ecology"
+subtitle: ""
+author: Sergio Cobo-Lopez, Heather Maughan , Forest L. Rohwer
+csl: "podzemna-voda.csl"
+abstract: Bacteria and bacteriophage are the most abundant biological agents on Earth. They are also ubiqutous. Their interactions with the biosphere and with each other have major impacts on a global scale. Here, we hypothesize 
+
+
+Transient dynamics are characterized by a sudden change in the dynamic behavior of a system. The frequency of transient dynamics is a property of the timescale of the system under study. However, all systems will eventually display transient dynamics. Transient dynamics are very common in ecology. We present a method to predict transient dynamics in a predator-prey model applied to bacteriophage-bacterial interactions. We chose this system, because phage and bacteria are the most abundant biological entities on Earth. Our results show that transient dynamics arise if the ecological timescales of bacteria and phage are disbalanced. Only when timescales are balanced, quasi-stable dynamics can be found. On the other hand, quasi-stable dynamics indicate that the model is not complete, because transient dynamics are inherent to dynamical systems. Our model can predict transient dynamics without having to solve the equations.
+graphics: yes
+header-includes:
+  - \usepackage{color}
+  - \usepackage{caption}
+  - \usepackage{anysize}
+  - \usepackage{amsmath}
+  - \usepackage{siunitx}
+
+---
+
+[comment]: <> (To compile this document with a bibliography: pandoc Viralization.md -o Viralization.pdf --bibliography Transient_Dynamics.bib)
+
+## Introduction
+
+### Hypothesis and background
+
+* Every ecosystem can be divided into microbialized and viralized. In viralized ecosystems, phages are virulent and lyse bacteria. This occurs because bacteria are producing ATP (catabolic environment) . In microbialized systems, phages are dormant, and bacteria grow fast and dominate. Anaerobic metabolism dominates.
+Our hypothesis is based on the Daisyworld model.
+
+### Knowledge gap
+The impact of bacterial and bacteriophage activity on the biosphere has not been studied before
+
+### How to fill the knowledge gap
+We propose a scale-free classification of biological systems: any ecological system can be classified as viralized or microbialized
+
+## Methods
+
+## Results
+
+## Discussion
+
+
+
+
