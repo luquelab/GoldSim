@@ -13,8 +13,6 @@ nav_order: 4
 
 This section describes the mathematical formalism used for the modules.
 
----
-
 ## Module 1 - eDAR
 
 eDAR stands for electron Donor-Acceptor Ratio. When there are more electron donors acceptors (oxygen) than donors (sugar) in a given ecosystem, a catabolic metabolism dominates. Otherwise, anabolic metabolism dominates. In the case of cellular respiration, where glucose ($$C_{6}H_{12}O_6$$) is the electron donor and oxygen ($$O_2$$) is the electron acceptor, we have:
