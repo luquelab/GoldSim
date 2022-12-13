@@ -3,7 +3,7 @@ title: "Viralization and Microbialization dominate global ecology"
 subtitle: ""
 author: "Sergio Cobo-Lopez, Heather Maughan, and Forest L. Rohwer"
 csl: "podzemna-voda.csl"
-abstract: "Measurements are critical for the practice of science. In biology, measurements are crucial to classify entities in categories. However, biological classifications are very often subjective, precisely they are not based in objective measurements. The classification of ecosystems is an example of this phenomenon. Here, we propose a new metric to classify ecosystems in two different categories: viralized or microbialized ecosystems. The balance of viruses to microbes is correlated to the dominant metabolism in the ecosystem and it can be measured in the lab or in the field. We tested our metric on different datasets and the results were consistent with our expectations."
+abstract: "Measurements are critical for the practice of science. For instance, measurements are necessary to classify entities into different categories. In biological sciences, classifications are often very subjective, precisely because they are not based in objective measurements. The classification of ecosystems is an example of this phenomenon. Here, we propose a new metric to classify ecosystems in two different categories: viralized or microbialized ecosystems. The balance of viruses to microbes is correlated to the dominant metabolism in the ecosystem and it can be measured in the lab or in the field. We tested our metric on different datasets and the results were consistent with our expectations."
 graphics: yes
 header-includes:
   - \usepackage{color}
