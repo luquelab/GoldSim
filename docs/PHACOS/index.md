@@ -16,7 +16,7 @@ Assume that:
 
 $$
 \begin{equation}
-   eDAR=6\frac{C_{6}H_{12}O_6}{O_2}
+   eDAR=6 \frac{C_{6}H_{12}O_6}{O_2}
 \end{equation}
 $$
 
