@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PHACOS
+title: phacos
 nav_order: 7
 
 \usepackage{mathtools}
@@ -21,7 +21,7 @@ $$
 $$
 
 Taking values from [Silveira et. al., 2019](https://doi.org/10.7554/eLife.49114) and assuming that DOC is equivalent to glucose, the minimum and maximum values of eDAR are 
-$eDAR_{min}=0.24$ and $eDAR_{max}=1.36$
+eDAR_{min}=0.24 and eDAR_{max}=1.36
  
 
 
