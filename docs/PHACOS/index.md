@@ -25,19 +25,19 @@ However, a conventional Hill Function will not be realistic, because it requires
 According to [Silveira et al, 2019](https://doi.org/10.7554/eLife.49114), we have:
 
 $$\begin{eqnarray*}
-eDAR_{min}=0.24$\\
-$eDAR_{max}=1.36$
+eDAR_{min}=0.24\\
+eDAR_{max}=1.36
 \end{eqnarray*}	$$
 
 Let us assume, for modeling purposes that:
 $$\begin{eqnarray*}
-eDAR_{min}=0.1$\\
-$eDAR_{max}=1.5$
+eDAR_{min}=0.1\\
+eDAR_{max}=1.5
 \end{eqnarray*}	$$
 
 Then, the corrected Hill Function should fulfill three conditions:
-1. $$H'(eDAR_{min})=0
-2. $$H'(eDAR_{max})=1
+1. $$H'(eDAR_{min})=0$$
+2. $$H'(eDAR_{max})=1$$
 3. $$H'(1)=0.5$$. This is because eDAR=1 corresponds to the goldilocks line.
 
 From these three conditions, we proposed the following function:
@@ -46,4 +46,10 @@ $$\begin{equation*}
 H'(eDAR)=\frac{(eDAR - eDAR_{min})^{n}}{K^n + \alpha (eDAR - eDAR_{min})^{n}}
 \end{equation*}	$$
 
-$K=(2-\alpha)^{1/n}(1-eDAR_{min})$
+where $\alpha=[0,1]$ is a coefficient that approaches $H'(eDAR)$ to 1 for values close to $eDAR_{max}$ and K is the value of eDAR that makes $H'(eDAR)=0.5$ (Goldilocks line). The values of $K$ and $\alpha$ for $H'(eDAR)$ are:
+
+$$\begin{eqnarray*}
+K=(2-\alpha)^{1/n}(1-eDAR_{min}) \\
+\alpha=
+\end{eqnarray*}	$$
+
