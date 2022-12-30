@@ -6,7 +6,7 @@ nav_order: 4
 
 # Approach
 
-This section describes the mathematical formalism used for the modules. Test
+This section describes the mathematical formalism used for the modules.
 
 ## Module 1 - eDAR
 
