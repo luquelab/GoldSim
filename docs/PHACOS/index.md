@@ -46,10 +46,10 @@ $$\begin{equation*}
 H'(eDAR)=\frac{(eDAR - eDAR_{min})^{n}}{K^n + \alpha (eDAR - eDAR_{min})^{n}}
 \end{equation*}	$$
 
-where $\alpha=[0,1]$ is a coefficient that approaches $H'(eDAR)$ to 1 for values close to $eDAR_{max}$ and K is the value of eDAR that makes $H'(eDAR)=0.5$ (Goldilocks line). The values of $K$ and $\alpha$ for $H'(eDAR)$ are:
+where $$\alpha=[0,1]$$ is a coefficient that approaches $$H'(eDAR)$$ to 1 for values close to $$eDAR_{max}$$ and K is the value of eDAR that makes $$H'(eDAR)=0.5$$ (Goldilocks line). The values of $$K$$ and $$\alpha$$ for $$H'(eDAR)$$ are:
 
 $$\begin{eqnarray*}
 K=(2-\alpha)^{1/n}(1-eDAR_{min}) \\
-\alpha=
+\alpha=\frac{(eDAR - eDAR_{min})^{n} - 2(1 - eDAR_{min}^{n}}{(eDAR - eDAR_{min})^{n} - (1 - eDAR_{min}^{n}}
 \end{eqnarray*}	$$
 
