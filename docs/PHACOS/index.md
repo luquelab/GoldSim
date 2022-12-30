@@ -45,3 +45,5 @@ From these three conditions, we proposed the following function:
 $$\begin{equation*}
 H'(eDAR)=\frac{(eDAR - eDAR_{min})^{n}}{K^n + \alpha (eDAR - eDAR_{min})^{n}}
 \end{equation*}	$$
+
+$K=(2-\alpha)^{1/n}(1-eDAR_{min})$
