@@ -50,6 +50,6 @@ where $$\alpha=[0,1]$$ is a coefficient that approaches $$H'(eDAR)$$ to 1 for va
 
 $$\begin{eqnarray*}
 K=(2-\alpha)^{1/n}(1-eDAR_{min}) \\
-\alpha=\frac{(eDAR - eDAR_{min})^{n} - 2(1 - eDAR_{min}^{n}}{(eDAR - eDAR_{min})^{n} - (1 - eDAR_{min}^{n}}
+\alpha=\frac{(eDAR - eDAR_{min})^{n} - 2(1 - eDAR_{min}^{n}}{(eDAR - eDAR_{min})^{n} - (1 - eDAR_{min})^{n}}
 \end{eqnarray*}	$$
 
