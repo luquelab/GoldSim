@@ -75,4 +75,4 @@ $$\begin{equation*}
 H'(eDAR)=\frac{DOC^{3}}{K^3_{DOC} + DOC^{3}}
 \end{equation*}	$$
 
-The exponent was chosen out of convenience to create a function that only limits growth at very low concentrations and grows very fast.
+The exponent $$n=3$$ was chosen out of convenience: it creates a function that only limits growth at very low concentrations, grows very fast, and particularly it is equal to 1 for the initial concentration of glucose ($$7.965 g/m^3$$). The maximum growth rate $$r_{max}$$ should be the one given for relatively low levels of sugar and catabolic side of the Goldilocks line.
