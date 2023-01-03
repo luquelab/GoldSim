@@ -72,5 +72,7 @@ In this case, I will use a conventional Hill Function. However, I am going to mo
 DOC concentration:
 
 $$\begin{equation*}
-H'(eDAR)=\frac{DOC^{n}}{K^n_{DOC} + DOC^{n}}
+H'(eDAR)=\frac{DOC^{3}}{K^3_{DOC} + DOC^{3}}
 \end{equation*}	$$
+
+The exponent was chosen out of convenience to create a function that only limits growth at very low concentrations and grows very fast.

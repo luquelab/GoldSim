@@ -1,5 +1,6 @@
 #2/12/2022 - Modified version of the Hill Function for eDAR
 #Update on 19/12/2022. Generalized version for min and maximum values
+#Update 03/01/2023. A hill function for sugar
 
 import math
 import numpy as np
@@ -12,11 +13,16 @@ import matplotlib
 eDAR_min=0.1
 eDAR_max=2
 
+Initial_Glucose_Conc=7.965 #g/m3
+Max_Glucose_Conc=1506 #g/m3
+
 eDAR_vec=np.arange(eDAR_min, eDAR_max, 0.01)
+Glucose_vec=np.arange(0, Max_Glucose_Conc, 0.01)
 #--------------------------------------------
 
 #K for conventional Hill function
-Ka=1
+Ka=0.1*Initial_Glucose_Conc
+
 
 exponents=[1,3,5,7,9]
 Hills=[]
@@ -24,7 +30,7 @@ Hills_Modified=[]
 
 for exponent in exponents:
     #conventional hill
-    Hill=[(eDAR)**exponent/(eDAR**exponent + Ka**exponent) for eDAR in eDAR_vec]
+    Hill=[(Glucose)**exponent/(Glucose**exponent + Ka**exponent) for Glucose in Glucose_vec]
 
     #Modified hill and parameters
     alpha=( (eDAR_max-eDAR_min)**exponent - 2*(1-eDAR_min)**exponent)/((eDAR_max-eDAR_min)**exponent - (1-eDAR_min)**exponent)
@@ -41,23 +47,18 @@ for exponent in exponents:
 #--------------------------------------------------------------
 #Fontsizes
 size_axis=9;size_ticks=9;
+exp_plot=1
+plt.plot(Glucose_vec,Hills[exp_plot],label="Ka="+str(exponents[exp_plot]), color='r')
 
-plt.plot(eDAR_vec,Hills[-2],label="Ka="+str(exponents[-2]), color='r')
+
 plt.plot(eDAR_vec,Hills_Modified[-2],label="Ka="+str(exponents[-2]), color='b')
 plt.ylabel('Hill(e-DAR)',fontsize=size_axis)
 plt.xlabel('e-DAR',fontsize=size_axis)
 
-print(Hills[-2])
-print(Hills_Modified[-2])
-# for Hill in range(len(Hills)):
-#     plt.plot(eDAR_vec,Hills[Hill],label="Ka="+str(exponents[Hill]))
-#     plt.ylabel('Hill(e-DAR)',fontsize=size_axis)
-#     plt.xlabel('e-DAR',fontsize=size_axis)
-#     plt.legend(loc='best',fontsize=size_ticks,frameon=False)
-
 width_line=1
 plt.axhline(y=0.5, color='k', linewidth=width_line,linestyle='dashed')
 plt.axvline(x=Ka, color='k', linewidth=width_line,linestyle='dashed')
+plt.axvline(x=Initial_Glucose_Conc, color='r', linewidth=2*width_line,linestyle='dashed')
 
 plt.ylabel('Hill function',fontsize=size_axis)
 plt.xlabel('e-DAR',fontsize=size_axis)
