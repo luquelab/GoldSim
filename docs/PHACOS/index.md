@@ -100,16 +100,17 @@ P(L)=( P_{max}(L) - P_{min}(L) ) H'(eDAR) + P_{min}(L)
 ## Metabolic dynamics
 
 There are two metabolic processes in this system: cellular respiration (aerobic/catabolic) and fermentation (anaerobic/anabolic). $$H'(eDAR)$$ controls the ratio of respiration to fermentation:
-if $$H'(eDAR)=0$$ corresponds to fully catabolic metabolism (only cellular respiration because there is more $$O_2$$ than $$C_{6}H_{12}O_{6}$$), whereas $$H'(eDAR)=1$$ corresponds to fully anaerobic metabolism (only fermentation).
-
-##Respiration
+$$H'(eDAR)=0$$ corresponds to fully catabolic metabolism (only cellular respiration because there is more $$O_2$$ than $$C_{6}H_{12}O_{6}$$), whereas $$H'(eDAR)=1$$ corresponds to fully anaerobic metabolism (only fermentation).
+This results in the following equations:
 
 $$
 \begin{align*}
-  \frac{d O}{d t}&=& - R^{O}_{out} O  \\	
-  \frac{d S}{d t}&=& - R^{S}_{out} S 
+  \frac{d O}{d t}&=& - (1 - H'(eDAR)) R^{O}_{out} O  \\	
+  \frac{d S}{d t}&=& - (1 - H'(eDAR)) R^{S}_{out} S - H'(eDAR) F^{S}_{out} S 
 \end{align*}
 $$
+
+where R^{O}_{out}, R^{S}_{out}, and F^{S}_{out} control the rate at which the total number of bacteria consume $$O_2$$ and $$C_{6}H_{12}O_{6}$$ (via respiration or fermentation). These rates are related to the following values:
 
 
 
