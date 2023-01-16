@@ -85,7 +85,9 @@ The phage bacterial dynamics consist of four differential equations:
 
 $$\begin{eqnarray*}
 \frac{dB}{dt}=r_{max}H_{eDAR}H_{DOC}B - dBP \\
-\frac{dP}{dt}= c\big(1-P(L)\big)\mu_pI + \mu_icL - mP \\
+\frac{dP}{dt}= c\big(1-P(L)\big)\mu_pI + c\mu_iL - mP \\
 \frac{dI}{dt}= dBP - P(L)I - \big(1-P(L)\big) \\
 \frac{dL}{dt}= r_{max}H_{eDAR}H_{DOC}L + P(L)I - \mu_iL
 \end{eqnarray*}	$$
+
+Here, $B$, $P$, $I$, and $L$ represent sensitive bacteria, phages, infected bacteria, and lysogens, respectively.
