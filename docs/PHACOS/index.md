@@ -110,7 +110,14 @@ $$
 \end{align*}
 $$
 
-where R^{O}_{out}, R^{S}_{out}, and F^{S}_{out} control the rate at which the total number of bacteria consume $$O_2$$ and $$C_{6}H_{12}O_{6}$$ (via respiration or fermentation). These rates are related to the following values:
+where $$R^{O}_{out}$$, $$R^{S}_{out}$$, and $$F^{S}_{out}$$ control the rate at which the total number of bacteria consume $$O_2$$ and $$C_{6}H_{12}O_{6}$$ (via respiration or fermentation). 
+These rates are related to the following values:
+$$r^{O}_{out}=4e-18 g/(h cell)$$ is the O2 consumption per bacterial cell.
+By stoichiometry of $$O_2$$ and $$C_{6}H_{12}O_{6}$$ in respiration, we can infer that:
+$$r^{O}_{out}=3.748e-18 g/(h cell)$$
+Finally, we assume that the rate of fermentation is double the rate of respiration:
+$$f^{O}_{out}=7.496e-18 g/(h cell)$$
+
 
 
 
