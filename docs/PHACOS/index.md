@@ -87,7 +87,7 @@ $$\begin{eqnarray*}
 \frac{dB}{dt}&=& \underbrace{r_{max}H_{eDAR}H_{DOC}B}_{growth} - \underbrace{dBP}_{infection} \\
 \frac{dP}{dt}&=& \underbrace{c\big(1-P(L)\big)\mu_pI}_{lytic burst} + \underbrace{c\mu_iL}_{induct growth} - \underbrace{mP}_{decay} \\
 \frac{dI}{dt}&=& \underbrace{dBP}_{infection} - \underbrace{P(L)I}_{lysogenic} - \underbrace{\big(1-P(L)\big)L}_{lytic} \\
-\frac{dL}{dt}&=& \underbrace{r_{max}H_{eDAR}H_{DOC}L }_{growth} + \underbrace{P(L)I} - \underbrace{\mu_iL}
+\frac{dL}{dt}&=& \underbrace{r_{max}H_{eDAR}H_{DOC}L }_{growth} + \underbrace{P(L)I}_{new lysogens} - \underbrace{\mu_iL}_{induction}
 \end{eqnarray*}	$$
 
 Here, $$B$$, $$P$$, $$I$$, and $$L$$ represent sensitive bacteria, phages, infected bacteria, and lysogens, respectively. $$P(L)$$ represents the probability of lysogeny, i.e. how likely is an infected bacteria to become a lysogen. 
@@ -119,6 +119,7 @@ Finally, we assume that the rate of fermentation is double the rate of respirati
 $$f^{O}_{out}=7.496e-18 g/(h cell)$$
 
 
+## Experiments
 
 
 
