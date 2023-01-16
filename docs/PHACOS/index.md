@@ -103,3 +103,6 @@ The probability of lysogeny is a function of the modified Hill function for the 
 $$\begin{eqnarray*}
 P(L)=( P_{max}(L) - P_{min}(L) ) H'(eDAR) + P_{min}(L)
 \end{eqnarray*}$$
+
+## Metabolic dynamics
+
