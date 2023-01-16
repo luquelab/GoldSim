@@ -80,3 +80,13 @@ The exponent $$n=3$$ was chosen out of convenience: it creates a function that o
  The maximum growth rate $$r_{max}$$ should be the one given for relatively low levels of sugar and catabolic side of the Goldilocks line.
 
 ## Phage bacterial dynamics
+
+The phage bacterial dynamics consist of four differential equations:
+
+$$\begin{eqnarray*}
+\frac{dB}{dt}=r_{max} H_{eDAR}H_{DOC} \\
+\frac{dP}{dt}= \\
+\frac{dI}{dt}= \\
+\frac{dL}{dt}= 
+H''(eDAR)=1 + H'(eDAR)
+\end{eqnarray*}	$$
