@@ -84,8 +84,8 @@ The exponent $$n=3$$ was chosen out of convenience: it creates a function that o
 The phage bacterial dynamics consist of four differential equations:
 
 $$\begin{eqnarray*}
-\frac{dB}{dt}=\underbrace{r_{max}H_{eDAR}H_{DOC}B}_{growth} - \underbrace{dBP}_{infection} \\
-\frac{dP}{dt}= \underbrace{c\big(1-P(L)\big)\mu_pI}_{lytic burst} + \underbrace{c\mu_iL}_{induct. growth} - \underbrace{mP}_{decay} \\
+\frac{dB}{dt}= \underbrace{r_{max}H_{eDAR}H_{DOC}B}_{growth} - \underbrace{dBP}_{infection} \\
+\frac{dP}{dt}= \underbrace{c\big(1-P(L)\big)\mu_pI}_{lytic burst} + \underbrace{c\mu_iL}_{induct growth} - \underbrace{mP}_{decay} \\
 \frac{dI}{dt}= \underbrace{dBP}_{infection} - \underbrace{P(L)I}_{lysogenic} - \underbrace{\big(1-P(L)\big)L}_{lytic} \\
 \frac{dL}{dt}= \underbrace{r_{max}H_{eDAR}H_{DOC}L }_{growth} + \underbrace{P(L)I - \underbrace{\mu_iL
 \end{eqnarray*}	$$
