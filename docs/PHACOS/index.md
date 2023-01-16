@@ -84,10 +84,10 @@ The exponent $$n=3$$ was chosen out of convenience: it creates a function that o
 The phage bacterial dynamics consist of four differential equations:
 
 $$\begin{eqnarray*}
-\frac{dB}{dt}=r_{max}H_{eDAR}H_{DOC}B - dBP \\
+\frac{dB}{dt}=\underbrace{r_{max}H_{eDAR}H_{DOC}B}_{growth} - dBP \\
 \frac{dP}{dt}= c\big(1-P(L)\big)\mu_pI + c\mu_iL - mP \\
 \frac{dI}{dt}= dBP - P(L)I - \big(1-P(L)\big)L \\
 \frac{dL}{dt}= r_{max}H_{eDAR}H_{DOC}L + P(L)I - \mu_iL
 \end{eqnarray*}	$$
 
-Here, $B$, $P$, $I$, and $L$ represent sensitive bacteria, phages, infected bacteria, and lysogens, respectively.
+Here, $$B$$, $$P$$, $$I$$, and $$L$$ represent sensitive bacteria, phages, infected bacteria, and lysogens, respectively.
