@@ -121,6 +121,17 @@ $$f^{O}_{out}=7.496e-18 g/(h cell)$$
 
 ## Experiments
 
+There are five experiments that I modeled: 
+
+| Experiment name| Type of intervention | 
+| ----------- | ----------- |  
+|Normoxic| $$O_2$$ concentration | 
+|Hyperoxic| $$C_{6}H_{12}O_{6}$$  | 
+|No DOC| $$CO_2$$ | 
+|Low DOC| $$H_2O$$ | 
+|High DOC| $$C_2H_6O$$ |     
+
+
 
 
 
