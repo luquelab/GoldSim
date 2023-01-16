@@ -100,6 +100,6 @@ $$\begin{eqnarray*}
 Here, $$B$$, $$P$$, $$I$$, and $$L$$ represent sensitive bacteria, phages, infected bacteria, and lysogens, respectively. $$P(L)$$ represents the probability of lysogeny, i.e. how likely is an infected bacteria to become a lysogen. 
 The probability of lysogeny is a function of the modified Hill function for the eDAR:
 
-$$begin{eqnarray*}
-P(L)=(P_{max}(L) - P_{min}(L)) H'(eDAR) + P_{min}(L)
+$$\begin{eqnarray*}
+P(L)=( P_{max}(L) - P_{min}(L) ) H'(eDAR) + P_{min}(L)
 \end{eqnarray*}$$
