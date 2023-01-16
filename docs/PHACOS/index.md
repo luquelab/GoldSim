@@ -121,15 +121,15 @@ $$f^{O}_{out}=7.496e-18 g/(h cell)$$
 
 ## Experiments
 
-There are five experiments that I modeled: 
+Five experiments were modeled. All experiments involve fixing the concentration of either $$O_2$$ or $$DOC$$ after t=2d.
 
 | Experiment name| Type of intervention | 
 | ----------- | ----------- |  
-|Normoxic| $$O_2$$ concentration | 
-|Hyperoxic| $$C_{6}H_{12}O_{6}$$  | 
-|No DOC| $$CO_2$$ | 
-|Low DOC| $$H_2O$$ | 
-|High DOC| $$C_2H_6O$$ |     
+|Normoxic|  Fix $$O_2=8.5 g/m^3$$| 
+|Hyperoxic| Fix $$O_2=9.78 g/m^3$$| 
+|No DOC| No changes | 
+|Low DOC| Fix $$C_{6}H_{12}O_{6}=136 g/m^3$$ | 
+|High DOC| Fix $$C_{6}H_{12}O_{6}=1506 g/m^3$$ |     
 
 
 
