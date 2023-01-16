@@ -121,7 +121,10 @@ $$f^{O}_{out}=7.496e-18 g/(h cell)$$
 
 ## Experiments
 
-Five experiments were modeled. All experiments involve fixing the concentration of either $$O_2$$ or $$DOC$$ after t=2d.
+Five experiments were modeled. All experiments involved changing (and fixing) the concentration of either $$O_2$$ or $$DOC$$ after t=2d. Sucrose ($$C_{12}H_{22}O_{11}$$) was used in experimental settings. However, we made the 
+approximation that a molecule of sucrose is equal to two molecules of glucose. This was done to not have to change the structure of the model in GoldSim that does respiration with glucose as an input.
+
+All experiments involve fixing the concentration of either $$O_2$$ or $$DOC$$ after t=2d.
 
 | Experiment name| Type of intervention | 
 | ----------- | ----------- |  
