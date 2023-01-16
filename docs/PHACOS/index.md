@@ -6,13 +6,13 @@ nav_order: 7
 
 # PHACOS Experiment
 
-## Corrected Hill function
+## Hill functions
 
 The carrying capacity will be changed by a product of two Hill functions: a modified Hill function for eDAR and a Hill function for the
 concentration of glucose.
 
 
-## eDAR Hill Function
+## Corrected eDAR Hill Function
 
 Regarding eDAR recall that:
 
@@ -75,4 +75,8 @@ $$\begin{equation*}
 H'(eDAR)=\frac{DOC^{3}}{K^3_{DOC} + DOC^{3}}
 \end{equation*}	$$
 
-The exponent $$n=3$$ was chosen out of convenience: it creates a function that only limits growth at very low concentrations, grows very fast, and particularly it is equal to 1 for the initial concentration of glucose ($$7.965 g/m^3$$). The maximum growth rate $$r_{max}$$ should be the one given for relatively low levels of sugar and catabolic side of the Goldilocks line.
+The exponent $$n=3$$ was chosen out of convenience: it creates a function that only limits growth at very low concentrations, grows very fast, and particularly it is equal to 1 for the initial concentration of glucose ($$7.965 g/m^3$$).
+
+ The maximum growth rate $$r_{max}$$ should be the one given for relatively low levels of sugar and catabolic side of the Goldilocks line.
+
+## Phage bacterial dynamics
