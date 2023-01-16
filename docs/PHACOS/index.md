@@ -6,13 +6,13 @@ nav_order: 7
 
 # PHACOS Experiment
 
-### Hill functions
+## Hill functions
 
 The carrying capacity will be changed by a product of two Hill functions: a modified Hill function for eDAR and a Hill function for the
 concentration of glucose.
 
 
-## Corrected eDAR Hill Function
+### Corrected eDAR Hill Function
 
 Regarding eDAR recall that:
 
