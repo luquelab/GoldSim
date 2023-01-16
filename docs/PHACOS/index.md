@@ -40,12 +40,12 @@ eDAR_{min}=0.1\\
 eDAR_{max}=1.5
 \end{eqnarray*}	$$
 
-Then, the corrected Hill Function should fulfill three conditions:
+Then, the corrected Hill Function should meet three conditions:
 1. $$H'(eDAR_{min})=0$$
 2. $$H'(eDAR_{max})=1$$
 3. $$H'(1)=0.5$$. (Goldilocks line)
 
-From these three conditions, we proposed the following function:
+From these conditions, we propose the following function:
 
 $$\begin{equation*}
 H'(eDAR)=\frac{(eDAR - eDAR_{min})^{n}}{K^n + \alpha (eDAR - eDAR_{min})^{n}}
@@ -58,13 +58,13 @@ K=(2-\alpha)^{1/n}(1-eDAR_{min}) \\
 \alpha=\frac{(eDAR_{max} - eDAR_{min})^{n} - 2(1 - eDAR_{min})^{n}}{(eDAR_{max}- eDAR_{min})^{n} - (1 - eDAR_{min})^{n}}
 \end{eqnarray*}	$$
 
-Furthermore, I modify H'(eDAR) so that it ranges between 1 and 2. Therefore:
+We further modify H'(eDAR) so that it ranges between 1 and 2 to control bacterial growth:
 
 $$\begin{eqnarray*}
 H''(eDAR)=1 + H'(eDAR)
 \end{eqnarray*}	$$
 
-H''(eDAR)=1 when the metabolism is totally catabolic and H''(eDAR)=2 when the metabolism is fully anabolic (it doubles growth rate).
+H''(eDAR)=1 when the metabolism is totally catabolic and H''(eDAR)=2 when it is fully anabolic (it doubles growth rate).
 
 ## Glucose Hill Function
 
@@ -84,10 +84,10 @@ The exponent $$n=3$$ was chosen out of convenience: it creates a function that o
 The phage bacterial dynamics consist of four differential equations:
 
 $$\begin{eqnarray*}
-\frac{dB}{dt}&=& \underbrace{r_{max}H_{eDAR}H_{DOC}B}_{growth} - \underbrace{dBP}_{infection} \\
+\frac{dB}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}B}_{growth} - \underbrace{dBP}_{infection} \\
 \frac{dP}{dt}&=& \underbrace{c\big(1-P(L)\big)\mu_pI}_{lytic burst} + \underbrace{c\mu_iL}_{induct growth} - \underbrace{mP}_{decay} \\
 \frac{dI}{dt}&=& \underbrace{dBP}_{infection} - \underbrace{P(L)I}_{lysogenic} - \underbrace{\big(1-P(L)\big)L}_{lytic} \\
-\frac{dL}{dt}&=& \underbrace{r_{max}H_{eDAR}H_{DOC}L }_{growth} + \underbrace{P(L)I}_{new lysogens} - \underbrace{\mu_iL}_{induction}
+\frac{dL}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}L }_{growth} + \underbrace{P(L)I}_{new lysogens} - \underbrace{\mu_iL}_{induction}
 \end{eqnarray*}	$$
 
 Here, $$B$$, $$P$$, $$I$$, and $$L$$ represent sensitive bacteria, phages, infected bacteria, and lysogens, respectively. $$P(L)$$ represents the probability of lysogeny, i.e. how likely is an infected bacteria to become a lysogen. 
