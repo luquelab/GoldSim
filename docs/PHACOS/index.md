@@ -125,11 +125,11 @@ Five experiments were modeled. All experiments involve fixing the concentration 
 
 | Experiment name| Type of intervention | 
 | ----------- | ----------- |  
-|Normoxic|  Fix $$O_2=8.5 g/m^3$$| 
-|Hyperoxic| Fix $$O_2=9.78 g/m^3$$| 
+|Normoxic|  $$O_2(t>2d)=8.5 g/m^3$$| 
+|Hyperoxic| $$O_2(t>2d)=9.78 g/m^3$$| 
 |No DOC| No changes | 
-|Low DOC| Fix $$C_{6}H_{12}O_{6}=136 g/m^3$$ | 
-|High DOC| Fix $$C_{6}H_{12}O_{6}=1506 g/m^3$$ |     
+|Low DOC| $$C_{6}H_{12}O_{6}(t>2d)=136 g/m^3$$ | 
+|High DOC|$$C_{6}H_{12}O_{6}(t>2d)=1506 g/m^3$$ |     
 
 
 
