@@ -20,14 +20,11 @@ header-includes:
 
 ### Hypothesis and background
 
-Our hypothesis is that all ecosystems can be classified into two categories: viralized or microbiolized ecosystems. Unlike other ecosystem classifications, this viral-bacterial dichotomy is an objective measurement in the sense that it is possible to measure the concentration of virus and bacteria in any given ecosystem.
-Our metric is based on microbiologic activity, because microbes (bacteria, particularly), and viruses are the most abundant biological entities on Earth. They have a big impact on upper levels of the trophic chain and also on abiotic factors, effectively shaping entire ecosystems. 
+Our hypothesis is that all ecosystems can be classified into two categories: viralized or microbiolized ecosystems. Unlike other ecosystem classifications, this viral-bacterial dichotomy is an objective metric based on the relative abundance of viruses and microbes in a given ecosystem. Microbes (bacteria, particularly) and viruses are the most abundant biological entities on earth and they have a big impact on upper levels of the trophic chain and also on abiotic factors, effectively shaping entire ecosystems. 
 
 ### Knowledge gap
 
-Unlike commonly called hard sciences, there is a lack of objective metrics in biology. For instance, the concept of biological species was questioned by Darwin in The Origin of Species [@9934839413602122].
-
-However, here have been several attempts to propose objective classifications in several problems of biology. A well known example is the Daisyworld [@https://doi.org/10.1111/j.1600-0889.1983.tb00031.x] . More recently, and specifically to viruses, other dichotomies have been proposed such as the Kill-the-Winner/Piggyback-the-Winner dynamics [@Knowles2016].
+Unlike commonly called hard sciences, there is a lack of objective metrics in biology. The very concept of species, for instance, was already questioned by Darwin in The Origin of Species [@9934839413602122]. However, there have been several models that are based on objective classifications. The best known is example is probably the Daisyworld [@https://doi.org/10.1111/j.1600-0889.1983.tb00031.x]. However, the Daysiworld model is based on a fictitious world. More recently, and specifically to viruses, other models have been proposed such as the Kill-the-Winner/Piggyback-the-Winner dynamics [@Knowles2016]. This model  in particular draws an objective measurable dichotomy between lytic and temperate behaviors of bacteriophages.
 
 ### How to fill the knowledge gap
 
@@ -47,6 +44,6 @@ We have proposed a metric to classify ecosystems based on microbiolical factors.
 
 ### Caveats
 
-Binary classifications are easily interpretable, but they are also arbitrary (where do we put the line?)
+Binary classifications are easily interpretable, but they are also arbitrary in where to put the line. Also, they could miss intermediate classifications.
 
-We have not considered other factors that could influence ecosystems. In other words, two ecosystems that are equally viralized or microbialized can be very different
+We have not considered other factors that could influence ecosystems. In other words, two ecosystems that are equally viralized or microbialized can be very different from each other due to multitude of biotic or abiotic factors.
