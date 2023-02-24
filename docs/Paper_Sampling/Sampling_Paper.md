@@ -50,26 +50,28 @@ First, we want to get the concentration $D_I$ as a function of time as we extrac
 Integrating, and dividing by $V_I$ we get the density:
 
 \begin{equation}
-D_I(t)=D_E - (D_E - D_I(0)) \exp^{-\frac{v}{V_I}t}.
+D_I(t)=D_E - (D_E - D_I(0)) \exp^{-\frac{v}{V_I} t}
 \end{equation}
 
-The density of the sample is also a function of time. In particular, the total mass in the sample $M_S$ changes as a function of $D_I$:
 
-\begin{equation} 
-\frac{dM_S}{dt}=D_Iv \,
-\end{equation}
+In the case of the sample both the mass and density change over time:
 
-and the volume:
+\begin{eqnarray} 
+\frac{dM_S}{dt}&=&D_Iv \\
+\frac{dV_S}{dt}&=&v 
+\end{eqnarray}
 
+Integrating, we get:
 
 \begin{equation}
-M_I(t)=D_0 V_I - \exp^{-\frac{v}{V_I}t}.
-\end{equation}
-
-\begin{equation}
-M_S(t)=vD_Et -(M_I(0) - D_E V_I) \exp^{-\frac{-v}{V_I}t}.
+M_S(t)=M_s(0) + vD_Et - (M_I(0) - D_E V_I) \exp^{-\frac{-v}{V_I}t}.
 \end{equation} 
 
+For the volume:
+
+\begin{equation}
+V_S(t)=v T 
+\end{equation}
  
 
 ## Results
