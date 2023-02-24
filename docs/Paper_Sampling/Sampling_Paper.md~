@@ -1,0 +1,39 @@
+---
+title: " A metric to measure ecosystems: the Viralization, Microbialization dichotomy"
+subtitle: ""
+author: "Sergio Cobo-Lopez, Forest L. Rohwer"
+csl: "podzemna-voda.csl"
+abstract: "Underwater measurements are important in field biology. Measurements are made from sites of interest that usually have a higher density of specific variables. This requires control over density, because of dilution rates"
+graphics: yes
+header-includes:
+  - \usepackage{color}
+  - \usepackage{caption}
+  - \usepackage{anysize}
+  - \usepackage{amsmath}
+  - \usepackage{siunitx}
+
+---
+
+[comment]: <> (To compile this document with a bibliography: pandoc Sampling_Paper.md -o Sampling_Paper.pdf --bibliography ../../data/1_references/References.bib)
+
+## Introduction
+
+\begin{figure}[htbp]\centering\includegraphics[width=0.5\textwidth, height=!]{/home/sergio/work/Github/needle-finder/docs/Finished_Figures/Paper_Figures/Figure_1.pdf}\caption{ \textbf{Identification of active terms in Lotka-Volterra dynamics with aggregated per capita rates}. \textbf{a)} Graphical representation of the predator-prey model in a phage bacterial system. \textbf{b)} Dynamics of the predator and prey concentrations when r is the dominant timescale. \textbf{c)} Contribution of terms to rates. Aggregated per capita rates are obtained by normalizing rates by the total population of prey or predator and the dominant timescale (r). Deeper red and blue represent increasing contributions of predator and prey-like terms to the dynamics, respectively.}\end{figure} 
+
+### Hypothesis and background
+
+### Knowledge gap
+
+### How to fill the knowledge gap
+
+## Methods
+
+## Results
+
+
+
+
+
+## Discussion
+
+### Conclusions

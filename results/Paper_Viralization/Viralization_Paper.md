@@ -3,7 +3,7 @@ title: " A metric to measure ecosystems: the Viralization, Microbialization dich
 subtitle: ""
 author: "Sergio Cobo-Lopez, Heather Maughan, Breeann Kirby, and Forest L. Rohwer"
 csl: "podzemna-voda.csl"
-abstract: "We propose a binary metric to classify ecosystems into two different categories: viralized or microbialized ecosystems. An ecosystem is viralized when virions are more abundant than bacteria, and it is microbialized when microbes are more abundant. Our metric stems from the fact that bacteria and bacteriophages are the most abundant biological entities on earth and they can shape their environment by controlling the dominant metabolism. This metric can be easily measured in the field and in the lab. Quantitative metrics are critical for the practice of science, because they allow us to test hypotheses and rigorously classify entities in categories. Classifications in biological sciences are often subjective precisely because they are not based on objective metrics. Our metric stems from the fact that bacteria and bacteriophages are the most abundant biological entities on earth and they can shape their environment by controlling the dominant metabolism."
+abstract: "We propose a binary metric to classify ecosystems into  viralized or microbialized ecosystems. An ecosystem is viralized when virions are more abundant than bacteria, and it is microbialized when microbes are more abundant. Our metric stems from the fact that bacteria and bacteriophages are the most abundant biological entities on earth and they can shape their environment by controlling the dominant metabolism. This metric can be easily measured in the field and in the lab. Quantitative metrics are critical for the practice of science, because they allow us to test hypotheses and rigorously classify entities in categories. Classifications in biological sciences are often subjective precisely because they are not based on objective metrics."
 graphics: yes
 header-includes:
   - \usepackage{color}
@@ -24,12 +24,12 @@ Our hypothesis is that all ecosystems can be classified into two categories: vir
 
 ### Knowledge gap
 
-Unlike commonly called hard sciences, there is a lack of objective metrics in biology. The very concept of species, for instance, was already questioned by Darwin in The Origin of Species [@9934839413602122]. However, there have been several models that are based on objective classifications. The best known is example is probably the Daisyworld [@https://doi.org/10.1111/j.1600-0889.1983.tb00031.x]. However, the Daysiworld model is based on a fictitious world. More recently, and specifically to viruses, other models have been proposed such as the Kill-the-Winner/Piggyback-the-Winner dynamics [@Knowles2016]. This model  in particular draws an objective measurable dichotomy between lytic and temperate behaviors of bacteriophages.
+Unlike commonly called hard sciences, there is a lack of objective metrics in biology. The very concept of species, for instance, was already questioned by Darwin in The Origin of Species [@9934839413602122]. However, there have been several models that are based on objective classifications. The best known is example is probably the Daisyworld model [@https://doi.org/10.1111/j.1600-0889.1983.tb00031.x]. However, the Daysiworld model is based on a fictitious world. More recently, and specifically to viruses, other models have been proposed such as the Kill-the-Winner/Piggyback-the-Winner dynamics [@Knowles2016]. This model  in particular draws an objective measurable dichotomy between lytic and temperate behaviors of bacteriophages.
 
 ### How to fill the knowledge gap
 
-Here, we propose viralized-microbialized dicthomy: an objective, scale-free and binary metric to classify ecosystems. 
-In our classification, viralized ecosystems are characterized by the dominance of bacteriophages with lytic activity and a catabolic metabolism, whereas in microbialized systems, phages are temperate, microbes are thus dominant, and there is an anaerobic metabolism.
+Here, we propose viral-microbial dicothomy: an objective, scale-free and binary metric to classify ecosystems. 
+In our classification, viralized ecosystems are characterized by the dominance of bacteriophages with lytic activity and a catabolic metabolism, whereas in microbialized systems, phages are temperate, microbes are thus dominant, and there is an anabolic metabolism.
 Whether an ecosystem belongs to one category or the other can be determined by sampling the ecosystem and determining the Virus to Microbe Ratio (VMR), for instance.
 
 ## Methods
