@@ -24,22 +24,21 @@ header-includes:
 
 ### How to fill the knowledge gap
 
-\begin{figure}[htbp]\centering\includegraphics[width=0.5\textwidth, height=!]{/home/sergio/work/Github/GoldSim/results/Figures_Sample_Paper/Figure_1.pdf}\caption{ \textbf{The subaquatic sampling system consists of an environment ($E$), a system of interest ($I$), and a sample ($S$)} The system of interest ($I$) is a subset of the environment ($E$). The hypothesis is that the concentration of certain biogeochemical properties is larger in $I$ than $E$ ($D_I>D_E$). As $I$ is sampled, $D_I$ will decrease by water dilution}\end{figure}
-
-
 
 ## Methods
+
+\begin{figure}[htbp]\centering\includegraphics[width=0.5\textwidth, height=!]{/home/sergio/work/Github/GoldSim/results/Figures_Sample_Paper/Figure_1.pdf}\caption{ \textbf{The subaquatic sampling system consists of an environment ($E$), a system of interest ($I$), and a sample ($S$)} The system of interest ($I$) is a subset of the environment ($E$). The hypothesis is that the concentration of certain biogeochemical properties is larger in $I$ than $E$ ($D_I>D_E$). As $I$ is sampled, $D_I$ will decrease by water dilution}\end{figure}
+
 
 | Input | Volume | Density |
 | ----------- | ----------- |----------- |
 |Environment|        $V_E=\inf$    | $D_E=10^6 VLP/ml$|
 |System of Interest| $V_I=1.4 L$   | $D_I=10^7 VLP/ml$|
-|Sample|             $V_S=0.5 L$   | $D_S=?$|
-|Sample rate|        $v=10 ml/s$ | |
+|Sample|             $V_S=0.5 L$   | $D_S=x$|
+|Sampling rate|      $v=10 ml/s$ | |
 
-Let $I$ be a subaquatic system of interest in an environment $E$ with a constant volume $V_I$ (Figure 1). Suppose that our hypothesis is that the concentration of a certain biogeochemical property is higher in $I$ than in $D$, $D_I(t=0)>D_E$. To test this hypothesis, we take a sample $S$ from $I$. Let that sample have a volume $V_S$. As water flows out from $I$ at a rate $v$, water flows in from $E$ at the same rate, thus diluting the concentration $D_I$ over time.
 
-Given the sample $S$, with volume $V_S$, and concentration $D_S$, we want to be able to infer the initial concentration of interest $D_I$.
+Let $I$ be a subaquatic system of interest in an environment $E$ with a constant volume $V_I$ (Figure 1) (for instance a coral reef in the ocean). Suppose $g$ is a certain biogeochemical element that we believe it is present in $I$ in higher concentration than in $E$, $D_I(g)>D_E(g)$ (dissolved organic carbon, for example). Also, suppose that $D_E(g)$ is known. Suppose that we take a sample $S$ of $g$ from $I$ and extract water at a rate of $v ml/min$. Because $I$ is a subaquatic environment, water from $E$ is going to flow into $I$ at the same rate effectively diluting $D_I$ over time. Given a sample $S$, with volume $V_S$ and density $D_S$, how can we extract the initial concentration $D_I$?
 
 First, we want to get the concentration $D_I$ as a function of time as we extract water at a rate of $v$. Because $V_I$ is constant, only the mass $M_I$ changes over time:
 

@@ -1,0 +1,7 @@
+import numpy as np
+import seaborn as sns
+
+
+#Initial parameters
+Volume_Interest_vec=[vi for vi in np.arange(1,2,0.1)]
+print(Vol_Interest_vec)
