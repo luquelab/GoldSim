@@ -43,7 +43,7 @@ eDAR_{max}=1.5
 Then, the corrected Hill Function should meet three conditions:
 1. $$H'(eDAR_{min})=0$$
 2. $$H'(eDAR_{max})=1$$
-3. $$H'(1)=0.5$$. (Goldilocks line)
+3. $$H'(1)=0.5$$. (Goldilocks line)$$
 
 From these conditions, we propose the following function:
 

@@ -1,7 +1,7 @@
 ---
 title: " A method for underwater sampling accounting for dilution"
 subtitle: ""
-author: "Sergio Cobo-Lopez, Forest L. Rohwer"
+author: "Sergio Cobo-Lopez, Heather Maughan, Breann Kirby, and Forest L. Rohwer"
 csl: "podzemna-voda.csl"
 abstract: "Underwater measurements are important in field biology. Measurements are made from sites of interest that usually have a higher density of specific variables. This requires control over density, because of dilution rates"
 graphics: yes

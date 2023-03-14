@@ -35,8 +35,12 @@ n})^{n}}
 
 where $$\alpha=[0,1]$$ is a coefficient that approaches $$H'(eDAR)$$
 to 1 for values close to $$eDAR_{max}$$ and K is the value of eDAR
-such that $$H'(eDAR)=0.5$$ (Goldilocks line).
+such that $$H'(eDAR)=0.5$$ (Goldilocks line). We set arbitrary values for the minimum and maximum values of eDAR$$
 
+$$\begin{eqnarray*}
+eDAR_{min}=0.1\\
+eDAR_{max}=1.5
+\end{eqnarray*} $$ 
 
 
 ## Module 2 - eDAR
