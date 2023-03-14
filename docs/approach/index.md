@@ -26,17 +26,32 @@ $$\begin{equation}
 r_{max}H''_{eDAR}B
 \end{equation}$$
 
-For now, I am going to assume that $H''_{eDAR}$ is a modified Hill Function that takes values between $1$ and $2$. $H''_{eDAR}=2$ when there is a fully anabolic metabolism (eDAR is very large). The exact expression is:
+2. Probability of Lysogeny:
 
-$$\begin{equation*}                                                  
-H'(eDAR)=\frac{(eDAR - eDAR_{min})^{n}}{K^n + \alpha (eDAR - eDAR_{mi
-n})^{n}}
-\end{equation*} $$
+$$\begin{eqnarray*}
+P(L)=( P_{max}(L) - P_{min}(L) ) H'(eDAR) + P_{min}(L)
+\end{eqnarray*}$$
+
+For now, I am going to assume that $H'(eDAR)$ and $H''(eDAR)$ are modified Hill Functions such that:
+
+$$\begin{equation}
+H''(eDAR) = 1 + H'(eDAR)
+\end{equation}$$
+
+and 
+
+$$\begin{equation}
+H'(eDAR) = \frac{(eDAR - eDAR_{min})^{n}}{K^n + \alpha (eDAR - eDAR_{min}
+\end{equation}$$
 
 where $$\alpha=[0,1]$$ is a coefficient that approaches $$H'(eDAR)$$
 to 1 for values close to $$eDAR_{max}$$ and K is the value of eDAR
-such that $$H'(eDAR)=0.5$$ (Goldilocks line).
+such that $$H'(eDAR)=0.5$$ (Goldilocks line). For convenience, we set arbitrary values for the minimum and maximum values of $$eDAR$$:
 
+$$\begin{eqnarray*}
+eDAR_{min}=0.1\\
+eDAR_{max}=1.5
+\end{eqnarray*} $$ 
 
 
 ## Module 2 - eDAR
