@@ -8,7 +8,17 @@ nav_order: 4
 
 This section describes the mathematical formalism used for the modules.
 
-## Module 1 - eDAR
+## Module 1 - Phage-Bacterial dynamics
+
+$$\begin{eqnarray*}
+\frac{dB}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}B}_{growth} - \underbrace{dBP}_{infection} \\
+\frac{dP}{dt}&=& \underbrace{c\big(1-P(L)\big)\mu_pI}_{lytic burst} +\underbrace{c\mu_iL}_{induct growth} - \underbrace{mP}_{decay} \\
+\frac{dI}{dt}&=& \underbrace{dBP}_{infection} - \underbrace{P(L)I}_{lysogenic} - \underbrace{\big(1-P(L)\big)L}_{lytic} \\
+\frac{dL}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}L }_{growth} +
+\underbrace{P(L)I}_{new lysogens} - \underbrace{\mu_iL}_{induction}
+\end{eqnarray*} $$
+
+## Module 2 - eDAR
 
 eDAR stands for electron Donor-Acceptor Ratio. When there are more electron donors acceptors (oxygen) than donors (sugar) in a given ecosystem, a catabolic metabolism dominates. Otherwise, anabolic metabolism dominates. In the case of cellular respiration, where glucose ($$C_{6}H_{12}O_6$$) is the electron donor and oxygen ($$O_2$$) is the electron acceptor, we have:
 
@@ -148,7 +158,7 @@ P^{W}_{out} W=\alpha^{P}_{out} P^{C}_{out} C \nonumber
 \end{align*}
 $$
 
-## Module 2 - Energy from metabolism
+## Module 3 - Energy from metabolism
 
 In this model, the rate of energy (power) is a positive function of the incoming power and a negative function of outcoming power:
 
