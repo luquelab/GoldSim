@@ -20,19 +20,19 @@ $$\begin{eqnarray*}
 
 In this model, bacterial growth and lytic/lysogenic infection are metabolic-dependent processes:
 
-1. Bacterial Growth:
+#1. Bacterial Growth:
 
 $$\begin{equation}
 r_{max}H''_{eDAR}B
 \end{equation}$$
 
-2. Probability of Lysogeny:
+#2. Probability of Lysogeny:
 
 $$\begin{eqnarray*}
 P(L)=( P_{max}(L) - P_{min}(L) ) H'(eDAR) + P_{min}(L)
 \end{eqnarray*}$$
 
-For now, I am going to assume that $H'(eDAR)$ and $H''(eDAR)$ are modified Hill Functions such that:
+$$H'(eDAR)$$ and $$H''(eDAR)$$ are modified Hill Functions such that:
 
 $$\begin{equation}
 H''(eDAR) = 1 + H'(eDAR)
