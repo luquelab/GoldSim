@@ -41,6 +41,10 @@ H''(eDAR) = 1 + H'(eDAR)
 and 
 
 $$\begin{equation}
+H''(eDAR) = 1 + H'(eDAR)
+\end{equation}$$
+
+$$\begin{equation}
 H'(eDAR) = \frac{(eDAR - eDAR_{min})^{n}}{K^n + \alpha (eDAR - eDAR_{min}
 \end{equation}$$
 
