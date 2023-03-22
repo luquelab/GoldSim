@@ -12,7 +12,7 @@ This section describes the mathematical formalism used for the modules.
 
 $$\begin{eqnarray*}
 \frac{dB}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}B}_{growth} - \underbrace{dBP}_{infection} \\
-\frac{dP}{dt}&=& \underbrace{c\big(1-P(L)\big)\mu_pI}_{lytic burst} +\underbrace{c\mu_iL}_{induct growth} - \underbrace{mP}_{decay} \\
+\frac{dP}{dt}&=& \underbrace{c\big(1-P(L)\big)\mu_pI}_{lytic burst} +\underbrace{c\mu_iL}_{\text{induct growth}} - \underbrace{mP}_{decay} \\
 \frac{dI}{dt}&=& \underbrace{dBP}_{infection} - \underbrace{P(L)I}_{lysogenic} - \underbrace{\big(1-P(L)\big)L}_{lytic} \\
 \frac{dL}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}L }_{growth} +
 \underbrace{P(L)I}_{new lysogens} - \underbrace{\mu_iL}_{induction}
