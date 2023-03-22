@@ -29,7 +29,7 @@ r_{max}H''_{eDAR}B
 #2. Probability of Lysogeny:
 
 $$\begin{eqnarray*}
-P(L)=P_{max}(L)H'(eDAR) + P_{min}(L) (1 - H'(eDAR)
+P(L)=P_{max}(L)H'(eDAR) + P_{min}(L) (1 - H'(eDAR))
 \end{eqnarray*}$$
 
 $$H'(eDAR)$$ and $$H''(eDAR)$$ are modified Hill Functions such that:
@@ -40,17 +40,15 @@ H''(eDAR) = 1 + H'(eDAR)
 
 and 
 
-$$\begin{equation}
-H''(eDAR) = 1 + H'(eDAR)
-\end{equation}$$
-
-$$\begin{equation}
+$$
+\begin{equation}
 H'(eDAR) = \frac{(eDAR - eDAR_{min})^{n}}{K^n + \alpha (eDAR - eDAR_{min}
-\end{equation}$$
+\end{equation}
+$$
 
 where $$\alpha=[0,1]$$ is a coefficient that approaches $$H'(eDAR)$$
 to 1 for values close to $$eDAR_{max}$$ and K is the value of eDAR
-such that $$H'(eDAR)=0.5$$ (Goldilocks line). For convenience, we set arbitrary values for the minimum and maximum values of $$eDAR$$:
+such that $$H'(eDAR)=0.5$$ (Goldilocks line)$$. For convenience, we set arbitrary values for the minimum and maximum values of $$eDAR$$:
 
 $$\begin{eqnarray*}
 eDAR_{min}=0.1\\
