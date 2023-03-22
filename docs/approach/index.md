@@ -29,7 +29,7 @@ r_{max}H''_{eDAR}B
 #2. Probability of Lysogeny:
 
 $$\begin{eqnarray*}
-P(L)=( P_{max}(L) - P_{min}(L) ) H'(eDAR) + P_{min}(L)
+P(L)=P_{max}(L)H'(eDAR) + P_{min}(L) (1 - H'(eDAR)
 \end{eqnarray*}$$
 
 $$H'(eDAR)$$ and $$H''(eDAR)$$ are modified Hill Functions such that:
