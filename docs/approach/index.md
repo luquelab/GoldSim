@@ -20,13 +20,13 @@ $$\begin{eqnarray*}
 
 In this model, bacterial growth and lytic/lysogenic infection are metabolic-dependent processes:
 
-# 1. Bacterial Growth:
+## 1. Bacterial Growth:
 
 $$\begin{eqnarray*}
 \frac{dB_{growth}}{dt}&=&r_{max}H''_{eDAR}B
 \end{eqnarray*}$$
 
-# 2. Probability of Lysogeny:
+## 2. Probability of Lysogeny:
 
 $$\begin{eqnarray*}
 P_L=P_L(max)H'(eDAR) + P_L(min) (1 - H'(eDAR))
