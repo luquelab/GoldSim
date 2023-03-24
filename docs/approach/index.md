@@ -22,9 +22,9 @@ In this model, bacterial growth and lytic/lysogenic infection are metabolic-depe
 
 #1. Bacterial Growth:
 
-$$\begin{equation}
+$$\begin{eqnarray*}
 \frac{dB_{growth}}{dt}&=&r_{max}H''_{eDAR}B
-\end{equation}$$
+\end{eqnarray*}$$
 
 #2. Probability of Lysogeny:
 
@@ -42,7 +42,7 @@ H''(eDAR) = 1 + H'(eDAR)
 Per capita version of the model:
 
 $$\begin{eqnarray*}
-\frac{1}{B}\frac{dB}{dt}&=& r_{max}H''_{eDAR}H_{DOC}} - dP \\
+\frac{1}{B}\frac{dB}{dt}&=& r_{max}H''_{eDAR}H_{DOC} - dP \\
 \frac{1}{P}\frac{dP}{dt}&=& \frac{c\big(1-P(L)\big)\mu_pI}{P} +\frac{c\mu_iL}{P} - m \\
 \frac{1}{I}\frac{dI}{dt}&=& \frac{dBP}{I} - P(L) - \big(1-P(L)\big)\frac{L}{I} \\
 \frac{1}{L}\frac{dL}{dt}&=& r_{max}H''_{eDAR}H_{DOC} + \frac{P(L)I}{L} - \mu_i
