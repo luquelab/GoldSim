@@ -61,7 +61,7 @@ Given a per capita mechanistic process $$M_i$$, assume that that process is acti
 
 | Term | Expression | Critical threshold|    
 | ----------- | ----------- |----------- |
-| Growth | $\tau r_{max}H''_{eDAR}$ | $H''_{eDAR} c = \frac{1}{\tau r}$|
+| Growth | $$\tau r_{max}H''_{eDAR}$$ | $$H''_{eDAR} c = \frac{1}{\tau r}$$ |
 | Predation | $\tau dP$ | $P_c = \frac{1}{\tau d}$|
 
 
