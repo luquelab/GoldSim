@@ -61,9 +61,9 @@ Given a per capita mechanistic process $$M_i$$, assume that that process is acti
 
 | Term | Expression | Critical threshold|    
 | ----------- | ----------- |----------- |
-| Growth | $$\tau r_{max}H''_{eDAR}$$ | $$H''_{eDAR} c = \frac{1}{\tau r}$$ |
-| Predation | $\tau dP$ | $P_c = \frac{1}{\tau d}$|
-
+| Growth |$$\tau r_{max}H''_{eDAR}$$|$$H''_{eDAR} c = 1/\tau r}$$|
+| Predation | $$\tau dP$$ | $$P_c=1/\tau d$$|
+|Lytic Burst| $$\tau \frac{c\big(1-P_L\big)\mu_pI}{P}$$ | \big(1-P_L\big) I/P = \frac{1}{\tau c \mu_p }$$ | 
 
 and
 
