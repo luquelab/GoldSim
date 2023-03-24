@@ -67,11 +67,11 @@ Given a per capita mechanistic process $$M_i$$, assume that that process is acti
 |Inductive lysis|$$\tau \frac{c\mu_iL}{P}$$||
 |Decay|$$\tau m$$||
 |Infection| $$\tau \frac{dBP}{I}$$ ||
-|Lysogenic infection|\tau P_L| |
-|Lytic infection|\tau \big(1-P_L\big) \frac{L}{I}||
-|Lysogenic growth|\tau r_{max}H''_{eDAR}||
-|New Lysogens|\tau P_L\frac{I}{L}||
-|Lysogenic induction|\tau \mu_i||
+|Lysogenic infection|$$\tau P_L$$| |
+|Lytic infection|$$\tau \big(1-P_L\big) \frac{L}{I}$$||
+|Lysogenic growth|$$\tau r_{max}H''_{eDAR}$$||
+|New Lysogens|$$\tau P_L\frac{I}{L}$$||
+|Lysogenic induction|$$\tau \mu_i$$||
  
 
 and
