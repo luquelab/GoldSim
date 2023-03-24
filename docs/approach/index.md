@@ -51,10 +51,16 @@ $$\begin{eqnarray*}
 ## Relevant timescale
 
 $$\begin{eqnarray*}
-\frac{1}{B}\frac{dB}{dt}&=& r_{max}H''_{eDAR} - dP \\
-\frac{1}{P}\frac{dP}{dt}&=& \frac{c\big(1-P_L\big)\mu_pI}{P} + \frac{c\mu_iL}{P} - m \\
-\frac{1}{I}\frac{dI}{dt}&=& \frac{dBP}{I} - P_L - \big(1-P_L\big) \frac{L}{I} \\
-\frac{1}{L}\frac{dL}{dt}&=& r_{max}H''_{eDAR} + P_L\frac{I}{L} - \mu_i
+\frac{\tau}{B}\frac{dB}{dt}&=& \tau r_{max}H''_{eDAR} - \tau dP \\
+\frac{\tau}{P}\frac{dP}{dt}&=& \tau \frac{c\big(1-P_L\big)\mu_pI}{P} + \tau \frac{c\mu_iL}{P} - \tau m \\
+\frac{\tau}{I}\frac{dI}{dt}&=& \tau \frac{dBP}{I} - \tau P_L - \tau \big(1-P_L\big) \frac{L}{I} \\
+\frac{\tau}{L}\frac{dL}{dt}&=& \tau r_{max}H''_{eDAR} + \tau P_L\frac{I}{L} - \tau \mu_i
+\end{eqnarray*} $$
+
+Given a per capita mechanistic process $$M_i$$, assume that that process is active if:
+
+$$\begin{eqnarray*}
+\tau M_i = 1
 \end{eqnarray*} $$
 
 
