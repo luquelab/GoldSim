@@ -63,10 +63,10 @@ Given a per capita mechanistic process $$M_i$$, assume that that process is acti
 | ----------- | ----------- |----------- |
 |Growth     |$$\tau r_{max}H''_{eDAR}$$|$$H''_{eDAR}c = 1/\tau r$$|
 |Predation  |$$\tau dP$$ | $$P_c=1/\tau d$$|
-|Lytic Burst|$$\tau \frac{c\big(1-P_L\big)\mu_pI}{P}$$ | \big(1-P_L\big) I/P = \frac{1}{\tau c \mu_p }$$ | 
-|Inductive lysis|$$\tau \frac{c\mu_iL}{P}$$||
+|Lytic Burst|$$\tau \frac{c\big(1-P_L\big)\mu_pI}{P}$$ | $$\big(1-P_L\big) I/P = \frac{1}{\tau c \mu_p }$$ | 
+|Inductive lysis|$$\tau \frac{c\mu_iL}{P}$$| $$\frac{L}{P}=\frac{1}{\tau c \mu_i}|
 |Decay|$$\tau m$$||
-|Infection| $$\tau \frac{dBP}{I}$$ ||
+|Infection| $$\tau \frac{dBP}{I}$$ | $$\frac{BP}{I}=\frac{1}{\tau d}$$|
 |Lysogenic infection|$$\tau P_L$$| |
 |Lytic infection|$$\tau \big(1-P_L\big) \frac{L}{I}$$||
 |Lysogenic growth|$$\tau r_{max}H''_{eDAR}$$||
