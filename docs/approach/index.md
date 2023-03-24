@@ -14,7 +14,7 @@ $$\begin{eqnarray*}
 \frac{dB}{dt}&=& \underbrace{r_{max}H''_{eDAR}B}_{growth} - \underbrace{dBP}_{infection} \\
 \frac{dP}{dt}&=& \underbrace{c\big(1-P_L\big)\mu_pI}_{\text{lytic burst}} +\underbrace{c\mu_iL}_{\text{induct growth}} - \underbrace{mP}_{decay} \\
 \frac{dI}{dt}&=& \underbrace{dBP}_{infection} - \underbrace{P_LI}_{lysogenic} - \underbrace{\big(1-P_L\big)L}_{lytic} \\
-\frac{dL}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}L }_{growth} +
+\frac{dL}{dt}&=& \underbrace{r_{max}H''_{eDAR}L }_{growth} +
 \underbrace{P_LI}_{\text{new lysogens}} - \underbrace{\mu_iL}_{induction}
 \end{eqnarray*} $$
 
@@ -57,11 +57,11 @@ $$\begin{eqnarray*}
 \frac{\tau}{L}\frac{dL}{dt}&=& \tau r_{max}H''_{eDAR} + \tau P_L\frac{I}{L} - \tau \mu_i
 \end{eqnarray*} $$
 
-Given a per capita mechanistic process $$M_i$$, assume that that process is active if:
+Given a per capita mechanistic process $$M_i$$, assume that that process is active if $\tau M_i = 1$. We analyze now the conditions of activation/inactivation of the terms in the model:
 
-$$\begin{eqnarray*}
-\tau M_i = 1
-\end{eqnarray*} $$
+| Term | Expression | Critical threshold|    
+| ----------- | ----------- |----------- |
+| Growth | \tau r_{max}H''_{eDAR}  |H''_{eDAR} c = \frac{1}{\tau r}|
 
 
 and
