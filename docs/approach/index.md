@@ -69,7 +69,7 @@ Given a per capita mechanistic process $$M_i$$, assume that that process is acti
 |Infection| $$\tau \frac{dBP}{I}$$ | $$\frac{BP}{I}=\frac{1}{\tau d}$$|
 |Lysogenic infection|$$\tau P_L$$| $$P_L=1/\tau$$ |
 |Lytic infection|$$\tau \big(1-P_L\big) \frac{L}{I}$$| $$\big(1-P_L\big) \frac{L}{I}=1/\tau $$ |
-|Lysogenic growth|$$\tau r_{max}H''_{eDAR}$$|$$H''_{eDAR}=\frac{1}{r_max} \tau}$$ |
+|Lysogenic growth|$$\tau r_{max}H''_{eDAR}$$|$$H''_{eDAR}=\frac{1}{r_{max} \tau}$$ |
 |New Lysogens|$$\tau P_L\frac{I}{L}$$|$$P_L\frac{I}{L}=1/\tau$$|
 |Lysogenic induction|$$\tau \mu_i$$||
  
