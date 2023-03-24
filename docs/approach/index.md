@@ -11,43 +11,51 @@ This section describes the mathematical formalism used for the modules.
 ## Module 1 - Phage-Bacterial dynamics
 
 $$\begin{eqnarray*}
-\frac{dB}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}B}_{growth} - \underbrace{dBP}_{infection} \\
-\frac{dP}{dt}&=& \underbrace{c\big(1-P(L)\big)\mu_pI}_{\text{lytic burst}} +\underbrace{c\mu_iL}_{\text{induct growth}} - \underbrace{mP}_{decay} \\
-\frac{dI}{dt}&=& \underbrace{dBP}_{infection} - \underbrace{P(L)I}_{lysogenic} - \underbrace{\big(1-P(L)\big)L}_{lytic} \\
+\frac{dB}{dt}&=& \underbrace{r_{max}H''_{eDAR}B}_{growth} - \underbrace{dBP}_{infection} \\
+\frac{dP}{dt}&=& \underbrace{c\big(1-P_L\big)\mu_pI}_{\text{lytic burst}} +\underbrace{c\mu_iL}_{\text{induct growth}} - \underbrace{mP}_{decay} \\
+\frac{dI}{dt}&=& \underbrace{dBP}_{infection} - \underbrace{P_LI}_{lysogenic} - \underbrace{\big(1-P_L\big)L}_{lytic} \\
 \frac{dL}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}L }_{growth} +
-\underbrace{P(L)I}_{\text{new lysogens}} - \underbrace{\mu_iL}_{induction}
+\underbrace{P_LI}_{\text{new lysogens}} - \underbrace{\mu_iL}_{induction}
 \end{eqnarray*} $$
 
 In this model, bacterial growth and lytic/lysogenic infection are metabolic-dependent processes:
 
-#1. Bacterial Growth:
+# 1. Bacterial Growth:
 
 $$\begin{eqnarray*}
 \frac{dB_{growth}}{dt}&=&r_{max}H''_{eDAR}B
 \end{eqnarray*}$$
 
-#2. Probability of Lysogeny:
+# 2. Probability of Lysogeny:
 
 $$\begin{eqnarray*}
 P_L=P_L(max)H'(eDAR) + P_L(min) (1 - H'(eDAR))
 \end{eqnarray*}$$
 
-$$H'(eDAR)$$ and $$H''(eDAR)$$ are modified Hill Functions such that:
+$$H'(eDAR)$$ and $$H''(eDAR)$$ are modified Hill Functions (or products or linear combinations of Hill functions) such that:
 
 $$\begin{equation*}
 H''(eDAR) = 1 + H'(eDAR)
 \end{equation*}$$
 
 
-Per capita version of the model:
+## Per capita version of the model:
 
 $$\begin{eqnarray*}
-\frac{1}{B}\frac{dB}{dt}&=& r_{max}H''_{eDAR}H_{DOC} - dP \\
-\frac{1}{P}\frac{dP}{dt}&=& \frac{c\big(1-P(L)\big)\mu_pI}{P} + \frac{c\mu_iL}{P} - m \\
-\frac{1}{I}\frac{dI}{dt}&=& \frac{dBP}{I} - P(L) - \big(1-P(L)\big) \frac{L}{I} \\
-\frac{1}{L}\frac{dL}{dt}&=& r_{max}H''_{eDAR}H_{DOC} + P_L\frac{I}{L} - \mu_i
+\frac{1}{B}\frac{dB}{dt}&=& r_{max}H''_{eDAR} - dP \\
+\frac{1}{P}\frac{dP}{dt}&=& \frac{c\big(1-P_L\big)\mu_pI}{P} + \frac{c\mu_iL}{P} - m \\
+\frac{1}{I}\frac{dI}{dt}&=& \frac{dBP}{I} - P_L - \big(1-P_L\big) \frac{L}{I} \\
+\frac{1}{L}\frac{dL}{dt}&=& r_{max}H''_{eDAR} + P_L\frac{I}{L} - \mu_i
 \end{eqnarray*} $$
 
+## Relevant timescale
+
+$$\begin{eqnarray*}
+\frac{1}{B}\frac{dB}{dt}&=& r_{max}H''_{eDAR} - dP \\
+\frac{1}{P}\frac{dP}{dt}&=& \frac{c\big(1-P_L\big)\mu_pI}{P} + \frac{c\mu_iL}{P} - m \\
+\frac{1}{I}\frac{dI}{dt}&=& \frac{dBP}{I} - P_L - \big(1-P_L\big) \frac{L}{I} \\
+\frac{1}{L}\frac{dL}{dt}&=& r_{max}H''_{eDAR} + P_L\frac{I}{L} - \mu_i
+\end{eqnarray*} $$
 
 
 and
