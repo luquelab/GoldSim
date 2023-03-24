@@ -42,8 +42,8 @@ H''(eDAR) = 1 + H'(eDAR)
 Per capita version of the model:
 
 $$\begin{eqnarray*}
-\frac{1}{B}\frac{dB}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}B}_{growth} - \underbrace{dBP}_{infection} \\
-\frac{1}{P}\frac{dP}{dt}&=& \underbrace{c\big(1-P(L)\big)\mu_pI}_{\text{lytic burst}} +\underbrace{c\mu_iL}_{\text{induct growth}} - \underbrace{mP}_{decay} \\
+\frac{1}{B}\frac{dB}{dt}&=& r_{max}H''_{eDAR}H_{DOC}} - dP \\
+\frac{1}{P}\frac{dP}{dt}&=& \frac{c\big(1-P(L)\big)\mu_pI}{P} +\frac{c\mu_iL}{P} - m \\
 \frac{1}{I}\frac{dI}{dt}&=& \underbrace{dBP}_{infection} - \underbrace{P(L)I}_{lysogenic} - \underbrace{\big(1-P(L)\big)L}_{lytic} \\
 \frac{1}{L}\frac{dL}{dt}&=& \underbrace{r_{max}H''_{eDAR}H_{DOC}L }_{growth} +
 \underbrace{P(L)I}_{\text{new lysogens}} - \underbrace{\mu_iL}_{induction}
