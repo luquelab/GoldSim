@@ -1,0 +1,31 @@
+GoldSim 14.0.0344
+Simulation Filename:	edar_Hill_Function_new
+Simulation Start Time:	4/3/2023 5:56:14 PM
+Simulation Run Time:	0.0 s
+Model Author Name:	Rohwer Lab
+Analysis Description:	(not specified)
+
+*** Simulation Time Settings ***
+Time Basis:  Elapsed Time
+Time Unit: min
+Duration: 10 min
+Basic Timestep: 1 min
+Reporting Periods: none
+Scheduled Updates: 11
+Number of Plot Points: 11
+Final Value Capture Times:
+  At the end of the simulation
+
+*** Simulation Monte-Carlo Settings ***
+Simulation Type: Probabilistic (run 1 realization)
+Latin Hypercube Sampling: enabled (using random points in strata)
+Sampling Sequences: repeated; beginning seed 1
+
+WARNINGS AND ERRORS:
+
+Realization 1
+
+8.45 min:
+\edar: This Pool element is overflowing, but there is nothing linked to its Overflow output!
+	(This message will not be repeated).
+
