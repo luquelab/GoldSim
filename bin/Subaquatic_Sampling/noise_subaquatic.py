@@ -1,0 +1,73 @@
+#5/6/2023 This is a modified version of a code for Euler-Maruyama processes for the subaquatic sampling process
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+#Parameter values and stochastic constants
+class Model:
+    SIGMA_v = 5
+    SIGMA_full = 1e6
+    
+    VOLUME_INTEREST=1400 #ml
+    DENSITY_INTEREST=1e7 #things/ml
+    DENSITY_ENVIRONMENT=1e6 #things/ml
+    v=10 #ml/s
+
+
+#Subaquatic sampling model
+def mu_sampling(y: float, _t: float) -> float:
+    return (Model.DENSITY_ENVIRONMENT*Model.VOLUME_INTEREST - y)*(Model.v/Model.VOLUME_INTEREST)
+
+#Stochastic noise for the whole model
+def sigma_total(_y: float, _t: float) -> float:
+    return Model.SIGMA_full
+
+#Stochastic noise for the sampling rate
+def sigma_v_rate(y: float, _t: float) -> float:
+    return (Model.DENSITY_ENVIRONMENT*Model.VOLUME_INTEREST - y)*(Model.SIGMA_v/Model.VOLUME_INTEREST)
+
+#Euler-Maruyama process
+def dW(delta_t: float) -> float:
+    return np.random.normal(loc=0.0, scale=np.sqrt(delta_t))
+
+#def density_sample(den_interest,sampling_rate):
+
+def run_simulation():
+    """ Return the result of one full simulation."""
+    T_INIT = 0
+    T_END = 60
+    N = 10000  # Compute at 1000 grid points
+    DT = float(T_END - T_INIT) / N
+    TS = np.arange(T_INIT, T_END + DT, DT)
+    assert TS.size == N + 1
+
+    #Initial condition
+    Y_INIT = Model.VOLUME_INTEREST*Model.DENSITY_INTEREST
+
+    ys = np.zeros(TS.size)
+    ys[0] = Y_INIT
+    for i in range(1, TS.size):
+        t = T_INIT + (i - 1) * DT
+        y = ys[i - 1]
+        ys[i] = y + mu_sampling(y, t) * DT + sigma_total(y, t) * dW(DT)
+
+    #Calculate density of interest
+    ys = ys/Model.VOLUME_INTEREST
+
+    return TS, ys
+
+
+#Plot results of simulations
+def plot_simulations(num_sims: int):
+
+    for _ in range(num_sims):
+        plt.plot(*run_simulation())
+    
+    plt.xlabel("time (s)")
+    plt.ylabel("D$_i$ (VLP/ml)")
+    plt.show()
+
+
+if __name__ == "__main__":
+    NUM_SIMS = 5
+    plot_simulations(NUM_SIMS)

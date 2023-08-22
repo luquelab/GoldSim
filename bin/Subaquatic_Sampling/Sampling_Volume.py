@@ -5,8 +5,10 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from matplotlib.pyplot import figure
 import matplotlib.ticker as mtick
+from scipy.integrate import solve_ivp
 
-
+def solve_mass_interest(t,y):
+    return [(-y + de*vi)*(v/vi)]
 
 def mass_interest(de,vi,mi0,v,time):
     mi=de*vi - (de*vi - mi0)*np.exp(-v*time/vi)
@@ -17,7 +19,7 @@ def mass_sample(mi0,de,vi,ms0,v,time):
     ms=v*de*time + vi*(de - (mi0/vi))*(np.exp(-v*time/vi)-1)
     
     return ms
-
+            
 #Initial parameters
 Vol_interest_vec=[vi for vi in np.arange(1,2,0.1)]
 Vol_sample_vec=[vi for vi in np.arange(0.1,1.1,0.1)]
@@ -35,6 +37,7 @@ flow_rate=10 #mL/s
 timestep=1 #s
 time_experiment=60
 time=np.arange(0,time_experiment + timestep,timestep)
+
 print(time)
 
 
@@ -52,7 +55,16 @@ ms=mass_sample(mi0,de,vi,mi0,v,time)
 vs=v*time
 ds=ms/vs
 
+y0=[mi0]
+step=0.01
+sol_equation=solve_ivp(solve_mass_interest,[time[0],time[-1]],y0,\
+method='RK45',dense_output=True,events=None,max_step=step)
 
+print(sol_equation)
+print(sol_equation.sol(time)[0])
+
+plt.plot(time,sol_equation.sol(time)[0])
+plt.show()
 
 v_vector=[0.1,1,10,50,100,1000]
 print(v_vector)
